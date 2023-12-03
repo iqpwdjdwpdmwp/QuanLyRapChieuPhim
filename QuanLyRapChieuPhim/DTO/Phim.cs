@@ -7,22 +7,22 @@ namespace DTO
     public class Phim
     {
         public int id { get; set; }
-        public string name { get; set; }
-        public string type { get; set; }
-        public string genre { get; set; }
-        public string country { get; set; }
+        public string tenphim { get; set; }
+        public string dangphim { get; set; }
+        public string theloai { get; set; }
+        public string quocgia { get; set; }
         public string moviePic { get; set; }
-        public int duration { get; set; }
+        public int thoiluong { get; set; }
 
         public Phim()
         {
             id = 0;
-            name = string.Empty;
-            type = string.Empty;
-            genre = string.Empty;
-            country = string.Empty;
+            tenphim = string.Empty;
+            dangphim = string.Empty;
+            theloai = string.Empty;
+            quocgia = string.Empty;
             moviePic = string.Empty;
-            duration = 0;
+            thoiluong = 0;
         }
     }
 }

@@ -21,21 +21,33 @@ namespace QuanLyRapChieuPhim.UserControls
         private void PhimDangChieu_Load(object sender, EventArgs e)
         {
             DataTable data = DAL.PhimDangChieu.getPhimDangChieu();
+            LoadPhim(data);
+
+        }
+
+        private void danhsachtheloai_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string theloai = danhsachtheloai.SelectedItem.ToString();
+            DataTable data = DAL.PhimDangChieu.getPhimTheoTheLoai(theloai);
+            LoadPhim(data);
+        }
+        private void LoadPhim(DataTable data)
+        {
+            flowLayoutPanel1.Controls.Clear();
             FilmItem[] list = new FilmItem[100];
-            for(int i = 0; i < data.Rows.Count; i++)
+            for (int i = 0; i < data.Rows.Count; i++)
             {
                 list[i] = new FilmItem();
-                list[i].Name = data.Rows[i]["name"].ToString();
-                string s = data.Rows[i]["type"].ToString() + data.Rows[i]["genre"].ToString();
+                list[i].Name = data.Rows[i]["TENPHIM"].ToString();
+                string s = data.Rows[i]["DANGPHIM"].ToString() + data.Rows[i]["THELOAI"].ToString();
                 list[i].PropertiesFilm = s;
-                list[i].Image = Image.FromFile(data.Rows[i]["moviepic"].ToString());
-                list[i].NgayChieu = Convert.ToDateTime(data.Rows[i]["ngaychieu"]).ToString("dd/MM/yyyy");
-                list[i].GioChieu = data.Rows[i]["giochieu"].ToString();
-                list[i].Phong = Convert.ToInt32(data.Rows[i]["phongid"]);
-                list[i].SuatChieuID = Convert.ToInt32(data.Rows[i]["id"]);
+                list[i].Image = Image.FromFile(data.Rows[i]["POSTER"].ToString());
+                list[i].NgayChieu = Convert.ToDateTime(data.Rows[i]["NGAYCHIEU"]).ToString("dd/MM/yyyy");
+                list[i].GioChieu = data.Rows[i]["THOIGIANCHIEU"].ToString();
+                list[i].Phong = Convert.ToInt32(data.Rows[i]["IDPHONG"]);
+                list[i].SuatChieuID = Convert.ToInt32(data.Rows[i]["IDSUATCHIEU"]);
                 flowLayoutPanel1.Controls.Add(list[i]);
             }
-
         }
     }
 }

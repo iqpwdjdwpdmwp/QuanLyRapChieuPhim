@@ -37,8 +37,6 @@
             this.phongchieu = new Guna.UI2.WinForms.Guna2TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
-            this.desc = new System.Windows.Forms.RichTextBox();
-            this.label6 = new System.Windows.Forms.Label();
             this.comboBoxHour = new Guna.UI2.WinForms.Guna2ComboBox();
             this.SuspendLayout();
             // 
@@ -158,24 +156,6 @@
             this.guna2Button1.Text = "Xác nhận";
             this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
-            // desc
-            // 
-            this.desc.Location = new System.Drawing.Point(70, 333);
-            this.desc.Name = "desc";
-            this.desc.Size = new System.Drawing.Size(358, 122);
-            this.desc.TabIndex = 24;
-            this.desc.Text = "";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(66, 289);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(51, 20);
-            this.label6.TabIndex = 25;
-            this.label6.Text = "Mô tả";
-            // 
             // comboBoxHour
             // 
             this.comboBoxHour.BackColor = System.Drawing.Color.Transparent;
@@ -199,8 +179,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(930, 467);
             this.Controls.Add(this.comboBoxHour);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.desc);
             this.Controls.Add(this.guna2Button1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.phongchieu);
@@ -229,8 +207,6 @@
         private Guna.UI2.WinForms.Guna2TextBox phongchieu;
         private System.Windows.Forms.Label label5;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
-        private System.Windows.Forms.RichTextBox desc;
-        private System.Windows.Forms.Label label6;
         private Guna.UI2.WinForms.Guna2ComboBox comboBoxHour;
     }
 }

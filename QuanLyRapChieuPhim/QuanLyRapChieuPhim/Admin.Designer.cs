@@ -124,7 +124,7 @@
             this.panel2.BackColor = System.Drawing.SystemColors.Control;
             this.panel2.Location = new System.Drawing.Point(256, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(955, 726);
+            this.panel2.Size = new System.Drawing.Size(956, 726);
             this.panel2.TabIndex = 1;
             // 
             // Admin
@@ -136,6 +136,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "Admin";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);

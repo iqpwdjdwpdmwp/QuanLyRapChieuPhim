@@ -42,6 +42,12 @@
             this.moviepicture = new System.Windows.Forms.PictureBox();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
+            this.mota = new System.Windows.Forms.RichTextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.tacgia = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.namphathanh = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.moviepicture)).BeginInit();
             this.SuspendLayout();
             // 
@@ -137,9 +143,10 @@
             // 
             // moviepicture
             // 
-            this.moviepicture.Location = new System.Drawing.Point(421, 311);
+            this.moviepicture.Location = new System.Drawing.Point(421, 282);
             this.moviepicture.Name = "moviepicture";
-            this.moviepicture.Size = new System.Drawing.Size(146, 144);
+            this.moviepicture.Size = new System.Drawing.Size(146, 173);
+            this.moviepicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.moviepicture.TabIndex = 11;
             this.moviepicture.TabStop = false;
             // 
@@ -173,11 +180,66 @@
             this.guna2Button2.Text = "Xác nhận";
             this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
             // 
+            // mota
+            // 
+            this.mota.Location = new System.Drawing.Point(626, 153);
+            this.mota.Name = "mota";
+            this.mota.Size = new System.Drawing.Size(296, 116);
+            this.mota.TabIndex = 14;
+            this.mota.Text = "";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(623, 115);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(40, 16);
+            this.label7.TabIndex = 15;
+            this.label7.Text = "Mô tả";
+            // 
+            // tacgia
+            // 
+            this.tacgia.Location = new System.Drawing.Point(48, 431);
+            this.tacgia.Name = "tacgia";
+            this.tacgia.Size = new System.Drawing.Size(146, 22);
+            this.tacgia.TabIndex = 17;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(45, 393);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(53, 16);
+            this.label8.TabIndex = 16;
+            this.label8.Text = "Tác giả";
+            // 
+            // namphathanh
+            // 
+            this.namphathanh.Location = new System.Drawing.Point(249, 431);
+            this.namphathanh.Name = "namphathanh";
+            this.namphathanh.Size = new System.Drawing.Size(146, 22);
+            this.namphathanh.TabIndex = 19;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(246, 393);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(97, 16);
+            this.label9.TabIndex = 18;
+            this.label9.Text = "Năm phát hành";
+            // 
             // ThemPhim
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(930, 467);
+            this.Controls.Add(this.namphathanh);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.tacgia);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.mota);
             this.Controls.Add(this.guna2Button2);
             this.Controls.Add(this.guna2Button1);
             this.Controls.Add(this.moviepicture);
@@ -216,5 +278,11 @@
         private System.Windows.Forms.PictureBox moviepicture;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
+        private System.Windows.Forms.RichTextBox mota;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox tacgia;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox namphathanh;
+        private System.Windows.Forms.Label label9;
     }
 }

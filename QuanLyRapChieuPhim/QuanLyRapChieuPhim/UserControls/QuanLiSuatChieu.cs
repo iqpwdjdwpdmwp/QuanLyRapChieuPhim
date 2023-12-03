@@ -32,13 +32,12 @@ namespace QuanLyRapChieuPhim.UserControls
             suatchieudtgv.Rows.Clear();
             foreach(DataRow row in data.Rows)
             {
-                newSuatChieu.MovieID = Convert.ToInt32(row["movieid"]);
-                newSuatChieu.NgayChieu = Convert.ToDateTime(row["ngaychieu"]);
-                newSuatChieu.PhongId = Convert.ToInt32(row["phongid"]);
-                newSuatChieu.GioChieu = row["giochieu"].ToString();
-                newSuatChieu.Description = row["description"].ToString();
+                newSuatChieu.MovieID = Convert.ToInt32(row["IDPHIM"]);
+                newSuatChieu.NgayChieu = Convert.ToDateTime(row["NGAYCHIEU"]);
+                newSuatChieu.PhongId = Convert.ToInt32(row["IDPHONG"]);
+                newSuatChieu.GioChieu = row["THOIGIANCHIEU"].ToString();
 
-                Object movieName = DAL.DataProvider.ExecuteScalar($"select name from movie where id = {newSuatChieu.MovieID} ");
+                Object movieName = DAL.DataProvider.ExecuteScalar($"select TENPHIM from PHIM where IDPHIM = {newSuatChieu.MovieID} ");
                 suatchieudtgv.Rows.Add(new object[]
                 {
                     movieName.ToString(),
@@ -52,7 +51,7 @@ namespace QuanLyRapChieuPhim.UserControls
         private void suatchieudtgv_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
-            var movieid = DAL.DataProvider.ExecuteScalar($"select id from movie where name = N'{suatchieudtgv.Rows[e.RowIndex].Cells[0].Value}'");
+            var movieid = DAL.DataProvider.ExecuteScalar($"select IDPHIM from PHIM where TENPHIM = N'{suatchieudtgv.Rows[e.RowIndex].Cells[0].Value}'");
             string gioChieu = suatchieudtgv.Rows[e.RowIndex].Cells[3].Value.ToString();
             ChiTiet newForm = new ChiTiet(Convert.ToInt32(movieid), gioChieu);   
             newForm.ShowDialog();

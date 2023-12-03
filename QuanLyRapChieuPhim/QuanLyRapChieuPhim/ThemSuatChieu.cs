@@ -23,10 +23,10 @@ namespace QuanLyRapChieuPhim
 
         private void ThemSuatChieu_Load(object sender, EventArgs e)
         {
-            string query = "select name from movie";
+            string query = "select TENPHIM from PHIM";
             data = DAL.DataProvider.ExecuteQuery(query);
             comboBoxFilm.DataSource = data;
-            comboBoxFilm.DisplayMember = "name";
+            comboBoxFilm.DisplayMember = "TENPHIM";
 
             const int firstHour = 0;
             const int lastHour = 24;
@@ -43,15 +43,14 @@ namespace QuanLyRapChieuPhim
         private void guna2Button1_Click(object sender, EventArgs e)
         {
             SuatChieu newSuatChieu = new SuatChieu();
-            string query = $"select * from movie where name = N'{comboBoxFilm.GetItemText(comboBoxFilm.SelectedItem)}'";
+            string query = $"select * from PHIM where TENPHIM = N'{comboBoxFilm.GetItemText(comboBoxFilm.SelectedItem)}'";
             newSuatChieu.MovieID = Convert.ToInt32(DAL.DataProvider.ExecuteScalar(query));
             newSuatChieu.GioChieu = comboBoxHour.GetItemText(comboBoxHour.SelectedItem);
             newSuatChieu.NgayChieu = ngaychieupicker.Value.Date;
             newSuatChieu.GioChieu = comboBoxHour.GetItemText(comboBoxHour.SelectedItem);
             newSuatChieu.PhongId = Convert.ToInt32(phongchieu.Text);
-            newSuatChieu.Description = desc.Text;
 
-            bool data = DAL.QuanLiSuatChieu.insertSuatChieu(newSuatChieu.MovieID, newSuatChieu.NgayChieu, newSuatChieu.PhongId, newSuatChieu.GioChieu, newSuatChieu.Description);
+            bool data = DAL.QuanLiSuatChieu.insertSuatChieu(newSuatChieu.MovieID, newSuatChieu.NgayChieu, newSuatChieu.PhongId, newSuatChieu.GioChieu);
             if (data == true)
             {
                 MessageBox.Show("Thêm suất chiếu thành công");

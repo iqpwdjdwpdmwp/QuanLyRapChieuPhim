@@ -14,13 +14,13 @@ namespace DAL
         }
         public static DataTable getSuatChieu(int idphong)
         {
-            string query = $"select * from suatchieu where phongid = {idphong}";
+            string query = $"select * from suatchieu where IDPHONG = {idphong}";
             return DAL.DataProvider.ExecuteQuery(query);
         }
-        public static bool insertSuatChieu(int movieid, DateTime ngaychieu, int phongid, string giochieu, string description)
+        public static bool insertSuatChieu(int movieid, DateTime ngaychieu, int phongid, string giochieu)
         {
 
-            string query = $"insert into suatchieu (movieid,ngaychieu,phongid,giochieu,description) values ({movieid},'{ngaychieu}',{phongid},'{giochieu}',N'{description}') ";
+            string query = $"insert into suatchieu (IDPHIM,IDPHONG,NGAYCHIEU,THOIGIANCHIEU) values ({movieid},{phongid},'{ngaychieu}','{giochieu}')";
             int data = DataProvider.ExecuteNonQuery(query);
             return data > 0;
         }

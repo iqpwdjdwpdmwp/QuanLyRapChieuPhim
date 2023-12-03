@@ -40,7 +40,7 @@ namespace QuanLyRapChieuPhim
                 Directory.CreateDirectory(appPath);
             }
             QuanLiPhim quanLiPhim = new QuanLiPhim();
-            quanLiPhim.insertMovie(moviename.Text, movietype.Text, moviegenre.Text, moviecountry.Text, path, movieduration.Text);
+            quanLiPhim.insertMovie(moviename.Text, movietype.Text, moviegenre.Text, moviecountry.Text, path, movieduration.Text, mota.Text, tacgia.Text, namphathanh.Text);
             img.Save(path);
         }
     }

@@ -110,9 +110,9 @@
             this.total.ForeColor = System.Drawing.Color.White;
             this.total.Location = new System.Drawing.Point(1383, 675);
             this.total.Name = "total";
-            this.total.Size = new System.Drawing.Size(77, 17);
+            this.total.Size = new System.Drawing.Size(74, 17);
             this.total.TabIndex = 28;
-            this.total.Text = "45.000 VND";
+            this.total.Text = "45000 VND";
             // 
             // label12
             // 
@@ -121,9 +121,9 @@
             this.label12.ForeColor = System.Drawing.Color.White;
             this.label12.Location = new System.Drawing.Point(1383, 589);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(77, 17);
+            this.label12.Size = new System.Drawing.Size(74, 17);
             this.label12.TabIndex = 27;
-            this.label12.Text = "45.000 VND";
+            this.label12.Text = "45000 VND";
             // 
             // soluong
             // 

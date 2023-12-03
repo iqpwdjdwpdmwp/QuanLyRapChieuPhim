@@ -29,20 +29,19 @@ namespace QuanLyRapChieuPhim.UserControls
             data = DAL.QuanLiPhim.getAllMovie();
             foreach(DataRow row in data.Rows)
             {
-                phim.id = Convert.ToInt32(row["id"]);
-                phim.name = row["name"].ToString();
-                phim.type = row["type"].ToString();
-                phim.genre = row["genre"].ToString();
-                phim.country = row["country"].ToString();
-                phim.duration = Convert.ToInt32(row["duration"]);
+                phim.id = Convert.ToInt32(row["IDPHIM"]);
+                phim.tenphim = row["TENPHIM"].ToString();
+                phim.theloai = row["THELOAI"].ToString();
+                phim.dangphim = row["DANGPHIM"].ToString();
+                phim.quocgia = row["QUOCGIA"].ToString();
+                phim.thoiluong = Convert.ToInt32(row["THOILUONG"]);
                 guna2DataGridView1.Rows.Add(new object[]
                 {
-                    phim.id,
-                    phim.name,
-                    phim.type,
-                    phim.genre,
-                    phim.country,
-                    phim.duration
+                    phim.tenphim,
+                    phim.dangphim,
+                    phim.quocgia,
+                    phim.theloai,
+                    phim.thoiluong
                 });
             }
         }
