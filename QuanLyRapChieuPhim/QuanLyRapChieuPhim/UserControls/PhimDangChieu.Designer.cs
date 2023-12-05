@@ -85,13 +85,17 @@
             this.danhsachtheloai.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.danhsachtheloai.ItemHeight = 30;
             this.danhsachtheloai.Items.AddRange(new object[] {
+            "Tất cả",
             "Hành động",
             "Hài",
             "Âm nhạc",
             "Bí ẩn",
             "Chiến tranh",
             "Chính kịch",
-            "Gia đình"});
+            "Gia đình",
+            "Hoạt hình",
+            "Tài liệu",
+            "Lịch sử"});
             this.danhsachtheloai.Location = new System.Drawing.Point(1044, 42);
             this.danhsachtheloai.Name = "danhsachtheloai";
             this.danhsachtheloai.Size = new System.Drawing.Size(174, 36);
@@ -100,6 +104,7 @@
             // 
             // flowLayoutPanel1
             // 
+            this.flowLayoutPanel1.AutoScroll = true;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(45, 148);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(1173, 716);

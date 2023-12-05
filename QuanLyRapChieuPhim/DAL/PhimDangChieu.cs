@@ -16,7 +16,14 @@ namespace DAL
         public static DataTable getPhimTheoTheLoai(string theloai)
         {
             string today = DateTime.Today.ToString();
-            string query = $"select * from SUATCHIEU SC inner join PHIM P on SC.IDPHIM = P.IDPHIM where NGAYCHIEU = '{today}' and P.THELOAI LIKE N'{theloai}'";
+            string query = String.Empty;
+            if(theloai == "Tất cả")
+            {
+                query = $"select * from SUATCHIEU SC inner join PHIM P on SC.IDPHIM = P.IDPHIM where NGAYCHIEU = '{today}'";
+            } else
+            {
+                query = $"select * from SUATCHIEU SC inner join PHIM P on SC.IDPHIM = P.IDPHIM where NGAYCHIEU = '{today}' and P.THELOAI LIKE N'%{theloai}%'";
+            }
             return DAL.DataProvider.ExecuteQuery(query);
         }
     }

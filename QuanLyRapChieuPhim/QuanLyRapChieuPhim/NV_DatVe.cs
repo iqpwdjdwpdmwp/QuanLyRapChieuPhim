@@ -53,7 +53,7 @@ namespace QuanLyRapChieuPhim
             }
             for (int i = 65; i <= 72; i++)
             {
-                for (int j = 1; j <= 9; j++)
+                for (int j = 1; j <= 12; j++)
                 {
                     Button newBtn = new Button();
                     newBtn.Size = new Size(60, 60);

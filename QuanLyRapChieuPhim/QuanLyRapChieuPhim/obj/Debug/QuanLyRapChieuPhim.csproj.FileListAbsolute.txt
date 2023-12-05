@@ -29,3 +29,5 @@ C:\Users\BEN\source\repos\QuanLyRapChieuPhim\QuanLyRapChieuPhim\QuanLyRapChieuPh
 C:\Users\BEN\source\repos\QuanLyRapChieuPhim\QuanLyRapChieuPhim\QuanLyRapChieuPhim\obj\Debug\QuanLyRapChieuPhim.UserControls.FilmItem.resources
 C:\Users\BEN\source\repos\QuanLyRapChieuPhim\QuanLyRapChieuPhim\QuanLyRapChieuPhim\obj\Debug\QuanLyRapChieuPhim.UserControls.PhimDangChieu.resources
 C:\Users\BEN\source\repos\QuanLyRapChieuPhim\QuanLyRapChieuPhim\QuanLyRapChieuPhim\obj\Debug\QuanLyRapChieuPhim.NV_DatVe.resources
+C:\Users\BEN\source\repos\QuanLyRapChieuPhim\QuanLyRapChieuPhim\QuanLyRapChieuPhim\obj\Debug\QuanLyRapChieuPhim.SuaPhim.resources
+C:\Users\BEN\source\repos\QuanLyRapChieuPhim\QuanLyRapChieuPhim\QuanLyRapChieuPhim\obj\Debug\QuanLyRapChieuPhim.login.resources

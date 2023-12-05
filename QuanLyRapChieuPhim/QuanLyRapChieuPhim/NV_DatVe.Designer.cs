@@ -311,7 +311,7 @@
             this.flpSeats.BackColor = System.Drawing.Color.Transparent;
             this.flpSeats.Location = new System.Drawing.Point(70, 162);
             this.flpSeats.Name = "flpSeats";
-            this.flpSeats.Size = new System.Drawing.Size(1070, 594);
+            this.flpSeats.Size = new System.Drawing.Size(1070, 668);
             this.flpSeats.TabIndex = 0;
             // 
             // NV_DatVe

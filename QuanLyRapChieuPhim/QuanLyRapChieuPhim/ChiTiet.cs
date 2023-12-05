@@ -15,11 +15,23 @@ namespace QuanLyRapChieuPhim
     public partial class ChiTiet : Form
     {
         string gioChieu;
-        public ChiTiet(int movieid, string gioChieu)
+        int movieId;
+        string ngayChieu;
+        int idSuatChieu;
+
+        public int IDSuatChieu
+        {
+            get { return idSuatChieu; }
+            set { idSuatChieu = value;}
+        }
+
+        public ChiTiet(int movieId, string gioChieu, string ngayChieu)
         {
             InitializeComponent();
             this.gioChieu = gioChieu;
-            getInfo(movieid);
+            this.movieId = movieId;
+            this.ngayChieu = ngayChieu;
+            getInfo(this.movieId);
             loadSeat();
         }
         public void getInfo(int movieid)
@@ -41,8 +53,9 @@ namespace QuanLyRapChieuPhim
         public void loadSeat()
         {
             flpSeats.Controls.Clear();
-            var suatChieuID = DAL.DataProvider.ExecuteScalar($"select IDSUATCHIEU from SUATCHIEU where THOIGIANCHIEU = '{gioChieu}'");
-            DataTable data = DAL.Seat.getAllSeats(Convert.ToInt32(suatChieuID));
+            var ID = DAL.DataProvider.ExecuteScalar($"select IDSUATCHIEU from SUATCHIEU where THOIGIANCHIEU = '{gioChieu}' and NGAYCHIEU = '{(Convert.ToDateTime(ngayChieu)).ToString("yyyy/dd/MM")}'");
+            IDSuatChieu = Convert.ToInt32(ID);
+            DataTable data = DAL.Seat.getAllSeats(Convert.ToInt32(ID));
             //if (data.Rows.Count == 0)
             //{
             //    MessageBox.Show(gioChieu);
@@ -128,5 +141,14 @@ namespace QuanLyRapChieuPhim
             seatState = !seatState;
         }
 
+        private void delete_Click(object sender, EventArgs e)
+        {
+            bool data = DAL.QuanLiSuatChieu.deleteSuatChieu(IDSuatChieu);
+            if (data == true)
+            {
+                MessageBox.Show("Xóa suất chiếu thành công");
+            }
+            
+        }
     }
 }

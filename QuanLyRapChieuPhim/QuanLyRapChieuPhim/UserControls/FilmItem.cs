@@ -17,6 +17,7 @@ namespace QuanLyRapChieuPhim.UserControls
         string propertiesFilm;
         string ngayChieu;
         string gioChieu;
+        string description;
         int suatChieuID;
         int phong;
         Image image;
@@ -47,6 +48,18 @@ namespace QuanLyRapChieuPhim.UserControls
         {
             get { return propertiesFilm; }
             set { propertiesFilm = value; properties.Text = value; }
+        }
+        public string Description
+        {
+            get
+            {
+                return description;
+            }
+            set
+            {
+                description = value;
+                mota.Text = value;
+            }
         }
         public Image Image
         {

@@ -43,6 +43,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.delete = new Guna.UI2.WinForms.Guna2Button();
             this.SuspendLayout();
             // 
             // label1
@@ -183,12 +184,28 @@
             this.label6.TabIndex = 15;
             this.label6.Text = "Trống";
             // 
+            // delete
+            // 
+            this.delete.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.delete.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.delete.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.delete.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.delete.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.delete.ForeColor = System.Drawing.Color.White;
+            this.delete.Location = new System.Drawing.Point(1132, 725);
+            this.delete.Name = "delete";
+            this.delete.Size = new System.Drawing.Size(180, 45);
+            this.delete.TabIndex = 16;
+            this.delete.Text = "Xóa suất chiếu";
+            this.delete.Click += new System.EventHandler(this.delete_Click);
+            // 
             // ChiTiet
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1339, 782);
+            this.Controls.Add(this.delete);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -205,6 +222,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "ChiTiet";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ChiTiet";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -228,5 +246,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
+        private Guna.UI2.WinForms.Guna2Button delete;
     }
 }

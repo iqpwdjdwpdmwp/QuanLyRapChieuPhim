@@ -53,7 +53,8 @@ namespace QuanLyRapChieuPhim.UserControls
 
             var movieid = DAL.DataProvider.ExecuteScalar($"select IDPHIM from PHIM where TENPHIM = N'{suatchieudtgv.Rows[e.RowIndex].Cells[0].Value}'");
             string gioChieu = suatchieudtgv.Rows[e.RowIndex].Cells[3].Value.ToString();
-            ChiTiet newForm = new ChiTiet(Convert.ToInt32(movieid), gioChieu);   
+            string ngayChieu = suatchieudtgv.Rows[e.RowIndex].Cells[2].Value.ToString();
+            ChiTiet newForm = new ChiTiet(Convert.ToInt32(movieid), gioChieu, ngayChieu);   
             newForm.ShowDialog();
         }
 
@@ -90,6 +91,13 @@ namespace QuanLyRapChieuPhim.UserControls
         {
             SuatChieu newSuatChieu = new SuatChieu();
             data = DAL.QuanLiSuatChieu.getSuatChieu(4);
+            getSuatChieuTheoPhong(newSuatChieu, data);
+        }
+
+        private void refresh_Click(object sender, EventArgs e)
+        {
+            SuatChieu newSuatChieu = new SuatChieu();
+            data = DAL.QuanLiSuatChieu.getAllSuatChieu();
             getSuatChieuTheoPhong(newSuatChieu, data);
         }
     }

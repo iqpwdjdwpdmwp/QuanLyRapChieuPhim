@@ -20,7 +20,10 @@ namespace QuanLyRapChieuPhim
             InitializeComponent();
         }
 
-        private void guna2Button1_Click(object sender, EventArgs e)
+        
+
+
+        private void moviepicture_Click(object sender, EventArgs e)
         {
             OpenFileDialog open = new OpenFileDialog();
             open.Title = "Select a picture";
@@ -31,7 +34,7 @@ namespace QuanLyRapChieuPhim
             }
         }
 
-        private void guna2Button2_Click(object sender, EventArgs e)
+        private void submit_Click(object sender, EventArgs e)
         {
             string path = Path.Combine(appPath, moviename.Text + ".jpg");
             Image img = moviepicture.Image;

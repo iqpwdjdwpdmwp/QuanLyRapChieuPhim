@@ -42,23 +42,77 @@ namespace QuanLyRapChieuPhim
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
+            List<string> list = new List<string>();
             SuatChieu newSuatChieu = new SuatChieu();
             string query = $"select * from PHIM where TENPHIM = N'{comboBoxFilm.GetItemText(comboBoxFilm.SelectedItem)}'";
             newSuatChieu.MovieID = Convert.ToInt32(DAL.DataProvider.ExecuteScalar(query));
-            newSuatChieu.GioChieu = comboBoxHour.GetItemText(comboBoxHour.SelectedItem);
+
             newSuatChieu.NgayChieu = ngaychieupicker.Value.Date;
             newSuatChieu.GioChieu = comboBoxHour.GetItemText(comboBoxHour.SelectedItem);
             newSuatChieu.PhongId = Convert.ToInt32(phongchieu.Text);
+            query = $"select THOIGIANCHIEU from SUATCHIEU where NGAYCHIEU = '{newSuatChieu.NgayChieu}' and THOIGIANCHIEU < '{newSuatChieu.GioChieu}' and IDPHONG = {newSuatChieu.PhongId}";
+            DataTable temp = DAL.DataProvider.ExecuteQuery(query);
 
-            bool data = DAL.QuanLiSuatChieu.insertSuatChieu(newSuatChieu.MovieID, newSuatChieu.NgayChieu, newSuatChieu.PhongId, newSuatChieu.GioChieu);
-            if (data == true)
+            if(temp.Rows.Count > 0)
             {
-                MessageBox.Show("Thêm suất chiếu thành công");
+                foreach (DataRow row in temp.Rows)
+                {
+                    list.Add(row["THOIGIANCHIEU"].ToString());
+
+                }
+                list.Sort();
+                string suatChieuGanNhatVoiSuatChieuDuocChon = list.Last();
+                query = $"select THOILUONG from PHIM P inner join SUATCHIEU SC on P.IDPHIM = SC.IDPHIM where SC.THOIGIANCHIEU = '{suatChieuGanNhatVoiSuatChieuDuocChon}' and SC.NGAYCHIEU = '{newSuatChieu.NgayChieu}' and IDPHONG = {newSuatChieu.PhongId}";
+                int duration = Convert.ToInt32(DAL.DataProvider.ExecuteScalar(query));
+                int hour = duration / 60;
+                int minute = duration % 60;
+                int suatChieuGanNhatHour = Convert.ToInt32(suatChieuGanNhatVoiSuatChieuDuocChon.Split(':')[0]);
+                int suatChieuGanNhatMinute = Convert.ToInt32(suatChieuGanNhatVoiSuatChieuDuocChon.Split(':')[1]);
+                suatChieuGanNhatHour += hour;
+                suatChieuGanNhatMinute += minute;
+
+                if (suatChieuGanNhatMinute >= 60)
+                {
+                    suatChieuGanNhatHour += suatChieuGanNhatMinute / 60;
+                    suatChieuGanNhatMinute %= 60;
+                }
+
+                int newSuatChieuHour = Convert.ToInt32(newSuatChieu.GioChieu.Split(':')[0]);
+                int newSuatChieuMinute = Convert.ToInt32(newSuatChieu.GioChieu.Split(':')[1]);
+                if (newSuatChieuHour > suatChieuGanNhatHour || newSuatChieuHour == suatChieuGanNhatHour && newSuatChieuMinute > suatChieuGanNhatMinute)
+                {
+                    bool data = DAL.QuanLiSuatChieu.insertSuatChieu(newSuatChieu.MovieID, newSuatChieu.NgayChieu, newSuatChieu.PhongId, newSuatChieu.GioChieu);
+                    if (data == true)
+                    {
+                        MessageBox.Show("Thêm suất chiếu thành công");
+                    }
+                    else
+                    {
+                        throw new Exception("Đã có lỗi xảy ra");
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Phòng này hiện tại không còn trống, vui lòng chọn phòng khác hoặc thời gian khác!");
+                }
             }
             else
             {
-                throw new Exception("Đã có lỗi xảy ra");
+                bool data = DAL.QuanLiSuatChieu.insertSuatChieu(newSuatChieu.MovieID, newSuatChieu.NgayChieu, newSuatChieu.PhongId, newSuatChieu.GioChieu);
+                if (data == true)
+                {
+                    MessageBox.Show("Thêm suất chiếu thành công");
+                }
+                else
+                {
+                    throw new Exception("Đã có lỗi xảy ra");
+                }
             }
+            
+
+
+
+
         }
     }
 }

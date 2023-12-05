@@ -13,6 +13,10 @@ namespace DTO
         public string quocgia { get; set; }
         public string moviePic { get; set; }
         public int thoiluong { get; set; }
+        
+        public string namphathanh { get; set; }
+        public string tacgia { get; set; }
+        public string mota { get; set; }
 
         public Phim()
         {

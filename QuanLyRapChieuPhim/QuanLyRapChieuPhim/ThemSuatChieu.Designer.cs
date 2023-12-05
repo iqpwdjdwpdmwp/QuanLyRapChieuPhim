@@ -177,6 +177,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(930, 467);
             this.Controls.Add(this.comboBoxHour);
             this.Controls.Add(this.guna2Button1);
@@ -189,6 +190,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "ThemSuatChieu";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ThemSuatChieu";
             this.Load += new System.EventHandler(this.ThemSuatChieu_Load);
             this.ResumeLayout(false);

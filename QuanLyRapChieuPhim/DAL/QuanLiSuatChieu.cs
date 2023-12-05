@@ -30,5 +30,12 @@ namespace DAL
             int data = DataProvider.ExecuteNonQuery(query);
             return data > 0;
         }
+        public static bool deleteSuatChieu(int IDSUATCHIEU)
+        {
+            string query = $"delete from SUATCHIEU where IDSUATCHIEU = {IDSUATCHIEU}";
+            int data = DataProvider.ExecuteNonQuery(query);
+            return data > 0;
+        }
+        
     }
 }

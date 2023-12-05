@@ -28,26 +28,28 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.moviename = new System.Windows.Forms.TextBox();
-            this.movietype = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.moviegenre = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.moviecountry = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.movieduration = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.moviepicture = new System.Windows.Forms.PictureBox();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
+            this.submit = new Guna.UI2.WinForms.Guna2Button();
             this.mota = new System.Windows.Forms.RichTextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.tacgia = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.namphathanh = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
+            this.moviename = new Guna.UI2.WinForms.Guna2TextBox();
+            this.moviegenre = new Guna.UI2.WinForms.Guna2TextBox();
+            this.tacgia = new Guna.UI2.WinForms.Guna2TextBox();
+            this.namphathanh = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.movietype = new Guna.UI2.WinForms.Guna2TextBox();
+            this.moviecountry = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.moviepicture)).BeginInit();
             this.SuspendLayout();
             // 
@@ -70,20 +72,6 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "Tên phim";
             // 
-            // moviename
-            // 
-            this.moviename.Location = new System.Drawing.Point(48, 153);
-            this.moviename.Name = "moviename";
-            this.moviename.Size = new System.Drawing.Size(146, 22);
-            this.moviename.TabIndex = 2;
-            // 
-            // movietype
-            // 
-            this.movietype.Location = new System.Drawing.Point(421, 153);
-            this.movietype.Name = "movietype";
-            this.movietype.Size = new System.Drawing.Size(146, 22);
-            this.movietype.TabIndex = 4;
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -93,13 +81,6 @@
             this.label3.TabIndex = 3;
             this.label3.Text = "Loại phim";
             // 
-            // moviegenre
-            // 
-            this.moviegenre.Location = new System.Drawing.Point(48, 240);
-            this.moviegenre.Name = "moviegenre";
-            this.moviegenre.Size = new System.Drawing.Size(146, 22);
-            this.moviegenre.TabIndex = 6;
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -108,13 +89,6 @@
             this.label4.Size = new System.Drawing.Size(56, 16);
             this.label4.TabIndex = 5;
             this.label4.Text = "Thể loại";
-            // 
-            // moviecountry
-            // 
-            this.moviecountry.Location = new System.Drawing.Point(421, 240);
-            this.moviecountry.Name = "moviecountry";
-            this.moviecountry.Size = new System.Drawing.Size(146, 22);
-            this.moviecountry.TabIndex = 8;
             // 
             // label5
             // 
@@ -127,10 +101,10 @@
             // 
             // movieduration
             // 
-            this.movieduration.Location = new System.Drawing.Point(48, 340);
+            this.movieduration.Location = new System.Drawing.Point(48, 329);
             this.movieduration.Name = "movieduration";
             this.movieduration.Size = new System.Drawing.Size(146, 22);
-            this.movieduration.TabIndex = 10;
+            this.movieduration.TabIndex = 5;
             // 
             // label6
             // 
@@ -143,49 +117,40 @@
             // 
             // moviepicture
             // 
+            this.moviepicture.BackColor = System.Drawing.Color.Black;
+            this.moviepicture.Cursor = System.Windows.Forms.Cursors.Hand;
             this.moviepicture.Location = new System.Drawing.Point(421, 282);
             this.moviepicture.Name = "moviepicture";
             this.moviepicture.Size = new System.Drawing.Size(146, 173);
             this.moviepicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.moviepicture.TabIndex = 11;
             this.moviepicture.TabStop = false;
+            this.moviepicture.Click += new System.EventHandler(this.moviepicture_Click);
             // 
-            // guna2Button1
+            // submit
             // 
-            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.Location = new System.Drawing.Point(593, 329);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(140, 33);
-            this.guna2Button1.TabIndex = 12;
-            this.guna2Button1.Text = "Thêm hình ảnh";
-            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
-            // 
-            // guna2Button2
-            // 
-            this.guna2Button2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button2.ForeColor = System.Drawing.Color.White;
-            this.guna2Button2.Location = new System.Drawing.Point(671, 410);
-            this.guna2Button2.Name = "guna2Button2";
-            this.guna2Button2.Size = new System.Drawing.Size(180, 45);
-            this.guna2Button2.TabIndex = 13;
-            this.guna2Button2.Text = "Xác nhận";
-            this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
+            this.submit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(131)))), ((int)(((byte)(99)))));
+            this.submit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.submit.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.submit.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.submit.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.submit.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.submit.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(131)))), ((int)(((byte)(99)))));
+            this.submit.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.submit.ForeColor = System.Drawing.Color.White;
+            this.submit.Location = new System.Drawing.Point(671, 410);
+            this.submit.Name = "submit";
+            this.submit.Size = new System.Drawing.Size(180, 45);
+            this.submit.TabIndex = 13;
+            this.submit.Text = "Xác nhận";
+            this.submit.Click += new System.EventHandler(this.submit_Click);
             // 
             // mota
             // 
             this.mota.Location = new System.Drawing.Point(626, 153);
             this.mota.Name = "mota";
             this.mota.Size = new System.Drawing.Size(296, 116);
-            this.mota.TabIndex = 14;
+            this.mota.TabIndex = 8;
             this.mota.Text = "";
             // 
             // label7
@@ -197,13 +162,6 @@
             this.label7.TabIndex = 15;
             this.label7.Text = "Mô tả";
             // 
-            // tacgia
-            // 
-            this.tacgia.Location = new System.Drawing.Point(48, 431);
-            this.tacgia.Name = "tacgia";
-            this.tacgia.Size = new System.Drawing.Size(146, 22);
-            this.tacgia.TabIndex = 17;
-            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -212,13 +170,6 @@
             this.label8.Size = new System.Drawing.Size(53, 16);
             this.label8.TabIndex = 16;
             this.label8.Text = "Tác giả";
-            // 
-            // namphathanh
-            // 
-            this.namphathanh.Location = new System.Drawing.Point(249, 431);
-            this.namphathanh.Name = "namphathanh";
-            this.namphathanh.Size = new System.Drawing.Size(146, 22);
-            this.namphathanh.TabIndex = 19;
             // 
             // label9
             // 
@@ -229,32 +180,162 @@
             this.label9.TabIndex = 18;
             this.label9.Text = "Năm phát hành";
             // 
+            // moviename
+            // 
+            this.moviename.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.moviename.DefaultText = "";
+            this.moviename.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.moviename.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.moviename.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.moviename.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.moviename.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.moviename.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.moviename.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.moviename.Location = new System.Drawing.Point(48, 135);
+            this.moviename.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.moviename.Name = "moviename";
+            this.moviename.PasswordChar = '\0';
+            this.moviename.PlaceholderText = "";
+            this.moviename.SelectedText = "";
+            this.moviename.Size = new System.Drawing.Size(229, 48);
+            this.moviename.TabIndex = 1;
+            // 
+            // moviegenre
+            // 
+            this.moviegenre.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.moviegenre.DefaultText = "";
+            this.moviegenre.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.moviegenre.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.moviegenre.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.moviegenre.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.moviegenre.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.moviegenre.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.moviegenre.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.moviegenre.Location = new System.Drawing.Point(48, 221);
+            this.moviegenre.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.moviegenre.Name = "moviegenre";
+            this.moviegenre.PasswordChar = '\0';
+            this.moviegenre.PlaceholderText = "";
+            this.moviegenre.SelectedText = "";
+            this.moviegenre.Size = new System.Drawing.Size(229, 48);
+            this.moviegenre.TabIndex = 3;
+            // 
+            // tacgia
+            // 
+            this.tacgia.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tacgia.DefaultText = "";
+            this.tacgia.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.tacgia.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.tacgia.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tacgia.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tacgia.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tacgia.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.tacgia.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tacgia.Location = new System.Drawing.Point(48, 413);
+            this.tacgia.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.tacgia.Name = "tacgia";
+            this.tacgia.PasswordChar = '\0';
+            this.tacgia.PlaceholderText = "";
+            this.tacgia.SelectedText = "";
+            this.tacgia.Size = new System.Drawing.Size(146, 42);
+            this.tacgia.TabIndex = 6;
+            // 
+            // namphathanh
+            // 
+            this.namphathanh.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.namphathanh.DefaultText = "";
+            this.namphathanh.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.namphathanh.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.namphathanh.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.namphathanh.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.namphathanh.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.namphathanh.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.namphathanh.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.namphathanh.Location = new System.Drawing.Point(249, 413);
+            this.namphathanh.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.namphathanh.Name = "namphathanh";
+            this.namphathanh.PasswordChar = '\0';
+            this.namphathanh.PlaceholderText = "";
+            this.namphathanh.SelectedText = "";
+            this.namphathanh.Size = new System.Drawing.Size(146, 42);
+            this.namphathanh.TabIndex = 7;
+            // 
+            // guna2Elipse1
+            // 
+            this.guna2Elipse1.TargetControl = this.moviepicture;
+            // 
+            // movietype
+            // 
+            this.movietype.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.movietype.DefaultText = "";
+            this.movietype.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.movietype.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.movietype.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.movietype.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.movietype.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.movietype.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.movietype.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.movietype.Location = new System.Drawing.Point(421, 135);
+            this.movietype.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.movietype.Name = "movietype";
+            this.movietype.PasswordChar = '\0';
+            this.movietype.PlaceholderText = "";
+            this.movietype.SelectedText = "";
+            this.movietype.Size = new System.Drawing.Size(146, 48);
+            this.movietype.TabIndex = 2;
+            // 
+            // moviecountry
+            // 
+            this.moviecountry.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.moviecountry.DefaultText = "";
+            this.moviecountry.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.moviecountry.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.moviecountry.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.moviecountry.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.moviecountry.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.moviecountry.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.moviecountry.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.moviecountry.Location = new System.Drawing.Point(421, 221);
+            this.moviecountry.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.moviecountry.Name = "moviecountry";
+            this.moviecountry.PasswordChar = '\0';
+            this.moviecountry.PlaceholderText = "";
+            this.moviecountry.SelectedText = "";
+            this.moviecountry.Size = new System.Drawing.Size(146, 48);
+            this.moviecountry.TabIndex = 4;
+            // 
+            // guna2Elipse2
+            // 
+            this.guna2Elipse2.BorderRadius = 15;
+            this.guna2Elipse2.TargetControl = this.submit;
+            // 
             // ThemPhim
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(930, 467);
+            this.Controls.Add(this.moviecountry);
+            this.Controls.Add(this.movietype);
             this.Controls.Add(this.namphathanh);
-            this.Controls.Add(this.label9);
             this.Controls.Add(this.tacgia);
+            this.Controls.Add(this.moviegenre);
+            this.Controls.Add(this.moviename);
+            this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.mota);
-            this.Controls.Add(this.guna2Button2);
-            this.Controls.Add(this.guna2Button1);
+            this.Controls.Add(this.submit);
             this.Controls.Add(this.moviepicture);
             this.Controls.Add(this.movieduration);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.moviecountry);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.moviegenre);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.movietype);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.moviename);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "ThemPhim";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ThemPhim";
             ((System.ComponentModel.ISupportInitialize)(this.moviepicture)).EndInit();
             this.ResumeLayout(false);
@@ -266,23 +347,24 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox moviename;
-        private System.Windows.Forms.TextBox movietype;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox moviegenre;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox moviecountry;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox movieduration;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.PictureBox moviepicture;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
-        private Guna.UI2.WinForms.Guna2Button guna2Button2;
+        private Guna.UI2.WinForms.Guna2Button submit;
         private System.Windows.Forms.RichTextBox mota;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox tacgia;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox namphathanh;
         private System.Windows.Forms.Label label9;
+        private Guna.UI2.WinForms.Guna2TextBox moviename;
+        private Guna.UI2.WinForms.Guna2TextBox moviegenre;
+        private Guna.UI2.WinForms.Guna2TextBox tacgia;
+        private Guna.UI2.WinForms.Guna2TextBox namphathanh;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
+        private Guna.UI2.WinForms.Guna2TextBox movietype;
+        private Guna.UI2.WinForms.Guna2TextBox moviecountry;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse2;
     }
 }
