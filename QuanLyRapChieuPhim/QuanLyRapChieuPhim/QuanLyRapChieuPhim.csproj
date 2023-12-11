@@ -45,6 +45,7 @@
       <HintPath>..\packages\System.Data.SqlClient.4.8.5\lib\net461\System.Data.SqlClient.dll</HintPath>
     </Reference>
     <Reference Include="System.Design" />
+    <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Management" />
     <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
@@ -69,6 +70,18 @@
     </Compile>
     <Compile Include="ChiTiet.Designer.cs">
       <DependentUpon>ChiTiet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SuaNV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SuaNV.Designer.cs">
+      <DependentUpon>SuaNV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThemNV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThemNV.Designer.cs">
+      <DependentUpon>ThemNV.cs</DependentUpon>
     </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -120,6 +133,12 @@
     <Compile Include="UserControls\PhimDangChieu.Designer.cs">
       <DependentUpon>PhimDangChieu.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\QuanLiNhanVien.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\QuanLiNhanVien.Designer.cs">
+      <DependentUpon>QuanLiNhanVien.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\QuanLiPhim.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -155,6 +174,12 @@
     <EmbeddedResource Include="SuaPhim.resx">
       <DependentUpon>SuaPhim.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="SuaNV.resx">
+      <DependentUpon>SuaNV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThemNV.resx">
+      <DependentUpon>ThemNV.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ThemPhim.resx">
       <DependentUpon>ThemPhim.cs</DependentUpon>
     </EmbeddedResource>
@@ -166,6 +191,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\PhimDangChieu.resx">
       <DependentUpon>PhimDangChieu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\QuanLiNhanVien.resx">
+      <DependentUpon>QuanLiNhanVien.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\QuanLiPhim.resx">
       <DependentUpon>QuanLiPhim.cs</DependentUpon>

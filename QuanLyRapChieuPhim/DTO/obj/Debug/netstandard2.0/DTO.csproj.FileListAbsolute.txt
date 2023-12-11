@@ -8,3 +8,13 @@ C:\Users\BEN\source\repos\QuanLyRapChieuPhim\QuanLyRapChieuPhim\DTO\obj\Debug\ne
 C:\Users\BEN\source\repos\QuanLyRapChieuPhim\QuanLyRapChieuPhim\DTO\obj\Debug\netstandard2.0\DTO.csproj.CoreCompileInputs.cache
 C:\Users\BEN\source\repos\QuanLyRapChieuPhim\QuanLyRapChieuPhim\DTO\obj\Debug\netstandard2.0\DTO.dll
 C:\Users\BEN\source\repos\QuanLyRapChieuPhim\QuanLyRapChieuPhim\DTO\obj\Debug\netstandard2.0\DTO.pdb
+C:\Users\PC\Source\Repos\QuanLyRapChieuPhim\QuanLyRapChieuPhim\DTO\bin\Debug\netstandard2.0\DTO.deps.json
+C:\Users\PC\Source\Repos\QuanLyRapChieuPhim\QuanLyRapChieuPhim\DTO\bin\Debug\netstandard2.0\DTO.dll
+C:\Users\PC\Source\Repos\QuanLyRapChieuPhim\QuanLyRapChieuPhim\DTO\bin\Debug\netstandard2.0\DTO.pdb
+C:\Users\PC\Source\Repos\QuanLyRapChieuPhim\QuanLyRapChieuPhim\DTO\obj\Debug\netstandard2.0\DTO.csproj.AssemblyReference.cache
+C:\Users\PC\Source\Repos\QuanLyRapChieuPhim\QuanLyRapChieuPhim\DTO\obj\Debug\netstandard2.0\DTO.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC\Source\Repos\QuanLyRapChieuPhim\QuanLyRapChieuPhim\DTO\obj\Debug\netstandard2.0\DTO.AssemblyInfoInputs.cache
+C:\Users\PC\Source\Repos\QuanLyRapChieuPhim\QuanLyRapChieuPhim\DTO\obj\Debug\netstandard2.0\DTO.AssemblyInfo.cs
+C:\Users\PC\Source\Repos\QuanLyRapChieuPhim\QuanLyRapChieuPhim\DTO\obj\Debug\netstandard2.0\DTO.csproj.CoreCompileInputs.cache
+C:\Users\PC\Source\Repos\QuanLyRapChieuPhim\QuanLyRapChieuPhim\DTO\obj\Debug\netstandard2.0\DTO.dll
+C:\Users\PC\Source\Repos\QuanLyRapChieuPhim\QuanLyRapChieuPhim\DTO\obj\Debug\netstandard2.0\DTO.pdb
