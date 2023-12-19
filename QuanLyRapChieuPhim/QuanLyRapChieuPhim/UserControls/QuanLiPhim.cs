@@ -83,7 +83,7 @@ namespace QuanLyRapChieuPhim.UserControls
                 bool data = DAL.QuanLiPhim.deleteMovie(IDPHIM);
                 string img = phim.moviePic;
                 File.Delete(img);
-                MessageBox.Show("Xóa phim thành công");
+                MessageBox.Show("Xóa phim thành công"); // Sai logic xóa phim cần tìm path theo ID
             } catch (Exception ex)
             {
                 throw ex;
