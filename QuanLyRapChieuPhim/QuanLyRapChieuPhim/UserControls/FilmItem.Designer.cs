@@ -35,7 +35,7 @@
             this.mota = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.datvebtn = new Guna.UI2.WinForms.Guna2Button();
+            this.chitietbtn = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -85,33 +85,33 @@
             this.guna2Elipse1.BorderRadius = 15;
             this.guna2Elipse1.TargetControl = this;
             // 
-            // datvebtn
+            // chitietbtn
             // 
-            this.datvebtn.BorderColor = System.Drawing.Color.Empty;
-            this.datvebtn.BorderRadius = 5;
-            this.datvebtn.BorderThickness = 1;
-            this.datvebtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.datvebtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.datvebtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.datvebtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.datvebtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.datvebtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(27)))), ((int)(((byte)(27)))));
-            this.datvebtn.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.datvebtn.ForeColor = System.Drawing.Color.White;
-            this.datvebtn.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(27)))), ((int)(((byte)(27)))));
-            this.datvebtn.Location = new System.Drawing.Point(42, 346);
-            this.datvebtn.Name = "datvebtn";
-            this.datvebtn.Size = new System.Drawing.Size(216, 32);
-            this.datvebtn.TabIndex = 4;
-            this.datvebtn.Text = "Đặt vé ngay";
-            this.datvebtn.Click += new System.EventHandler(this.datvebtn_Click);
+            this.chitietbtn.BorderColor = System.Drawing.Color.Empty;
+            this.chitietbtn.BorderRadius = 5;
+            this.chitietbtn.BorderThickness = 1;
+            this.chitietbtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.chitietbtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.chitietbtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.chitietbtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.chitietbtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.chitietbtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(27)))), ((int)(((byte)(27)))));
+            this.chitietbtn.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.chitietbtn.ForeColor = System.Drawing.Color.White;
+            this.chitietbtn.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(27)))), ((int)(((byte)(27)))));
+            this.chitietbtn.Location = new System.Drawing.Point(42, 346);
+            this.chitietbtn.Name = "chitietbtn";
+            this.chitietbtn.Size = new System.Drawing.Size(216, 32);
+            this.chitietbtn.TabIndex = 4;
+            this.chitietbtn.Text = "Xem chi tiết";
+            this.chitietbtn.Click += new System.EventHandler(this.chitietbtn_Click);
             // 
             // FilmItem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.Controls.Add(this.datvebtn);
+            this.Controls.Add(this.chitietbtn);
             this.Controls.Add(this.mota);
             this.Controls.Add(this.properties);
             this.Controls.Add(this.tenphim);
@@ -132,6 +132,6 @@
         private System.Windows.Forms.Label properties;
         private System.Windows.Forms.Label mota;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
-        private Guna.UI2.WinForms.Guna2Button datvebtn;
+        private Guna.UI2.WinForms.Guna2Button chitietbtn;
     }
 }

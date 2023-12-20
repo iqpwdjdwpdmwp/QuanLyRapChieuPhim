@@ -98,6 +98,7 @@ namespace QuanLyRapChieuPhim
             }
             else
             {
+            MessageBox.Show(newSuatChieu.NgayChieu.ToString());
                 bool data = DAL.QuanLiSuatChieu.insertSuatChieu(newSuatChieu.MovieID, newSuatChieu.NgayChieu, newSuatChieu.PhongId, newSuatChieu.GioChieu);
                 if (data == true)
                 {

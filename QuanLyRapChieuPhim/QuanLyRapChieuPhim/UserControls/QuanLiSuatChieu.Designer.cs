@@ -28,11 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.phong4 = new Guna.UI2.WinForms.Guna2Button();
@@ -48,6 +49,7 @@
             this.giochieu = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.chitiet = new System.Windows.Forms.DataGridViewButtonColumn();
             this.refresh = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.suatchieudtgv)).BeginInit();
             this.SuspendLayout();
@@ -61,7 +63,7 @@
             this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.Location = new System.Drawing.Point(485, 49);
+            this.guna2Button1.Location = new System.Drawing.Point(478, 30);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.Size = new System.Drawing.Size(180, 49);
             this.guna2Button1.TabIndex = 4;
@@ -78,16 +80,17 @@
             this.panel1.Controls.Add(this.tatca);
             this.panel1.Location = new System.Drawing.Point(27, 134);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(182, 598);
+            this.panel1.Size = new System.Drawing.Size(903, 75);
             this.panel1.TabIndex = 5;
             // 
             // phong4
             // 
-            this.phong4.BorderRadius = 5;
+            this.phong4.BorderRadius = 3;
             this.phong4.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
             this.phong4.CheckedState.FillColor = System.Drawing.Color.White;
             this.phong4.CheckedState.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.phong4.CheckedState.ForeColor = System.Drawing.Color.Black;
+            this.phong4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.phong4.CustomBorderThickness = new System.Windows.Forms.Padding(1);
             this.phong4.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.phong4.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -98,20 +101,21 @@
             this.phong4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(114)))), ((int)(((byte)(122)))));
             this.phong4.HoverState.CustomBorderColor = System.Drawing.Color.White;
             this.phong4.HoverState.FillColor = System.Drawing.Color.White;
-            this.phong4.Location = new System.Drawing.Point(20, 275);
+            this.phong4.Location = new System.Drawing.Point(744, 18);
             this.phong4.Name = "phong4";
-            this.phong4.Size = new System.Drawing.Size(142, 30);
+            this.phong4.Size = new System.Drawing.Size(142, 36);
             this.phong4.TabIndex = 4;
             this.phong4.Text = "Phòng 4";
             this.phong4.Click += new System.EventHandler(this.phong4_Click);
             // 
             // phong3
             // 
-            this.phong3.BorderRadius = 5;
+            this.phong3.BorderRadius = 3;
             this.phong3.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
             this.phong3.CheckedState.FillColor = System.Drawing.Color.White;
             this.phong3.CheckedState.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.phong3.CheckedState.ForeColor = System.Drawing.Color.Black;
+            this.phong3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.phong3.CustomBorderThickness = new System.Windows.Forms.Padding(1);
             this.phong3.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.phong3.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -122,20 +126,21 @@
             this.phong3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(114)))), ((int)(((byte)(122)))));
             this.phong3.HoverState.CustomBorderColor = System.Drawing.Color.White;
             this.phong3.HoverState.FillColor = System.Drawing.Color.White;
-            this.phong3.Location = new System.Drawing.Point(20, 225);
+            this.phong3.Location = new System.Drawing.Point(560, 18);
             this.phong3.Name = "phong3";
-            this.phong3.Size = new System.Drawing.Size(142, 30);
+            this.phong3.Size = new System.Drawing.Size(142, 36);
             this.phong3.TabIndex = 3;
             this.phong3.Text = "Phòng 3";
             this.phong3.Click += new System.EventHandler(this.phong3_Click);
             // 
             // phong2
             // 
-            this.phong2.BorderRadius = 5;
+            this.phong2.BorderRadius = 3;
             this.phong2.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
             this.phong2.CheckedState.FillColor = System.Drawing.Color.White;
             this.phong2.CheckedState.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.phong2.CheckedState.ForeColor = System.Drawing.Color.Black;
+            this.phong2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.phong2.CustomBorderThickness = new System.Windows.Forms.Padding(1);
             this.phong2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.phong2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -146,20 +151,21 @@
             this.phong2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(114)))), ((int)(((byte)(122)))));
             this.phong2.HoverState.CustomBorderColor = System.Drawing.Color.White;
             this.phong2.HoverState.FillColor = System.Drawing.Color.White;
-            this.phong2.Location = new System.Drawing.Point(20, 175);
+            this.phong2.Location = new System.Drawing.Point(384, 18);
             this.phong2.Name = "phong2";
-            this.phong2.Size = new System.Drawing.Size(142, 30);
+            this.phong2.Size = new System.Drawing.Size(142, 36);
             this.phong2.TabIndex = 2;
             this.phong2.Text = "Phòng 2";
             this.phong2.Click += new System.EventHandler(this.phong2_Click);
             // 
             // phong1
             // 
-            this.phong1.BorderRadius = 5;
+            this.phong1.BorderRadius = 3;
             this.phong1.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
             this.phong1.CheckedState.FillColor = System.Drawing.Color.White;
             this.phong1.CheckedState.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.phong1.CheckedState.ForeColor = System.Drawing.Color.Black;
+            this.phong1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.phong1.CustomBorderThickness = new System.Windows.Forms.Padding(1);
             this.phong1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.phong1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -170,9 +176,9 @@
             this.phong1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(114)))), ((int)(((byte)(122)))));
             this.phong1.HoverState.CustomBorderColor = System.Drawing.Color.White;
             this.phong1.HoverState.FillColor = System.Drawing.Color.White;
-            this.phong1.Location = new System.Drawing.Point(20, 121);
+            this.phong1.Location = new System.Drawing.Point(204, 18);
             this.phong1.Name = "phong1";
-            this.phong1.Size = new System.Drawing.Size(142, 30);
+            this.phong1.Size = new System.Drawing.Size(142, 36);
             this.phong1.TabIndex = 1;
             this.phong1.Text = "Phòng 1";
             this.phong1.Click += new System.EventHandler(this.phong1_Click);
@@ -180,12 +186,13 @@
             // tatca
             // 
             this.tatca.BackColor = System.Drawing.Color.Black;
-            this.tatca.BorderRadius = 5;
+            this.tatca.BorderRadius = 3;
             this.tatca.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
             this.tatca.Checked = true;
             this.tatca.CheckedState.FillColor = System.Drawing.Color.White;
             this.tatca.CheckedState.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tatca.CheckedState.ForeColor = System.Drawing.Color.Black;
+            this.tatca.Cursor = System.Windows.Forms.Cursors.Hand;
             this.tatca.CustomBorderThickness = new System.Windows.Forms.Padding(1);
             this.tatca.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.tatca.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -194,9 +201,9 @@
             this.tatca.FillColor = System.Drawing.Color.Empty;
             this.tatca.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tatca.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(114)))), ((int)(((byte)(122)))));
-            this.tatca.Location = new System.Drawing.Point(20, 69);
+            this.tatca.Location = new System.Drawing.Point(20, 18);
             this.tatca.Name = "tatca";
-            this.tatca.Size = new System.Drawing.Size(142, 30);
+            this.tatca.Size = new System.Drawing.Size(142, 36);
             this.tatca.TabIndex = 0;
             this.tatca.Text = "Tất cả";
             this.tatca.Click += new System.EventHandler(this.tatca_Click);
@@ -211,16 +218,16 @@
             // suatchieudtgv
             // 
             this.suatchieudtgv.AllowUserToAddRows = false;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            this.suatchieudtgv.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle6;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.Gray;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.suatchieudtgv.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.White;
+            this.suatchieudtgv.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle12.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.Gray;
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.suatchieudtgv.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle12;
             this.suatchieudtgv.ColumnHeadersHeight = 40;
             this.suatchieudtgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.suatchieudtgv.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -229,26 +236,26 @@
             this.ngaychieu,
             this.giochieu,
             this.chitiet});
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.suatchieudtgv.DefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle14.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.suatchieudtgv.DefaultCellStyle = dataGridViewCellStyle14;
             this.suatchieudtgv.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
-            this.suatchieudtgv.Location = new System.Drawing.Point(209, 134);
+            this.suatchieudtgv.Location = new System.Drawing.Point(27, 215);
             this.suatchieudtgv.Name = "suatchieudtgv";
             this.suatchieudtgv.RowHeadersVisible = false;
             this.suatchieudtgv.RowHeadersWidth = 51;
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.Black;
-            this.suatchieudtgv.RowsDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle15.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle15.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.Black;
+            this.suatchieudtgv.RowsDefaultCellStyle = dataGridViewCellStyle15;
             this.suatchieudtgv.RowTemplate.Height = 30;
-            this.suatchieudtgv.Size = new System.Drawing.Size(721, 598);
+            this.suatchieudtgv.Size = new System.Drawing.Size(903, 474);
             this.suatchieudtgv.TabIndex = 7;
             this.suatchieudtgv.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.suatchieudtgv.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -275,8 +282,8 @@
             // 
             // tenphim
             // 
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.White;
-            this.tenphim.DefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.Color.White;
+            this.tenphim.DefaultCellStyle = dataGridViewCellStyle13;
             this.tenphim.HeaderText = "Tên phim";
             this.tenphim.MinimumWidth = 6;
             this.tenphim.Name = "tenphim";
@@ -318,12 +325,17 @@
             this.refresh.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.refresh.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.refresh.ForeColor = System.Drawing.Color.White;
-            this.refresh.Location = new System.Drawing.Point(750, 49);
+            this.refresh.Location = new System.Drawing.Point(750, 30);
             this.refresh.Name = "refresh";
             this.refresh.Size = new System.Drawing.Size(180, 49);
             this.refresh.TabIndex = 8;
             this.refresh.Text = "Refresh";
             this.refresh.Click += new System.EventHandler(this.refresh_Click);
+            // 
+            // guna2Elipse1
+            // 
+            this.guna2Elipse1.BorderRadius = 5;
+            this.guna2Elipse1.TargetControl = this.panel1;
             // 
             // QuanLiSuatChieu
             // 
@@ -360,5 +372,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn giochieu;
         private System.Windows.Forms.DataGridViewButtonColumn chitiet;
         private Guna.UI2.WinForms.Guna2Button refresh;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
     }
 }

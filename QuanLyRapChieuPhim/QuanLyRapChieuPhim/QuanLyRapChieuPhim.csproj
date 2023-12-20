@@ -70,6 +70,12 @@
     <Compile Include="ChiTiet.Designer.cs">
       <DependentUpon>ChiTiet.cs</DependentUpon>
     </Compile>
+    <Compile Include="ChiTietPhim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChiTietPhim.Designer.cs">
+      <DependentUpon>ChiTietPhim.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -108,17 +114,35 @@
     <Compile Include="ThemSuatChieu.Designer.cs">
       <DependentUpon>ThemSuatChieu.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\DienVienItemcs.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\DienVienItemcs.Designer.cs">
+      <DependentUpon>DienVienItemcs.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\FilmItem.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="UserControls\FilmItem.Designer.cs">
       <DependentUpon>FilmItem.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\NV_Home.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\NV_Home.Designer.cs">
+      <DependentUpon>NV_Home.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\PhimDangChieu.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="UserControls\PhimDangChieu.Designer.cs">
       <DependentUpon>PhimDangChieu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\QuanLiDoAn.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\QuanLiDoAn.Designer.cs">
+      <DependentUpon>QuanLiDoAn.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControls\QuanLiPhim.cs">
       <SubType>UserControl</SubType>
@@ -137,6 +161,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ChiTiet.resx">
       <DependentUpon>ChiTiet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChiTietPhim.resx">
+      <DependentUpon>ChiTietPhim.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
@@ -161,11 +188,20 @@
     <EmbeddedResource Include="ThemSuatChieu.resx">
       <DependentUpon>ThemSuatChieu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\DienVienItemcs.resx">
+      <DependentUpon>DienVienItemcs.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControls\FilmItem.resx">
       <DependentUpon>FilmItem.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\NV_Home.resx">
+      <DependentUpon>NV_Home.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControls\PhimDangChieu.resx">
       <DependentUpon>PhimDangChieu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\QuanLiDoAn.resx">
+      <DependentUpon>QuanLiDoAn.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\QuanLiPhim.resx">
       <DependentUpon>QuanLiPhim.cs</DependentUpon>
@@ -211,6 +247,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nonimage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background1.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

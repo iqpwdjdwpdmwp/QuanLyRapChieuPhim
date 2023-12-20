@@ -36,6 +36,12 @@ namespace DAL
             int data = DataProvider.ExecuteNonQuery(query);
             return data > 0;
         }
+        public static DataTable getSuatChieuTheoID(int IDPHIM)
+        {
+            string today = DateTime.Now.Date.ToString();
+            string query = $"select * from SUATCHIEU where IDPHIM = {IDPHIM} and  NGAYCHIEU = '{today}' order by THOIGIANCHIEU ASC";
+            return DataProvider.ExecuteQuery(query);
+        }
         
     }
 }

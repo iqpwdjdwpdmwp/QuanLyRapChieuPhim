@@ -36,5 +36,10 @@ namespace DAL
             int result = DataProvider.ExecuteNonQuery(query);
             return result > 0;
         }
+        public static DataTable getChiTietPhim(int IDPHIM)
+        {
+            string query = $"select * from PHIM where IDPHIM = {IDPHIM}";
+            return DataProvider.ExecuteQuery(query);
+        }
     }
 }

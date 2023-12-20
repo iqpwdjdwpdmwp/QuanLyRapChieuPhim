@@ -18,9 +18,26 @@ namespace QuanLyRapChieuPhim
             InitializeComponent();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+
+        
+
+        private void NhanVien_Load(object sender, EventArgs e)
         {
+            NV_Home newForm = new NV_Home();
+            panel2.Controls.Add(newForm);
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            panel2.Controls.Clear();
             PhimDangChieu newForm = new PhimDangChieu();
+            panel2.Controls.Add(newForm);
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            panel2.Controls.Clear();
+            NV_Home newForm = new NV_Home();
             panel2.Controls.Add(newForm);
         }
     }

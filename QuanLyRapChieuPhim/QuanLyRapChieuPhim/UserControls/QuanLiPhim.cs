@@ -81,7 +81,8 @@ namespace QuanLyRapChieuPhim.UserControls
             try
             {
                 bool data = DAL.QuanLiPhim.deleteMovie(IDPHIM);
-                string img = phim.moviePic;
+                string imgPath = DAL.DataProvider.ExecuteScalar($"SELECT POSTER FROM PHIM WHERE IDPHIM = {IDPHIM}").ToString();
+                string img = imgPath;
                 File.Delete(img);
                 MessageBox.Show("Xóa phim thành công"); // Sai logic xóa phim cần tìm path theo ID
             } catch (Exception ex)

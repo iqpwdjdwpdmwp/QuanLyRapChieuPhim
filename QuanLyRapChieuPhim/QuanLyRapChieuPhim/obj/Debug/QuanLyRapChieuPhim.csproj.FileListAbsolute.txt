@@ -31,3 +31,7 @@ C:\Users\BEN\source\repos\QuanLyRapChieuPhim\QuanLyRapChieuPhim\QuanLyRapChieuPh
 C:\Users\BEN\source\repos\QuanLyRapChieuPhim\QuanLyRapChieuPhim\QuanLyRapChieuPhim\obj\Debug\QuanLyRapChieuPhim.NV_DatVe.resources
 C:\Users\BEN\source\repos\QuanLyRapChieuPhim\QuanLyRapChieuPhim\QuanLyRapChieuPhim\obj\Debug\QuanLyRapChieuPhim.SuaPhim.resources
 C:\Users\BEN\source\repos\QuanLyRapChieuPhim\QuanLyRapChieuPhim\QuanLyRapChieuPhim\obj\Debug\QuanLyRapChieuPhim.login.resources
+C:\Users\BEN\source\repos\QuanLyRapChieuPhim\QuanLyRapChieuPhim\QuanLyRapChieuPhim\obj\Debug\QuanLyRapChieuPhim.ChiTietPhim.resources
+C:\Users\BEN\source\repos\QuanLyRapChieuPhim\QuanLyRapChieuPhim\QuanLyRapChieuPhim\obj\Debug\QuanLyRapChieuPhim.UserControls.QuanLiDoAn.resources
+C:\Users\BEN\source\repos\QuanLyRapChieuPhim\QuanLyRapChieuPhim\QuanLyRapChieuPhim\obj\Debug\QuanLyRapChieuPhim.UserControls.DienVienItemcs.resources
+C:\Users\BEN\source\repos\QuanLyRapChieuPhim\QuanLyRapChieuPhim\QuanLyRapChieuPhim\obj\Debug\QuanLyRapChieuPhim.UserControls.NV_Home.resources

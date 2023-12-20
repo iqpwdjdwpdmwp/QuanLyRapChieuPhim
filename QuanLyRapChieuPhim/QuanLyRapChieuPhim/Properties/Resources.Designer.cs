@@ -73,6 +73,26 @@ namespace QuanLyRapChieuPhim.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap background1 {
+            get {
+                object obj = ResourceManager.GetObject("background1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap nonimage {
+            get {
+                object obj = ResourceManager.GetObject("nonimage", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap pngtree_black_round_pattern_user_cartoon_avatar_image_1200114 {
             get {
                 object obj = ResourceManager.GetObject("pngtree-black-round-pattern-user-cartoon-avatar-image_1200114", resourceCulture);
