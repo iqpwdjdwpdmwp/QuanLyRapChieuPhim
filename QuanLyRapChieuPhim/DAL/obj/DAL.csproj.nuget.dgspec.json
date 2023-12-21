@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\c#\\DoAnLyThuyet\\QuanLyRapChieuPhim\\DAL\\DAL.csproj": {}
+    "D:\\c#\\cc\\QuanLyRapChieuPhim\\DAL\\DAL.csproj": {}
   },
   "projects": {
-    "D:\\c#\\DoAnLyThuyet\\QuanLyRapChieuPhim\\DAL\\DAL.csproj": {
+    "D:\\c#\\cc\\QuanLyRapChieuPhim\\DAL\\DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\c#\\DoAnLyThuyet\\QuanLyRapChieuPhim\\DAL\\DAL.csproj",
+        "projectUniqueName": "D:\\c#\\cc\\QuanLyRapChieuPhim\\DAL\\DAL.csproj",
         "projectName": "DAL",
-        "projectPath": "D:\\c#\\DoAnLyThuyet\\QuanLyRapChieuPhim\\DAL\\DAL.csproj",
+        "projectPath": "D:\\c#\\cc\\QuanLyRapChieuPhim\\DAL\\DAL.csproj",
         "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "D:\\c#\\DoAnLyThuyet\\QuanLyRapChieuPhim\\DAL\\obj\\",
+        "outputPath": "D:\\c#\\cc\\QuanLyRapChieuPhim\\DAL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "netstandard2.0": {
             "targetAlias": "netstandard2.0",
             "projectReferences": {
-              "D:\\c#\\DoAnLyThuyet\\QuanLyRapChieuPhim\\DTO\\DTO.csproj": {
-                "projectPath": "D:\\c#\\DoAnLyThuyet\\QuanLyRapChieuPhim\\DTO\\DTO.csproj"
+              "D:\\c#\\cc\\QuanLyRapChieuPhim\\DTO\\DTO.csproj": {
+                "projectPath": "D:\\c#\\cc\\QuanLyRapChieuPhim\\DTO\\DTO.csproj"
               }
             }
           }
@@ -70,14 +70,14 @@
         }
       }
     },
-    "D:\\c#\\DoAnLyThuyet\\QuanLyRapChieuPhim\\DTO\\DTO.csproj": {
+    "D:\\c#\\cc\\QuanLyRapChieuPhim\\DTO\\DTO.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\c#\\DoAnLyThuyet\\QuanLyRapChieuPhim\\DTO\\DTO.csproj",
+        "projectUniqueName": "D:\\c#\\cc\\QuanLyRapChieuPhim\\DTO\\DTO.csproj",
         "projectName": "DTO",
-        "projectPath": "D:\\c#\\DoAnLyThuyet\\QuanLyRapChieuPhim\\DTO\\DTO.csproj",
+        "projectPath": "D:\\c#\\cc\\QuanLyRapChieuPhim\\DTO\\DTO.csproj",
         "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "D:\\c#\\DoAnLyThuyet\\QuanLyRapChieuPhim\\DTO\\obj\\",
+        "outputPath": "D:\\c#\\cc\\QuanLyRapChieuPhim\\DTO\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",

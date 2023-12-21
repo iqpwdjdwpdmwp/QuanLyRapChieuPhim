@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "2wbegAMAAeum4/6dz96QUj1lu0uYO2Mf7O2twQOkdkH1X8NoaH2bXTHxGOCRDyjaFDSyvCJ1eokdfAL1/paodw==",
+  "dgSpecHash": "EamEgoZNKKZIqTNfV2PcYako81Ny9HS0UdQ4BzZHRl5JC/XPLvhWstYxkJcbli3WZ24tO2v15FPH8dml7MnJ9w==",
   "success": true,
-  "projectFilePath": "D:\\c#\\DoAnLyThuyet\\QuanLyRapChieuPhim\\DTO\\DTO.csproj",
+  "projectFilePath": "D:\\c#\\cc\\QuanLyRapChieuPhim\\DTO\\DTO.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\admin\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",

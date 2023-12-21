@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Ol8U113D5OqIX+/mQTVqj4RYAc9io9MCRAK22iwjaHXzkWBM8GEXGP4oP4X5tVfGjrY2raaTCfu4PYCR8sX/Kg==",
+  "dgSpecHash": "L/PeK2XCPJe7g3wpP//SfpsL/YNhMLE0GQL83oYlT1lVLCN2q2tm2o0boOW3gcQhtG1eMd1+RGBD4Epnxk8njA==",
   "success": true,
-  "projectFilePath": "D:\\c#\\DoAnLyThuyet\\QuanLyRapChieuPhim\\DAL\\DAL.csproj",
+  "projectFilePath": "D:\\c#\\cc\\QuanLyRapChieuPhim\\DAL\\DAL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\admin\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
