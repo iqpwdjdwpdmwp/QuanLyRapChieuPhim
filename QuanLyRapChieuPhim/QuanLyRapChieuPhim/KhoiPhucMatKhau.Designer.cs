@@ -64,7 +64,7 @@
             this.btHoanTat.Location = new System.Drawing.Point(1108, 602);
             this.btHoanTat.Name = "btHoanTat";
             this.btHoanTat.Size = new System.Drawing.Size(342, 49);
-            this.btHoanTat.TabIndex = 22;
+            this.btHoanTat.TabIndex = 20;
             this.btHoanTat.Text = "Hoàn tất ";
             this.btHoanTat.Click += new System.EventHandler(this.btHoanTat_Click);
             // 
@@ -77,7 +77,7 @@
             this.lbMKNew.Location = new System.Drawing.Point(1113, 387);
             this.lbMKNew.Name = "lbMKNew";
             this.lbMKNew.Size = new System.Drawing.Size(109, 20);
-            this.lbMKNew.TabIndex = 21;
+            this.lbMKNew.TabIndex = 23;
             this.lbMKNew.Text = "Mật khẩu mới";
             // 
             // lbOTP
@@ -89,7 +89,7 @@
             this.lbOTP.Location = new System.Drawing.Point(1113, 281);
             this.lbOTP.Name = "lbOTP";
             this.lbOTP.Size = new System.Drawing.Size(105, 20);
-            this.lbOTP.TabIndex = 20;
+            this.lbOTP.TabIndex = 22;
             this.lbOTP.Text = "Mã xác thực ";
             // 
             // XáKhoiPhucMK
@@ -101,7 +101,7 @@
             this.XáKhoiPhucMK.Location = new System.Drawing.Point(1159, 221);
             this.XáKhoiPhucMK.Name = "XáKhoiPhucMK";
             this.XáKhoiPhucMK.Size = new System.Drawing.Size(264, 32);
-            this.XáKhoiPhucMK.TabIndex = 19;
+            this.XáKhoiPhucMK.TabIndex = 21;
             this.XáKhoiPhucMK.Text = "Khôi phục mật khẩu";
             // 
             // tbMKNew
@@ -186,7 +186,7 @@
             this.tbXacThucMK.PlaceholderText = "";
             this.tbXacThucMK.SelectedText = "";
             this.tbXacThucMK.Size = new System.Drawing.Size(341, 48);
-            this.tbXacThucMK.TabIndex = 23;
+            this.tbXacThucMK.TabIndex = 19;
             // 
             // KhoiPhucMatKhau
             // 

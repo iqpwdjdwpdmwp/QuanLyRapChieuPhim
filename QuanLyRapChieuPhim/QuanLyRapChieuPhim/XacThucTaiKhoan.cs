@@ -156,6 +156,7 @@ namespace QuanLyRapChieuPhim
                 MessageBox.Show(ex.Message, "Email", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
             }
+            Close();
         }
     }
 }

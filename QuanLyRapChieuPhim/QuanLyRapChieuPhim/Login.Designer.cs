@@ -174,6 +174,7 @@
             this.lbQuenMatKhau.Size = new System.Drawing.Size(109, 18);
             this.lbQuenMatKhau.TabIndex = 8;
             this.lbQuenMatKhau.Text = "Quên mật khẩu";
+            this.lbQuenMatKhau.Click += new System.EventHandler(this.lbQuenMatKhau_Click);
             // 
             // Login
             // 

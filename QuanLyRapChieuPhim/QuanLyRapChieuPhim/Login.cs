@@ -84,5 +84,11 @@ namespace QuanLyRapChieuPhim
                 sqlCon.Close();
             }
         }
+
+        private void lbQuenMatKhau_Click(object sender, EventArgs e)
+        {
+            XacThucTaiKhoan xacThucTaiKhoan = new XacThucTaiKhoan();
+            xacThucTaiKhoan.ShowDialog();
+        }
     }
 }
