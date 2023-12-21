@@ -935,19 +935,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\BEN\\.nuget\\packages\\": {}
+    "C:\\Users\\admin\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\BEN\\source\\repos\\QuanLyRapChieuPhim\\QuanLyRapChieuPhim\\BLL\\BLL.csproj",
+      "projectUniqueName": "D:\\c#\\DoAnLyThuyet\\QuanLyRapChieuPhim\\BLL\\BLL.csproj",
       "projectName": "BLL",
-      "projectPath": "C:\\Users\\BEN\\source\\repos\\QuanLyRapChieuPhim\\QuanLyRapChieuPhim\\BLL\\BLL.csproj",
-      "packagesPath": "C:\\Users\\BEN\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\BEN\\source\\repos\\QuanLyRapChieuPhim\\QuanLyRapChieuPhim\\BLL\\obj\\",
+      "projectPath": "D:\\c#\\DoAnLyThuyet\\QuanLyRapChieuPhim\\BLL\\BLL.csproj",
+      "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
+      "outputPath": "D:\\c#\\DoAnLyThuyet\\QuanLyRapChieuPhim\\BLL\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\BEN\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -961,11 +961,11 @@
         "netstandard2.0": {
           "targetAlias": "netstandard2.0",
           "projectReferences": {
-            "C:\\Users\\BEN\\source\\repos\\QuanLyRapChieuPhim\\QuanLyRapChieuPhim\\DAL\\DAL.csproj": {
-              "projectPath": "C:\\Users\\BEN\\source\\repos\\QuanLyRapChieuPhim\\QuanLyRapChieuPhim\\DAL\\DAL.csproj"
+            "D:\\c#\\DoAnLyThuyet\\QuanLyRapChieuPhim\\DAL\\DAL.csproj": {
+              "projectPath": "D:\\c#\\DoAnLyThuyet\\QuanLyRapChieuPhim\\DAL\\DAL.csproj"
             },
-            "C:\\Users\\BEN\\source\\repos\\QuanLyRapChieuPhim\\QuanLyRapChieuPhim\\DTO\\DTO.csproj": {
-              "projectPath": "C:\\Users\\BEN\\source\\repos\\QuanLyRapChieuPhim\\QuanLyRapChieuPhim\\DTO\\DTO.csproj"
+            "D:\\c#\\DoAnLyThuyet\\QuanLyRapChieuPhim\\DTO\\DTO.csproj": {
+              "projectPath": "D:\\c#\\DoAnLyThuyet\\QuanLyRapChieuPhim\\DTO\\DTO.csproj"
             }
           }
         }
@@ -1002,7 +1002,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }
