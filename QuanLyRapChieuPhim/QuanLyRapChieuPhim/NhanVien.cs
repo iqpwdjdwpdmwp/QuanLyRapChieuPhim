@@ -19,7 +19,7 @@ namespace QuanLyRapChieuPhim
         }
 
 
-        
+       
 
         private void NhanVien_Load(object sender, EventArgs e)
         {
