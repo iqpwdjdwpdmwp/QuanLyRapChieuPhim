@@ -25,3 +25,17 @@ D:\c#\DoAnLyThuyet\QuanLyRapChieuPhim\DAL\obj\Debug\netstandard2.0\DAL.sourcelin
 D:\c#\DoAnLyThuyet\QuanLyRapChieuPhim\DAL\obj\Debug\netstandard2.0\DAL.csproj.CopyComplete
 D:\c#\DoAnLyThuyet\QuanLyRapChieuPhim\DAL\obj\Debug\netstandard2.0\DAL.dll
 D:\c#\DoAnLyThuyet\QuanLyRapChieuPhim\DAL\obj\Debug\netstandard2.0\DAL.pdb
+D:\c#\cc\QuanLyRapChieuPhim\DAL\bin\Debug\netstandard2.0\DAL.deps.json
+D:\c#\cc\QuanLyRapChieuPhim\DAL\bin\Debug\netstandard2.0\DAL.dll
+D:\c#\cc\QuanLyRapChieuPhim\DAL\bin\Debug\netstandard2.0\DAL.pdb
+D:\c#\cc\QuanLyRapChieuPhim\DAL\bin\Debug\netstandard2.0\DTO.dll
+D:\c#\cc\QuanLyRapChieuPhim\DAL\bin\Debug\netstandard2.0\DTO.pdb
+D:\c#\cc\QuanLyRapChieuPhim\DAL\obj\Debug\netstandard2.0\DAL.csproj.AssemblyReference.cache
+D:\c#\cc\QuanLyRapChieuPhim\DAL\obj\Debug\netstandard2.0\DAL.GeneratedMSBuildEditorConfig.editorconfig
+D:\c#\cc\QuanLyRapChieuPhim\DAL\obj\Debug\netstandard2.0\DAL.AssemblyInfoInputs.cache
+D:\c#\cc\QuanLyRapChieuPhim\DAL\obj\Debug\netstandard2.0\DAL.AssemblyInfo.cs
+D:\c#\cc\QuanLyRapChieuPhim\DAL\obj\Debug\netstandard2.0\DAL.csproj.CoreCompileInputs.cache
+D:\c#\cc\QuanLyRapChieuPhim\DAL\obj\Debug\netstandard2.0\DAL.sourcelink.json
+D:\c#\cc\QuanLyRapChieuPhim\DAL\obj\Debug\netstandard2.0\DAL.csproj.CopyComplete
+D:\c#\cc\QuanLyRapChieuPhim\DAL\obj\Debug\netstandard2.0\DAL.dll
+D:\c#\cc\QuanLyRapChieuPhim\DAL\obj\Debug\netstandard2.0\DAL.pdb
