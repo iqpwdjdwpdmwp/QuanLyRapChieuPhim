@@ -18,5 +18,5 @@ namespace QuanLyRapChieuPhim
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new NhanVien());
         }
-    }
+    }   
 }

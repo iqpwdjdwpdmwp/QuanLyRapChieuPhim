@@ -40,5 +40,12 @@ namespace QuanLyRapChieuPhim
             NV_Home newForm = new NV_Home();
             panel2.Controls.Add(newForm);
         }
+
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+            panel2.Controls.Clear();
+            DoAn newForm = new DoAn();
+            panel2.Controls.Add(newForm);
+        }
     }
 }

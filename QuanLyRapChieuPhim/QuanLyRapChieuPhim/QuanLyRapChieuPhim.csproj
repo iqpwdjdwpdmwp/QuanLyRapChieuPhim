@@ -114,17 +114,35 @@
     <Compile Include="ThemSuatChieu.Designer.cs">
       <DependentUpon>ThemSuatChieu.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\CartItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\CartItem.Designer.cs">
+      <DependentUpon>CartItem.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\DienVienItemcs.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="UserControls\DienVienItemcs.Designer.cs">
       <DependentUpon>DienVienItemcs.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\DoAn.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\DoAn.Designer.cs">
+      <DependentUpon>DoAn.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\FilmItem.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="UserControls\FilmItem.Designer.cs">
       <DependentUpon>FilmItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\FoodItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\FoodItem.Designer.cs">
+      <DependentUpon>FoodItem.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControls\NV_Home.cs">
       <SubType>UserControl</SubType>
@@ -188,11 +206,20 @@
     <EmbeddedResource Include="ThemSuatChieu.resx">
       <DependentUpon>ThemSuatChieu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\CartItem.resx">
+      <DependentUpon>CartItem.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControls\DienVienItemcs.resx">
       <DependentUpon>DienVienItemcs.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\DoAn.resx">
+      <DependentUpon>DoAn.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControls\FilmItem.resx">
       <DependentUpon>FilmItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\FoodItem.resx">
+      <DependentUpon>FoodItem.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\NV_Home.resx">
       <DependentUpon>NV_Home.cs</DependentUpon>

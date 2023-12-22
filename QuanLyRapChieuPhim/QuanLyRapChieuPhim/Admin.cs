@@ -18,28 +18,33 @@ namespace QuanLyRapChieuPhim
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
 
-        }
 
-        private void button4_Click(object sender, EventArgs e)
-        {
+        
 
-        }
+        
 
-        private void button2_Click(object sender, EventArgs e)
+        
+
+        private void button2_Click_1(object sender, EventArgs e)
         {
             QuanLiPhim newForm = new QuanLiPhim();
             panel2.Controls.Clear();
             panel2.Controls.Add(newForm);
         }
 
-        private void button4_Click_1(object sender, EventArgs e)
+        private void button3_Click(object sender, EventArgs e)
         {
             QuanLiSuatChieu newForm = new QuanLiSuatChieu();
             panel2.Controls.Clear();
             panel2.Controls.Add((newForm));
+        }
+
+        private void button5_Click_1(object sender, EventArgs e)
+        {
+            QuanLiDoAn newForm = new QuanLiDoAn();
+            panel2.Controls.Clear();
+            panel2.Controls.Add(newForm);
         }
     }
 }

@@ -35,3 +35,6 @@ C:\Users\BEN\source\repos\QuanLyRapChieuPhim\QuanLyRapChieuPhim\QuanLyRapChieuPh
 C:\Users\BEN\source\repos\QuanLyRapChieuPhim\QuanLyRapChieuPhim\QuanLyRapChieuPhim\obj\Debug\QuanLyRapChieuPhim.UserControls.QuanLiDoAn.resources
 C:\Users\BEN\source\repos\QuanLyRapChieuPhim\QuanLyRapChieuPhim\QuanLyRapChieuPhim\obj\Debug\QuanLyRapChieuPhim.UserControls.DienVienItemcs.resources
 C:\Users\BEN\source\repos\QuanLyRapChieuPhim\QuanLyRapChieuPhim\QuanLyRapChieuPhim\obj\Debug\QuanLyRapChieuPhim.UserControls.NV_Home.resources
+C:\Users\BEN\source\repos\QuanLyRapChieuPhim\QuanLyRapChieuPhim\QuanLyRapChieuPhim\obj\Debug\QuanLyRapChieuPhim.UserControls.DoAn.resources
+C:\Users\BEN\source\repos\QuanLyRapChieuPhim\QuanLyRapChieuPhim\QuanLyRapChieuPhim\obj\Debug\QuanLyRapChieuPhim.UserControls.FoodItem.resources
+C:\Users\BEN\source\repos\QuanLyRapChieuPhim\QuanLyRapChieuPhim\QuanLyRapChieuPhim\obj\Debug\QuanLyRapChieuPhim.UserControls.CartItem.resources
