@@ -90,6 +90,7 @@
             this.button3.TabIndex = 7;
             this.button3.Text = "Quản lí nhân viên";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 

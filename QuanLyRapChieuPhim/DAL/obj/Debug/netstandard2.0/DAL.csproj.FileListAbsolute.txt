@@ -39,3 +39,16 @@ D:\c#\cc\QuanLyRapChieuPhim\DAL\obj\Debug\netstandard2.0\DAL.sourcelink.json
 D:\c#\cc\QuanLyRapChieuPhim\DAL\obj\Debug\netstandard2.0\DAL.csproj.CopyComplete
 D:\c#\cc\QuanLyRapChieuPhim\DAL\obj\Debug\netstandard2.0\DAL.dll
 D:\c#\cc\QuanLyRapChieuPhim\DAL\obj\Debug\netstandard2.0\DAL.pdb
+C:\Users\PC\Source\Repos\QuanLyRapChieuPhim\QuanLyRapChieuPhim\DAL\bin\Debug\netstandard2.0\DAL.deps.json
+C:\Users\PC\Source\Repos\QuanLyRapChieuPhim\QuanLyRapChieuPhim\DAL\bin\Debug\netstandard2.0\DAL.dll
+C:\Users\PC\Source\Repos\QuanLyRapChieuPhim\QuanLyRapChieuPhim\DAL\bin\Debug\netstandard2.0\DAL.pdb
+C:\Users\PC\Source\Repos\QuanLyRapChieuPhim\QuanLyRapChieuPhim\DAL\bin\Debug\netstandard2.0\DTO.dll
+C:\Users\PC\Source\Repos\QuanLyRapChieuPhim\QuanLyRapChieuPhim\DAL\bin\Debug\netstandard2.0\DTO.pdb
+C:\Users\PC\Source\Repos\QuanLyRapChieuPhim\QuanLyRapChieuPhim\DAL\obj\Debug\netstandard2.0\DAL.csproj.AssemblyReference.cache
+C:\Users\PC\Source\Repos\QuanLyRapChieuPhim\QuanLyRapChieuPhim\DAL\obj\Debug\netstandard2.0\DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC\Source\Repos\QuanLyRapChieuPhim\QuanLyRapChieuPhim\DAL\obj\Debug\netstandard2.0\DAL.AssemblyInfoInputs.cache
+C:\Users\PC\Source\Repos\QuanLyRapChieuPhim\QuanLyRapChieuPhim\DAL\obj\Debug\netstandard2.0\DAL.AssemblyInfo.cs
+C:\Users\PC\Source\Repos\QuanLyRapChieuPhim\QuanLyRapChieuPhim\DAL\obj\Debug\netstandard2.0\DAL.csproj.CoreCompileInputs.cache
+C:\Users\PC\Source\Repos\QuanLyRapChieuPhim\QuanLyRapChieuPhim\DAL\obj\Debug\netstandard2.0\DAL.csproj.CopyComplete
+C:\Users\PC\Source\Repos\QuanLyRapChieuPhim\QuanLyRapChieuPhim\DAL\obj\Debug\netstandard2.0\DAL.dll
+C:\Users\PC\Source\Repos\QuanLyRapChieuPhim\QuanLyRapChieuPhim\DAL\obj\Debug\netstandard2.0\DAL.pdb

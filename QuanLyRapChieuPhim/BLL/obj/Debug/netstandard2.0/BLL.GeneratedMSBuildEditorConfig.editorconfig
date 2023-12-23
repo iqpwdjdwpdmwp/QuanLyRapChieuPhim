@@ -1,5 +1,3 @@
 is_global = true
 build_property.RootNamespace = BLL
-build_property.ProjectDir = D:\c#\cc\QuanLyRapChieuPhim\BLL\
-build_property.EnableComHosting = 
-build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.ProjectDir = C:\Users\PC\Source\Repos\QuanLyRapChieuPhim\QuanLyRapChieuPhim\BLL\

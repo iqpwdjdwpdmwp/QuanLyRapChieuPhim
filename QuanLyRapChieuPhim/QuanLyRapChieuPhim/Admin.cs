@@ -41,5 +41,12 @@ namespace QuanLyRapChieuPhim
             panel2.Controls.Clear();
             panel2.Controls.Add((newForm));
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            QuanLiNhanVien newForm = new QuanLiNhanVien();
+            panel2.Controls.Clear();
+            panel2.Controls.Add((newForm));
+        }
     }
 }
