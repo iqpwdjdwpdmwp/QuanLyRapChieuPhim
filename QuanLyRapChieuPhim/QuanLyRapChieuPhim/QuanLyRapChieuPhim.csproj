@@ -76,6 +76,12 @@
     <Compile Include="ChiTietPhim.Designer.cs">
       <DependentUpon>ChiTietPhim.cs</DependentUpon>
     </Compile>
+    <Compile Include="KhoiPhucMatKhau.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KhoiPhucMatKhau.Designer.cs">
+      <DependentUpon>KhoiPhucMatKhau.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -94,6 +100,8 @@
     <Compile Include="NV_DatVe.Designer.cs">
       <DependentUpon>NV_DatVe.cs</DependentUpon>
     </Compile>
+    <Compile Include="obj\Debug\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
+    <Compile Include="obj\Release\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SuaPhim.cs">
@@ -174,6 +182,12 @@
     <Compile Include="UserControls\QuanLiSuatChieu.Designer.cs">
       <DependentUpon>QuanLiSuatChieu.cs</DependentUpon>
     </Compile>
+    <Compile Include="XacThucTaiKhoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XacThucTaiKhoan.Designer.cs">
+      <DependentUpon>XacThucTaiKhoan.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Admin.resx">
       <DependentUpon>Admin.cs</DependentUpon>
     </EmbeddedResource>
@@ -182,6 +196,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ChiTietPhim.resx">
       <DependentUpon>ChiTietPhim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KhoiPhucMatKhau.resx">
+      <DependentUpon>KhoiPhucMatKhau.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
@@ -192,6 +209,25 @@
     <EmbeddedResource Include="NV_DatVe.resx">
       <DependentUpon>NV_DatVe.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="obj\Debug\QuanLyRapChieuPhim.Admin.resources" />
+    <EmbeddedResource Include="obj\Debug\QuanLyRapChieuPhim.ChiTiet.resources" />
+    <EmbeddedResource Include="obj\Debug\QuanLyRapChieuPhim.ChiTietPhim.resources" />
+    <EmbeddedResource Include="obj\Debug\QuanLyRapChieuPhim.KhoiPhucMatKhau.resources" />
+    <EmbeddedResource Include="obj\Debug\QuanLyRapChieuPhim.login.resources" />
+    <EmbeddedResource Include="obj\Debug\QuanLyRapChieuPhim.NhanVien.resources" />
+    <EmbeddedResource Include="obj\Debug\QuanLyRapChieuPhim.NV_DatVe.resources" />
+    <EmbeddedResource Include="obj\Debug\QuanLyRapChieuPhim.Properties.Resources.resources" />
+    <EmbeddedResource Include="obj\Debug\QuanLyRapChieuPhim.SuaPhim.resources" />
+    <EmbeddedResource Include="obj\Debug\QuanLyRapChieuPhim.ThemPhim.resources" />
+    <EmbeddedResource Include="obj\Debug\QuanLyRapChieuPhim.ThemSuatChieu.resources" />
+    <EmbeddedResource Include="obj\Debug\QuanLyRapChieuPhim.UserControls.DienVienItemcs.resources" />
+    <EmbeddedResource Include="obj\Debug\QuanLyRapChieuPhim.UserControls.FilmItem.resources" />
+    <EmbeddedResource Include="obj\Debug\QuanLyRapChieuPhim.UserControls.NV_Home.resources" />
+    <EmbeddedResource Include="obj\Debug\QuanLyRapChieuPhim.UserControls.PhimDangChieu.resources" />
+    <EmbeddedResource Include="obj\Debug\QuanLyRapChieuPhim.UserControls.QuanLiDoAn.resources" />
+    <EmbeddedResource Include="obj\Debug\QuanLyRapChieuPhim.UserControls.QuanLiPhim.resources" />
+    <EmbeddedResource Include="obj\Debug\QuanLyRapChieuPhim.UserControls.QuanLiSuatChieu.resources" />
+    <EmbeddedResource Include="obj\Debug\QuanLyRapChieuPhim.XacThucTaiKhoan.resources" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
@@ -236,6 +272,19 @@
     <EmbeddedResource Include="UserControls\QuanLiSuatChieu.resx">
       <DependentUpon>QuanLiSuatChieu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="XacThucTaiKhoan.resx">
+      <DependentUpon>XacThucTaiKhoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include=".vs\QuanLyRapChieuPhim.csproj.dtbcache.json" />
+    <None Include="bin\Debug\QuanLyRapChieuPhim.exe.config" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\Debug\QuanLyRapChieuPhim.csproj.AssemblyReference.cache" />
+    <None Include="obj\Debug\QuanLyRapChieuPhim.csproj.CopyComplete" />
+    <None Include="obj\Debug\QuanLyRapChieuPhim.csproj.CoreCompileInputs.cache" />
+    <None Include="obj\Debug\QuanLyRapChieuPhim.csproj.GenerateResource.cache" />
+    <None Include="obj\Debug\QuanLyRapChieuPhim.csproj.SuggestedBindingRedirects.cache" />
+    <None Include="obj\Release\QuanLyRapChieuPhim.csproj.AssemblyReference.cache" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -280,6 +329,28 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\background1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\BLL.dll" />
+    <Content Include="bin\Debug\BLL.pdb" />
+    <Content Include="bin\Debug\Bunifu_UI_v1.52.dll" />
+    <Content Include="bin\Debug\DAL.dll" />
+    <Content Include="bin\Debug\DAL.pdb" />
+    <Content Include="bin\Debug\DTO.dll" />
+    <Content Include="bin\Debug\DTO.pdb" />
+    <Content Include="bin\Debug\Guna.UI2.dll" />
+    <Content Include="bin\Debug\movie_pictures\Killers of the Flower Moon.jpg" />
+    <Content Include="bin\Debug\movie_pictures\Loki.jpg" />
+    <Content Include="bin\Debug\movie_pictures\Stamped from the Beginning.jpg" />
+    <Content Include="bin\Debug\movie_pictures\The Velveteen Rabbit.jpg" />
+    <Content Include="bin\Debug\QuanLyRapChieuPhim.exe" />
+    <Content Include="bin\Debug\QuanLyRapChieuPhim.pdb" />
+    <Content Include="bin\Debug\System.Data.SqlClient.dll" />
+    <Content Include="bin\Debug\System.Data.SqlClient.xml" />
+    <Content Include="obj\Debug\QuanLyRapChieuPhim.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\QuanLyRapChieuPhim.exe" />
+    <Content Include="obj\Debug\QuanLyRapChieuPhim.pdb" />
+    <Content Include="obj\Debug\TempPE\Properties.Resources.Designer.cs.dll" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
