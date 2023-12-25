@@ -1,7 +1,6 @@
 C:\Users\BEN\source\repos\QuanLyRapChieuPhim\QuanLyRapChieuPhim\QuanLyRapChieuPhim\bin\Debug\QuanLyRapChieuPhim.exe.config
 C:\Users\BEN\source\repos\QuanLyRapChieuPhim\QuanLyRapChieuPhim\QuanLyRapChieuPhim\bin\Debug\QuanLyRapChieuPhim.exe
 C:\Users\BEN\source\repos\QuanLyRapChieuPhim\QuanLyRapChieuPhim\QuanLyRapChieuPhim\bin\Debug\QuanLyRapChieuPhim.pdb
-C:\Users\BEN\source\repos\QuanLyRapChieuPhim\QuanLyRapChieuPhim\QuanLyRapChieuPhim\bin\Debug\Bunifu_UI_v1.52.dll
 C:\Users\BEN\source\repos\QuanLyRapChieuPhim\QuanLyRapChieuPhim\QuanLyRapChieuPhim\obj\Debug\QuanLyRapChieuPhim.csproj.AssemblyReference.cache
 C:\Users\BEN\source\repos\QuanLyRapChieuPhim\QuanLyRapChieuPhim\QuanLyRapChieuPhim\obj\Debug\QuanLyRapChieuPhim.csproj.SuggestedBindingRedirects.cache
 C:\Users\BEN\source\repos\QuanLyRapChieuPhim\QuanLyRapChieuPhim\QuanLyRapChieuPhim\obj\Debug\QuanLyRapChieuPhim.Properties.Resources.resources
@@ -16,8 +15,6 @@ C:\Users\BEN\source\repos\QuanLyRapChieuPhim\QuanLyRapChieuPhim\QuanLyRapChieuPh
 C:\Users\BEN\source\repos\QuanLyRapChieuPhim\QuanLyRapChieuPhim\QuanLyRapChieuPhim\bin\Debug\DTO.dll
 C:\Users\BEN\source\repos\QuanLyRapChieuPhim\QuanLyRapChieuPhim\QuanLyRapChieuPhim\bin\Debug\BLL.pdb
 C:\Users\BEN\source\repos\QuanLyRapChieuPhim\QuanLyRapChieuPhim\QuanLyRapChieuPhim\bin\Debug\DTO.pdb
-C:\Users\BEN\source\repos\QuanLyRapChieuPhim\QuanLyRapChieuPhim\QuanLyRapChieuPhim\bin\Debug\Guna.UI2.dll
-C:\Users\BEN\source\repos\QuanLyRapChieuPhim\QuanLyRapChieuPhim\QuanLyRapChieuPhim\bin\Debug\System.Data.SqlClient.dll
 C:\Users\BEN\source\repos\QuanLyRapChieuPhim\QuanLyRapChieuPhim\QuanLyRapChieuPhim\bin\Debug\System.Data.SqlClient.xml
 C:\Users\BEN\source\repos\QuanLyRapChieuPhim\QuanLyRapChieuPhim\QuanLyRapChieuPhim\obj\Debug\QuanLyRapChieuPhim.UserControls.QuanLiPhim.resources
 C:\Users\BEN\source\repos\QuanLyRapChieuPhim\QuanLyRapChieuPhim\QuanLyRapChieuPhim\obj\Debug\QuanLyRapChieuPhim.ThemPhim.resources
@@ -38,3 +35,5 @@ C:\Users\BEN\source\repos\QuanLyRapChieuPhim\QuanLyRapChieuPhim\QuanLyRapChieuPh
 C:\Users\BEN\source\repos\QuanLyRapChieuPhim\QuanLyRapChieuPhim\QuanLyRapChieuPhim\obj\Debug\QuanLyRapChieuPhim.UserControls.DoAn.resources
 C:\Users\BEN\source\repos\QuanLyRapChieuPhim\QuanLyRapChieuPhim\QuanLyRapChieuPhim\obj\Debug\QuanLyRapChieuPhim.UserControls.FoodItem.resources
 C:\Users\BEN\source\repos\QuanLyRapChieuPhim\QuanLyRapChieuPhim\QuanLyRapChieuPhim\obj\Debug\QuanLyRapChieuPhim.UserControls.CartItem.resources
+C:\Users\BEN\source\repos\QuanLyRapChieuPhim\QuanLyRapChieuPhim\QuanLyRapChieuPhim\obj\Debug\QuanLyRapChieuPhim.KhoiPhucMatKhau.resources
+C:\Users\BEN\source\repos\QuanLyRapChieuPhim\QuanLyRapChieuPhim\QuanLyRapChieuPhim\obj\Debug\QuanLyRapChieuPhim.XacThucTaiKhoan.resources
