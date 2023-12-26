@@ -12,9 +12,11 @@ namespace QuanLyRapChieuPhim.UserControls
 {
     public partial class DoAn : UserControl
     {
-        public DoAn()
+        public int IDNV { get; set; }
+        public DoAn(int IDNV)
         {
             InitializeComponent();
+            this.IDNV = IDNV;
         }
 
         private void DoAn_Load(object sender, EventArgs e)
@@ -114,7 +116,19 @@ namespace QuanLyRapChieuPhim.UserControls
 
         private void thanhtoanbtn_Click(object sender, EventArgs e)
         {
-
+            try
+            {
+                string today = DateTime.Today.Date.ToString("dd/MM/yyyy");
+                TimKhachHang newForm = new TimKhachHang(IDNV, "DOAN");
+                newForm.ShowDialog();
+                
+                
+                MessageBox.Show("Thanh toán thành công !!!");
+            } catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            
         }
     }
 }

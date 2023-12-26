@@ -8,7 +8,7 @@ namespace QuanLyRapChieuPhim
 {
     internal static class Program
     {
-        /// <summary>
+        /// <summary>   
         /// The main entry point for the application.
         /// </summary>
         [STAThread]
@@ -16,7 +16,7 @@ namespace QuanLyRapChieuPhim
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Admin());
+            Application.Run(new Login());
         }
     }   
 }

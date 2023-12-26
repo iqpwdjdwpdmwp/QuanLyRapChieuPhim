@@ -95,7 +95,7 @@ namespace QuanLyRapChieuPhim.UserControls
             {
                 int ID = Convert.ToInt32(data.Rows[0]["ID"]);
                 int soLuong = Convert.ToInt32(data.Rows[0]["SOLUONG"]);
-                query = $"update CART set SOLUONG = {++soLuong} where ID = {ID}";
+                query = $"update CART set SOLUONG = {++soLuong}, TONGTIEN = TONGTIEN * (SOLUONG + 1) where ID = {ID}";
                 try
                 {
                     DAL.DataProvider.ExecuteNonQuery(query);
@@ -111,7 +111,7 @@ namespace QuanLyRapChieuPhim.UserControls
                 }
             } else
             {
-                query = $"INSERT INTO CART VALUES ({ID},1)";
+                query = $"INSERT INTO CART VALUES ({ID},1, {Convert.ToInt32(price.Text)})";
 
                 try
                 {

@@ -73,7 +73,7 @@ namespace QuanLyRapChieuPhim.UserControls
         private void guna2Button2_Click(object sender, EventArgs e)
         {
             ++this.quantity;
-            string query = $"UPDATE CART SET SOLUONG = {this.quantity} WHERE ID = {ID}";
+            string query = $"UPDATE CART SET SOLUONG = {this.quantity}, TONGTIEN = TONGTIEN * (SOLUONG + 1) WHERE ID = {ID}";
             DAL.DataProvider.ExecuteNonQuery(query);
             quantitylb.Text = quantity.ToString();
             totalPrice.Text = getTotalPrice().ToString();
@@ -83,7 +83,7 @@ namespace QuanLyRapChieuPhim.UserControls
         private void guna2Button1_Click(object sender, EventArgs e)
         {
             --this.quantity;
-            string query = $"UPDATE CART SET SOLUONG = {this.quantity} WHERE ID = {ID}";
+            string query = $"UPDATE CART SET SOLUONG = {this.quantity}, TONGTIEN = TONGTIEN / (SOLUONG - 1) WHERE ID = {ID}";
             DAL.DataProvider.ExecuteNonQuery(query);
             quantitylb.Text = quantity.ToString();
             totalPrice.Text = getTotalPrice().ToString();

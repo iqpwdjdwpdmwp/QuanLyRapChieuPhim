@@ -14,9 +14,9 @@ namespace DAL
             string query = "select * from nhanvien";
             return DataProvider.ExecuteQuery(query);
         }
-        public bool insertStaff(string staffname, string staffsex, string staffgmail, string staffphone, string staffbirth, string staffjob, string daystart, int idacc)
+        public bool insertStaff(string staffname, string staffsex, string staffgmail, string staffphone, string staffbirth, string staffjob, string daystart)
         {
-            string query = $"Insert into nhanvien (hoten, gioitinh, email, sdt, ngaysinh, chucvu, ngaybd, idaccount) values (N'{staffname}','{staffsex}',N'{staffgmail}',N'{staffphone}',N'{staffbirth}','{staffjob}',N'{daystart}', {idacc})";
+            string query = $"Insert into nhanvien (hoten, gioitinh, email, sdt, ngaysinh, chucvu, ngaybd) values (N'{staffname}',N'{staffsex}',N'{staffgmail}',N'{staffphone}',N'{staffbirth}','{staffjob}',N'{daystart}')";
             int result = DataProvider.ExecuteNonQuery(query);
             return result > 0;
         }
@@ -28,7 +28,7 @@ namespace DAL
         public static bool updateNhanVien(int IDNV, string staffname, string staffsex, string staffgmail, string staffphone, string staffbirth, string staffjob, string daystart)
         {
             string query = "update NHANVIEN " +
-                $"set HOTEN = N'{staffname}', EMAIL = N'{staffgmail}', GIOITINH = '{staffsex}', SDT = N'{staffphone}', NGAYSINH = '{staffbirth}', CHUCVU = N'{staffjob}', NGAYBD = N'{daystart}'"
+                $"set HOTEN = N'{staffname}', EMAIL = N'{staffgmail}', GIOITINH = N'{staffsex}', SDT = N'{staffphone}', NGAYSINH = '{staffbirth}', CHUCVU = N'{staffjob}', NGAYBD = N'{daystart}'"
                 + $" where IDNV = {IDNV}";
             int result = DataProvider.ExecuteNonQuery(query);
             return result > 0;

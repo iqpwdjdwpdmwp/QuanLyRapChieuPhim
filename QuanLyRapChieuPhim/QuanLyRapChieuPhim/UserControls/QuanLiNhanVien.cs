@@ -25,6 +25,7 @@ namespace QuanLyRapChieuPhim.UserControls
         {
             data = DAL.QuanLiNhanVien.getAllStaff();
             danhsachnv.Rows.Clear();
+            
             foreach (DataRow row in data.Rows)
             {
                 staff.id = Convert.ToInt32(row["IDNV"]);

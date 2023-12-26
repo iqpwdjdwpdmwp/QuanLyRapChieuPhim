@@ -39,13 +39,13 @@ namespace QuanLyRapChieuPhim
                 pq = 0;
             }
             Account account = new Account();
-            account.insertAccount(tendn, "12345678", pq);
-            query = $"SELECT MAX(IDACCOUNT) AS MaxID FROM TAIKHOAN";
-            int idacc=Convert.ToInt32(DAL.DataProvider.ExecuteScalar(query));
+            query = $"SELECT MAX(IDNV) AS MaxID FROM NHANVIEN";
+            QuanLiNhanVien quanLiNhanVien = new QuanLiNhanVien();
             string start = daystart.Value.Date.ToString("dd/MM/yyyy");
             string birth = staffbirth.Value.Date.ToString("dd/MM/yyyy");
-            QuanLiNhanVien quanLiNhanVien = new QuanLiNhanVien();
-            quanLiNhanVien.insertStaff(staffname.Text, staffsex.Text, staffgmail.Text, staffphone.Text, birth, staffjob.Text, start, idacc);
+            quanLiNhanVien.insertStaff(staffname.Text, staffsex.Text, staffgmail.Text, staffphone.Text, birth, staffjob.Text, start);
+            int IDNV=Convert.ToInt32(DAL.DataProvider.ExecuteScalar(query));
+            account.insertAccount(tendn, "12345678", pq, IDNV);
             //img.Save(path);
             MessageBox.Show("Thêm nhân viên thành công !!!");
         }

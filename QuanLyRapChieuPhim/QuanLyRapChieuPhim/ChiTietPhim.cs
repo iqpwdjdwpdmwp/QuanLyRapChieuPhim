@@ -22,7 +22,8 @@ namespace QuanLyRapChieuPhim
         public Image Image { get; set; }
         public int SuatChieuID { get; set; }
         public int IDPHIM { get; set; }
-        public ChiTietPhim(string Name, int Phong, string NgayChieu, string GioChieu, Image Image, int SuatChieuID, int IDPHIM)
+        public int IDNV { get; set; }
+        public ChiTietPhim(string Name, int Phong, string NgayChieu, string GioChieu, Image Image, int SuatChieuID, int IDPHIM, int IDNV)
         {
             InitializeComponent();
             this.Name = Name;
@@ -32,6 +33,7 @@ namespace QuanLyRapChieuPhim
             this.Image = Image;
             this.SuatChieuID = SuatChieuID;
             this.IDPHIM = IDPHIM;
+            this.IDNV = IDNV;
         }
 
 
@@ -81,7 +83,7 @@ namespace QuanLyRapChieuPhim
                 return;
             } else
             {
-                NV_DatVe newForm = new NV_DatVe(Name, Phong, NgayChieu, GioChieu, Image, SuatChieuID);
+                NV_DatVe newForm = new NV_DatVe(Name, Phong, NgayChieu, GioChieu, Image, SuatChieuID, IDNV, IDPHIM);
                 newForm.ShowDialog();
             }
         }

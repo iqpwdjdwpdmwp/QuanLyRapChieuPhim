@@ -15,7 +15,7 @@ namespace QuanLyRapChieuPhim
     public partial class NV_DatVe : Form
     {
         int suatChieuID;
-        
+
         public int SuatChieuID {
             get
             {
@@ -26,14 +26,18 @@ namespace QuanLyRapChieuPhim
                 suatChieuID = value;
             }
         }
+        public int IDPHIM {get; set;}
+        public int IDNV { get; set; }
         
 
         ArrayList list = new ArrayList();
-        public NV_DatVe(string name, int phongID,string ngayChieu, string gioChieu, Image image, int suatChieuID)
+        public NV_DatVe(string name, int phongID,string ngayChieu, string gioChieu, Image image, int suatChieuID, int IDNV, int IDPHIM)
         {
             InitializeComponent();
             SuatChieuID = suatChieuID;
             load(name, phongID, ngayChieu, gioChieu, image, suatChieuID);
+            this.IDNV = IDNV;
+            this.IDPHIM = IDPHIM;
         }
         public void load(string name, int phongID, string ngayChieu, string gioChieu, Image image, int suatChieuID)
         {
@@ -115,13 +119,28 @@ namespace QuanLyRapChieuPhim
 
         private void thanhtoanbtn_Click(object sender, EventArgs e)
         {
+            string today = DateTime.Today.Date.ToString("dd/MM/yyyy");
+
             bool result = false;
-            foreach(var item in list)
+            TimKhachHang newForm = new TimKhachHang(IDNV, "DATVE");
+            newForm.ShowDialog();
+        
+            string query = "SELECT MAX(IDHD) FROM HOADON";
+            
+            int IDHD = Convert.ToInt32(DAL.DataProvider.ExecuteScalar(query));
+            foreach (var item in list)
             {
                 result = DAL.Seat.insertSeat(item.ToString(), suatChieuID, item.ToString()[0]);
+                query = "SELECT MAX(IDGHE) FROM GHE";
+                int IDGHE = Convert.ToInt32(DAL.DataProvider.ExecuteScalar(query));
+                DAL.Ve.insertVe(IDNV, IDPHIM, SuatChieuID, IDGHE, 45000);
+                query = "SELECT MAX(IDVE) FROM VE";
+                int IDVE = Convert.ToInt32(DAL.DataProvider.ExecuteScalar(query));
+                DAL.LichSuGiaoDich.insertCTHDVE(IDHD, IDVE, 1, 45000);
             }
             if (result)
             {
+
                 MessageBox.Show("Thanh toán thành công");
             } else
             {

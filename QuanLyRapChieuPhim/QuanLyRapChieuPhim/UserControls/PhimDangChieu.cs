@@ -13,9 +13,11 @@ namespace QuanLyRapChieuPhim.UserControls
 {
     public partial class PhimDangChieu : UserControl
     {
-        public PhimDangChieu()
+        public int IDNV { get; set; }
+        public PhimDangChieu(int IDNV)
         {
             InitializeComponent();
+            this.IDNV = IDNV;
         }
 
         private void PhimDangChieu_Load(object sender, EventArgs e)
@@ -49,8 +51,9 @@ namespace QuanLyRapChieuPhim.UserControls
                 list[i].NgayChieu = Convert.ToDateTime(data.Rows[i]["NGAYCHIEU"]).ToString("dd/MM/yyyy");
                 //list[i].GioChieu = data.Rows[i]["THOIGIANCHIEU"].ToString();
                 list[i].Phong = Convert.ToInt32(data.Rows[i]["IDPHONG"]);
-                //list[i].SuatChieuID = Convert.ToInt32(data.Rows[i]["IDSUATCHIEU"]);
+                list[i].SuatChieuID = Convert.ToInt32(data.Rows[i]["IDSUATCHIEU"]);
                 list[i].Description = data.Rows[i]["MOTA"].ToString();
+                list[i].IDNV = IDNV;
                 flowLayoutPanel1.Controls.Add(list[i]);
             }
         }

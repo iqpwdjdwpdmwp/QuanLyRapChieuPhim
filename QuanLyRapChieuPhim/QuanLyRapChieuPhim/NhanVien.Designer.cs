@@ -33,7 +33,11 @@
             this.button2 = new Guna.UI2.WinForms.Guna2Button();
             this.button1 = new Guna.UI2.WinForms.Guna2Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.tennhanvien = new System.Windows.Forms.Label();
+            this.chucvu = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -42,6 +46,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.guna2Button2);
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.button1);
@@ -125,6 +130,38 @@
             this.panel2.Size = new System.Drawing.Size(1576, 891);
             this.panel2.TabIndex = 2;
             // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.panel3.Controls.Add(this.chucvu);
+            this.panel3.Controls.Add(this.tennhanvien);
+            this.panel3.ForeColor = System.Drawing.Color.White;
+            this.panel3.Location = new System.Drawing.Point(27, 749);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(194, 52);
+            this.panel3.TabIndex = 11;
+            // 
+            // tennhanvien
+            // 
+            this.tennhanvien.AutoSize = true;
+            this.tennhanvien.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tennhanvien.Location = new System.Drawing.Point(76, 4);
+            this.tennhanvien.Name = "tennhanvien";
+            this.tennhanvien.Size = new System.Drawing.Size(45, 17);
+            this.tennhanvien.TabIndex = 0;
+            this.tennhanvien.Text = "label1";
+            // 
+            // chucvu
+            // 
+            this.chucvu.AutoSize = true;
+            this.chucvu.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chucvu.Location = new System.Drawing.Point(76, 28);
+            this.chucvu.Name = "chucvu";
+            this.chucvu.Size = new System.Drawing.Size(43, 17);
+            this.chucvu.TabIndex = 1;
+            this.chucvu.Text = "label2";
+            this.chucvu.Click += new System.EventHandler(this.chucvu_Click);
+            // 
             // NhanVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -138,6 +175,8 @@
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.NhanVien_Load);
             this.panel1.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -149,5 +188,8 @@
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
         private Guna.UI2.WinForms.Guna2Button button2;
         private Guna.UI2.WinForms.Guna2Button button1;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Label chucvu;
+        private System.Windows.Forms.Label tennhanvien;
     }
 }

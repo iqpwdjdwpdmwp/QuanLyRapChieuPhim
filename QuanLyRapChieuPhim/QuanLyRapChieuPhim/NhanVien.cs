@@ -13,9 +13,11 @@ namespace QuanLyRapChieuPhim
 {
     public partial class NhanVien : Form
     {
-        public NhanVien()
+        public int IDNV { get; set; }
+        public NhanVien(int IDNV)
         {
             InitializeComponent();
+            this.IDNV = IDNV;
         }
 
 
@@ -23,6 +25,12 @@ namespace QuanLyRapChieuPhim
 
         private void NhanVien_Load(object sender, EventArgs e)
         {
+            DataTable data = new DataTable();
+            string query = $"select * from taikhoan TK join nhanvien NV on TK.IDNV = NV.IDNV where TK.IDNV = {IDNV}";
+            data = DAL.DataProvider.ExecuteQuery(query);
+
+            tennhanvien.Text = data.Rows[0]["HOTEN"].ToString();
+            chucvu.Text = data.Rows[0]["CHUCVU"].ToString();
             NV_Home newForm = new NV_Home();
             panel2.Controls.Add(newForm);
         }
@@ -30,7 +38,7 @@ namespace QuanLyRapChieuPhim
         private void button2_Click_1(object sender, EventArgs e)
         {
             panel2.Controls.Clear();
-            PhimDangChieu newForm = new PhimDangChieu();
+            PhimDangChieu newForm = new PhimDangChieu(IDNV);
             panel2.Controls.Add(newForm);
         }
 
@@ -44,8 +52,13 @@ namespace QuanLyRapChieuPhim
         private void guna2Button2_Click(object sender, EventArgs e)
         {
             panel2.Controls.Clear();
-            DoAn newForm = new DoAn();
+            DoAn newForm = new DoAn(IDNV);
             panel2.Controls.Add(newForm);
+        }
+
+        private void chucvu_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

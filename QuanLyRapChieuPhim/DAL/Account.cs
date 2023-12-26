@@ -8,9 +8,9 @@ namespace DAL
 {
     public class Account
     {
-        public bool insertAccount(string tdn, string matkhau, int pq)
+        public bool insertAccount(string tdn, string matkhau, int pq, int IDNV)
         {
-            string query = $"insert into TAIKHOAN (TENDN, MKHAU, PHANQUYEN) values (N'{tdn}',N'{matkhau}', {pq})";
+            string query = $"insert into TAIKHOAN (TENDN, MKHAU, PHANQUYEN, IDNV) values (N'{tdn}',N'{matkhau}', {pq}, {IDNV})";
             int data = DAL.DataProvider.ExecuteNonQuery(query);
             return data > 0;
         }

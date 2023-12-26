@@ -18,6 +18,8 @@ namespace QuanLyRapChieuPhim
         public Login()
         {
             InitializeComponent();
+            
+            
         }
 
         private void btDangNhap_Click(object sender, EventArgs e)
@@ -58,12 +60,14 @@ namespace QuanLyRapChieuPhim
                 while (reader.Read())
                 {
                     flag = true;
-                    if (reader.GetInt32(3) == 0)
+                    if (reader.GetInt32(3) == 1)
                     {
-                        NhanVien nv = new NhanVien();
+                        string query = $"SELECT IDNV FROM TAIKHOAN WHERE TENDN = '{TaiKhoan}'";
+                        int IDNV = Convert.ToInt32(DAL.DataProvider.ExecuteScalar(query));
+                        NhanVien nv = new NhanVien(IDNV);
                         nv.ShowDialog();
                     }
-                    if (reader.GetInt32(3) == 1)
+                    if (reader.GetInt32(3) == 0)
                     {
                         Admin admin = new Admin();
                         admin.ShowDialog();

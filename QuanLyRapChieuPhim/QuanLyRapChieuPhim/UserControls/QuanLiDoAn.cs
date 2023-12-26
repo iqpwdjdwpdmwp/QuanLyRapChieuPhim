@@ -32,6 +32,7 @@ namespace QuanLyRapChieuPhim.UserControls
                 string path = Path.Combine(appPath, name.Text + ".jpg");
                 Image img = guna2PictureBox1.Image;
                 bool data = DAL.QuanLiDoAn.insertSanPham(name.Text, Convert.ToInt32(quantity.Text), Convert.ToInt32(price.Text), typelist.SelectedItem.ToString(), path);
+
                 if(data == true)
                 {
                     MessageBox.Show("Thêm sản phẩm thành công");
