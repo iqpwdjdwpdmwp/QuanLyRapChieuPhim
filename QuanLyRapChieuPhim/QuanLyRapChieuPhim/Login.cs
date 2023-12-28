@@ -65,12 +65,16 @@ namespace QuanLyRapChieuPhim
                         string query = $"SELECT IDNV FROM TAIKHOAN WHERE TENDN = '{TaiKhoan}'";
                         int IDNV = Convert.ToInt32(DAL.DataProvider.ExecuteScalar(query));
                         NhanVien nv = new NhanVien(IDNV);
+                        this.Hide();
                         nv.ShowDialog();
+                        this.Close();
                     }
                     if (reader.GetInt32(3) == 0)
                     {
                         Admin admin = new Admin();
+                        this.Hide();
                         admin.ShowDialog();
+                        this.Close();
                     }
                 }
                 if (!flag)

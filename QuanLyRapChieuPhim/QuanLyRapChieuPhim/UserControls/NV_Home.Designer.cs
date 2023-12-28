@@ -128,7 +128,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.guna2Button1);
             this.Name = "NV_Home";
-            this.Size = new System.Drawing.Size(1287, 891);
+            this.Size = new System.Drawing.Size(1322, 891);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.guna2Panel1.ResumeLayout(false);
             this.ResumeLayout(false);

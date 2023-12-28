@@ -122,8 +122,7 @@ namespace QuanLyRapChieuPhim
             string today = DateTime.Today.Date.ToString("dd/MM/yyyy");
 
             bool result = false;
-            TimKhachHang newForm = new TimKhachHang(IDNV, "DATVE");
-            newForm.ShowDialog();
+            
         
             string query = "SELECT MAX(IDHD) FROM HOADON";
             
@@ -138,6 +137,8 @@ namespace QuanLyRapChieuPhim
                 int IDVE = Convert.ToInt32(DAL.DataProvider.ExecuteScalar(query));
                 DAL.LichSuGiaoDich.insertCTHDVE(IDHD, IDVE, 1, 45000);
             }
+            TimKhachHang newForm = new TimKhachHang(IDNV, "DATVE");
+            newForm.ShowDialog();
             if (result)
             {
 

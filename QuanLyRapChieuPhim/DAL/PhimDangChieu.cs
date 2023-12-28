@@ -9,8 +9,8 @@ namespace DAL
     {
         public static DataTable getPhimDangChieu()
         {
-            string today = DateTime.Today.ToString();
-            string query = $"select distinct P.IDPHIM, THOILUONG, THELOAI, DANGPHIM, TENPHIM, THELOAI, POSTER, NGAYCHIEU, IDPHONG, MOTA, SC.IDSUATCHIEU from SUATCHIEU SC inner join PHIM P on SC.IDPHIM = P.IDPHIM where NGAYCHIEU = '{today}'";
+            string today = DateTime.Today.ToString();   
+            string query = $"select distinct P.IDPHIM, THOILUONG, THELOAI, DANGPHIM, TENPHIM, THELOAI, POSTER, NGAYCHIEU, IDPHONG, MOTA from SUATCHIEU SC inner join PHIM P on SC.IDPHIM = P.IDPHIM where NGAYCHIEU = '{today}'";
             return DAL.DataProvider.ExecuteQuery(query);
         }
         public static DataTable getPhimTheoTheLoai(string theloai)
@@ -24,6 +24,12 @@ namespace DAL
             {
                 query = $"select distinct P.IDPHIM, THOILUONG, THELOAI, DANGPHIM, TENPHIM, THELOAI, POSTER, NGAYCHIEU, IDPHONG, MOTA, SC.IDSUATCHIEU  from SUATCHIEU SC inner join PHIM P on SC.IDPHIM = P.IDPHIM where NGAYCHIEU = '{today}' and P.THELOAI LIKE N'%{theloai}%'";
             }
+            return DAL.DataProvider.ExecuteQuery(query);
+        }
+        public static DataTable getIDPhimDangChieu()
+        {
+            string today = DateTime.Today.ToString();
+            string query = $"select SC.IDSUATCHIEU from SUATCHIEU SC inner join PHIM P on SC.IDPHIM = P.IDPHIM where NGAYCHIEU = '{today}'";
             return DAL.DataProvider.ExecuteQuery(query);
         }
     }

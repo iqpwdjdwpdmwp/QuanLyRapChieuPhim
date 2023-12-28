@@ -36,9 +36,6 @@
             this.guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
             this.guna2Separator2 = new Guna.UI2.WinForms.Guna2Separator();
             this.danhsachnv = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.refreshbtn = new System.Windows.Forms.Button();
-            this.deleteBtn = new System.Windows.Forms.Button();
-            this.editBtn = new System.Windows.Forms.Button();
             this.idnv = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.hoten = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gioitinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -47,6 +44,9 @@
             this.ngaysinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.chucvu = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ngaybd = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.refreshbtn = new System.Windows.Forms.Button();
+            this.deleteBtn = new System.Windows.Forms.Button();
+            this.editBtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.danhsachnv)).BeginInit();
             this.SuspendLayout();
             // 
@@ -58,7 +58,7 @@
             this.btnAdd.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnAdd.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnAdd.ForeColor = System.Drawing.Color.White;
-            this.btnAdd.Location = new System.Drawing.Point(808, 44);
+            this.btnAdd.Location = new System.Drawing.Point(1048, 44);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(134, 48);
             this.btnAdd.TabIndex = 1;
@@ -89,14 +89,14 @@
             // 
             this.guna2Separator1.Location = new System.Drawing.Point(0, 99);
             this.guna2Separator1.Name = "guna2Separator1";
-            this.guna2Separator1.Size = new System.Drawing.Size(960, 10);
+            this.guna2Separator1.Size = new System.Drawing.Size(1182, 10);
             this.guna2Separator1.TabIndex = 3;
             // 
             // guna2Separator2
             // 
-            this.guna2Separator2.Location = new System.Drawing.Point(0, 645);
+            this.guna2Separator2.Location = new System.Drawing.Point(0, 716);
             this.guna2Separator2.Name = "guna2Separator2";
-            this.guna2Separator2.Size = new System.Drawing.Size(960, 10);
+            this.guna2Separator2.Size = new System.Drawing.Size(1206, 10);
             this.guna2Separator2.TabIndex = 5;
             // 
             // danhsachnv
@@ -137,7 +137,7 @@
             this.danhsachnv.RowHeadersVisible = false;
             this.danhsachnv.RowHeadersWidth = 51;
             this.danhsachnv.RowTemplate.Height = 24;
-            this.danhsachnv.Size = new System.Drawing.Size(927, 524);
+            this.danhsachnv.Size = new System.Drawing.Size(1167, 524);
             this.danhsachnv.TabIndex = 6;
             this.danhsachnv.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.danhsachnv.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -161,39 +161,6 @@
             this.danhsachnv.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.danhsachnv.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.danhsachnv.SelectionChanged += new System.EventHandler(this.danhsachnv_SelectionChanged);
-            // 
-            // refreshbtn
-            // 
-            this.refreshbtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.refreshbtn.Location = new System.Drawing.Point(833, 671);
-            this.refreshbtn.Name = "refreshbtn";
-            this.refreshbtn.Size = new System.Drawing.Size(109, 42);
-            this.refreshbtn.TabIndex = 9;
-            this.refreshbtn.Text = "Refresh";
-            this.refreshbtn.UseVisualStyleBackColor = true;
-            this.refreshbtn.Click += new System.EventHandler(this.refreshbtn_Click);
-            // 
-            // deleteBtn
-            // 
-            this.deleteBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.deleteBtn.Location = new System.Drawing.Point(694, 671);
-            this.deleteBtn.Name = "deleteBtn";
-            this.deleteBtn.Size = new System.Drawing.Size(109, 42);
-            this.deleteBtn.TabIndex = 8;
-            this.deleteBtn.Text = "Xóa";
-            this.deleteBtn.UseVisualStyleBackColor = true;
-            this.deleteBtn.Click += new System.EventHandler(this.deleteBtn_Click);
-            // 
-            // editBtn
-            // 
-            this.editBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.editBtn.Location = new System.Drawing.Point(553, 671);
-            this.editBtn.Name = "editBtn";
-            this.editBtn.Size = new System.Drawing.Size(109, 42);
-            this.editBtn.TabIndex = 7;
-            this.editBtn.Text = "Sửa";
-            this.editBtn.UseVisualStyleBackColor = true;
-            this.editBtn.Click += new System.EventHandler(this.editBtn_Click);
             // 
             // idnv
             // 
@@ -251,6 +218,39 @@
             this.ngaybd.Name = "ngaybd";
             this.ngaybd.Width = 85;
             // 
+            // refreshbtn
+            // 
+            this.refreshbtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.refreshbtn.Location = new System.Drawing.Point(1043, 745);
+            this.refreshbtn.Name = "refreshbtn";
+            this.refreshbtn.Size = new System.Drawing.Size(109, 42);
+            this.refreshbtn.TabIndex = 9;
+            this.refreshbtn.Text = "Refresh";
+            this.refreshbtn.UseVisualStyleBackColor = true;
+            this.refreshbtn.Click += new System.EventHandler(this.refreshbtn_Click);
+            // 
+            // deleteBtn
+            // 
+            this.deleteBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.deleteBtn.Location = new System.Drawing.Point(904, 745);
+            this.deleteBtn.Name = "deleteBtn";
+            this.deleteBtn.Size = new System.Drawing.Size(109, 42);
+            this.deleteBtn.TabIndex = 8;
+            this.deleteBtn.Text = "Xóa";
+            this.deleteBtn.UseVisualStyleBackColor = true;
+            this.deleteBtn.Click += new System.EventHandler(this.deleteBtn_Click);
+            // 
+            // editBtn
+            // 
+            this.editBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.editBtn.Location = new System.Drawing.Point(763, 745);
+            this.editBtn.Name = "editBtn";
+            this.editBtn.Size = new System.Drawing.Size(109, 42);
+            this.editBtn.TabIndex = 7;
+            this.editBtn.Text = "Sửa";
+            this.editBtn.UseVisualStyleBackColor = true;
+            this.editBtn.Click += new System.EventHandler(this.editBtn_Click);
+            // 
             // QuanLiNhanVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -265,7 +265,7 @@
             this.Controls.Add(this.guna2TextBox2);
             this.Controls.Add(this.btnAdd);
             this.Name = "QuanLiNhanVien";
-            this.Size = new System.Drawing.Size(960, 726);
+            this.Size = new System.Drawing.Size(1206, 790);
             ((System.ComponentModel.ISupportInitialize)(this.danhsachnv)).EndInit();
             this.ResumeLayout(false);
 

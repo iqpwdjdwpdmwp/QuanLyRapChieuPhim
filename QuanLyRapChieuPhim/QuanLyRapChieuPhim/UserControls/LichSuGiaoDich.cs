@@ -15,14 +15,22 @@ namespace QuanLyRapChieuPhim.UserControls
         public LichSuGiaoDich()
         {
             InitializeComponent();
+            from.Value = DateTime.Today;
+            to.Value = DateTime.Today;
         }
 
         private void LichSuGiaoDich_Load(object sender, EventArgs e)
         {
             DataTable data = new DataTable();
             data = DAL.LichSuGiaoDich.getLogs();
-            if(data.Rows.Count > 0 ) { 
-                foreach(DataRow row in data.Rows)
+            LoadData(data);
+        }
+        private void LoadData(DataTable data)
+        {
+            logs.Rows.Clear();
+            if (data.Rows.Count > 0)
+            {
+                foreach (DataRow row in data.Rows)
                 {
                     logs.Rows.Add(new object[]
                     {
@@ -38,6 +46,35 @@ namespace QuanLyRapChieuPhim.UserControls
                     });
                 }
             }
+        }
+        private void from_ValueChanged(object sender, EventArgs e)
+        {
+            string fromDate = from.Value.ToString("MM/dd/yyyy");
+            string toDate = to.Value.ToString("MM/dd/yyyy");
+            
+            DataTable data = new DataTable();
+            data = DAL.LichSuGiaoDich.getLogsTheoTimKiem(fromDate, toDate, productfinding.Text, empfinding.Text, guestfinding.Text);
+
+            LoadData(data);
+        }
+
+        private void to_ValueChanged(object sender, EventArgs e)
+        {
+            string fromDate = from.Value.ToString("MM/dd/yyyy");
+            string toDate = to.Value.ToString("MM/dd/yyyy");
+            
+            DataTable data = new DataTable();
+            data = DAL.LichSuGiaoDich.getLogsTheoTimKiem(fromDate, toDate, productfinding.Text, empfinding.Text, guestfinding.Text);
+            LoadData(data);
+        }
+
+        private void productfinding_TextChanged(object sender, EventArgs e)
+        {
+            string fromDate = from.Value.ToString("MM/dd/yyyy");
+            string toDate = to.Value.ToString("MM/dd/yyyy");
+            DataTable data = new DataTable();
+            data = DAL.LichSuGiaoDich.getLogsTheoTimKiem(fromDate, toDate, productfinding.Text, empfinding.Text, guestfinding.Text);
+            LoadData(data);
         }
     }
 }

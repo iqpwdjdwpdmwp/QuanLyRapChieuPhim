@@ -43,20 +43,20 @@
             this.price = new Guna.UI2.WinForms.Guna2TextBox();
             this.typelist = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.addbtn = new Guna.UI2.WinForms.Guna2Button();
             this.guna2VSeparator1 = new Guna.UI2.WinForms.Guna2VSeparator();
             this.danhsachsanpham = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tensanpham = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.loaiphim = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.soluong = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dongia = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.guna2Panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.danhsachsanpham)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.danhsachsanpham)).BeginInit();
             this.SuspendLayout();
             // 
             // flowLayoutPanel1
@@ -64,12 +64,14 @@
             this.flowLayoutPanel1.AutoScroll = true;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 116);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(559, 741);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(758, 741);
             this.flowLayoutPanel1.TabIndex = 10;
             // 
             // danhsachtheloai
             // 
+            this.danhsachtheloai.AutoRoundedCorners = true;
             this.danhsachtheloai.BackColor = System.Drawing.Color.Transparent;
+            this.danhsachtheloai.BorderRadius = 17;
             this.danhsachtheloai.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.danhsachtheloai.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.danhsachtheloai.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
@@ -89,7 +91,7 @@
             "Hoạt hình",
             "Tài liệu",
             "Lịch sử"});
-            this.danhsachtheloai.Location = new System.Drawing.Point(1078, 35);
+            this.danhsachtheloai.Location = new System.Drawing.Point(1003, 36);
             this.danhsachtheloai.Name = "danhsachtheloai";
             this.danhsachtheloai.Size = new System.Drawing.Size(174, 36);
             this.danhsachtheloai.TabIndex = 9;
@@ -224,10 +226,32 @@
             this.guna2Panel1.Controls.Add(this.name);
             this.guna2Panel1.Controls.Add(this.quantity);
             this.guna2Panel1.Controls.Add(this.typelist);
-            this.guna2Panel1.Location = new System.Drawing.Point(590, 144);
+            this.guna2Panel1.Location = new System.Drawing.Point(825, 161);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(352, 541);
             this.guna2Panel1.TabIndex = 15;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(42, 310);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(94, 16);
+            this.label3.TabIndex = 18;
+            this.label3.Text = "Thêm hình ảnh";
+            // 
+            // guna2PictureBox1
+            // 
+            this.guna2PictureBox1.BackColor = System.Drawing.Color.Black;
+            this.guna2PictureBox1.FillColor = System.Drawing.Color.Black;
+            this.guna2PictureBox1.ImageRotate = 0F;
+            this.guna2PictureBox1.Location = new System.Drawing.Point(42, 332);
+            this.guna2PictureBox1.Name = "guna2PictureBox1";
+            this.guna2PictureBox1.Size = new System.Drawing.Size(281, 128);
+            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2PictureBox1.TabIndex = 17;
+            this.guna2PictureBox1.TabStop = false;
+            this.guna2PictureBox1.Click += new System.EventHandler(this.guna2PictureBox1_Click);
             // 
             // label2
             // 
@@ -256,9 +280,9 @@
             // 
             // guna2VSeparator1
             // 
-            this.guna2VSeparator1.Location = new System.Drawing.Point(549, 106);
+            this.guna2VSeparator1.Location = new System.Drawing.Point(764, 106);
             this.guna2VSeparator1.Name = "guna2VSeparator1";
-            this.guna2VSeparator1.Size = new System.Drawing.Size(10, 791);
+            this.guna2VSeparator1.Size = new System.Drawing.Size(10, 696);
             this.guna2VSeparator1.TabIndex = 16;
             // 
             // danhsachsanpham
@@ -303,7 +327,7 @@
             dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.Black;
             this.danhsachsanpham.RowsDefaultCellStyle = dataGridViewCellStyle5;
             this.danhsachsanpham.RowTemplate.Height = 30;
-            this.danhsachsanpham.Size = new System.Drawing.Size(543, 610);
+            this.danhsachsanpham.Size = new System.Drawing.Size(758, 657);
             this.danhsachsanpham.TabIndex = 17;
             this.danhsachsanpham.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.danhsachsanpham.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -327,81 +351,59 @@
             this.danhsachsanpham.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.danhsachsanpham.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
-            // guna2PictureBox1
-            // 
-            this.guna2PictureBox1.BackColor = System.Drawing.Color.Black;
-            this.guna2PictureBox1.FillColor = System.Drawing.Color.Black;
-            this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(42, 332);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(281, 128);
-            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox1.TabIndex = 17;
-            this.guna2PictureBox1.TabStop = false;
-            this.guna2PictureBox1.Click += new System.EventHandler(this.guna2PictureBox1_Click);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(42, 310);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(94, 16);
-            this.label3.TabIndex = 18;
-            this.label3.Text = "Thêm hình ảnh";
-            // 
             // id
             // 
             this.id.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.id.FillWeight = 143.6382F;
+            this.id.FillWeight = 140F;
             this.id.HeaderText = "ID";
             this.id.MinimumWidth = 6;
             this.id.Name = "id";
             this.id.ReadOnly = true;
-            this.id.Width = 30;
+            this.id.Width = 60;
             // 
             // tensanpham
             // 
             this.tensanpham.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.White;
             this.tensanpham.DefaultCellStyle = dataGridViewCellStyle3;
-            this.tensanpham.FillWeight = 98.55804F;
+            this.tensanpham.FillWeight = 140F;
             this.tensanpham.HeaderText = "Tên sản phẩm";
             this.tensanpham.MinimumWidth = 6;
             this.tensanpham.Name = "tensanpham";
             this.tensanpham.ReadOnly = true;
             this.tensanpham.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.tensanpham.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.tensanpham.Width = 200;
             // 
             // loaiphim
             // 
             this.loaiphim.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.loaiphim.FillWeight = 70.4288F;
+            this.loaiphim.FillWeight = 200F;
             this.loaiphim.HeaderText = "Loại sản phẩm";
             this.loaiphim.MinimumWidth = 6;
             this.loaiphim.Name = "loaiphim";
             this.loaiphim.ReadOnly = true;
             this.loaiphim.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.loaiphim.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.loaiphim.Width = 50;
+            this.loaiphim.Width = 140;
             // 
             // soluong
             // 
             this.soluong.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.soluong.FillWeight = 60.98985F;
             this.soluong.HeaderText = "Số lượng";
             this.soluong.MinimumWidth = 6;
             this.soluong.Name = "soluong";
             this.soluong.ReadOnly = true;
-            this.soluong.Width = 50;
+            this.soluong.Width = 80;
             // 
             // dongia
             // 
             this.dongia.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.dongia.FillWeight = 12.38503F;
             this.dongia.HeaderText = "Đơn giá";
             this.dongia.MinimumWidth = 6;
             this.dongia.Name = "dongia";
             this.dongia.ReadOnly = true;
+            this.dongia.Width = 80;
             // 
             // QuanLiDoAn
             // 
@@ -417,12 +419,12 @@
             this.Controls.Add(this.guna2Separator1);
             this.Controls.Add(this.label1);
             this.Name = "QuanLiDoAn";
-            this.Size = new System.Drawing.Size(960, 726);
+            this.Size = new System.Drawing.Size(1206, 790);
             this.Load += new System.EventHandler(this.QuanLiDoAn_Load);
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.danhsachsanpham)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.danhsachsanpham)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

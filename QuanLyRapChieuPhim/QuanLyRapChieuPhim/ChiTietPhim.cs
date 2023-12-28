@@ -23,7 +23,8 @@ namespace QuanLyRapChieuPhim
         public int SuatChieuID { get; set; }
         public int IDPHIM { get; set; }
         public int IDNV { get; set; }
-        public ChiTietPhim(string Name, int Phong, string NgayChieu, string GioChieu, Image Image, int SuatChieuID, int IDPHIM, int IDNV)
+        DataTable list;
+        public ChiTietPhim(string Name, int Phong, string NgayChieu, string GioChieu, Image Image, int SuatChieuID, int IDPHIM, int IDNV, DataTable list)
         {
             InitializeComponent();
             this.Name = Name;
@@ -34,6 +35,7 @@ namespace QuanLyRapChieuPhim
             this.SuatChieuID = SuatChieuID;
             this.IDPHIM = IDPHIM;
             this.IDNV = IDNV;
+            this.list = list;
         }
 
 

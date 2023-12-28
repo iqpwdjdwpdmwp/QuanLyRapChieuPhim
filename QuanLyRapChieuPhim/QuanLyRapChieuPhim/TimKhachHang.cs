@@ -55,16 +55,18 @@ namespace QuanLyRapChieuPhim
         {
             string today = DateTime.Today.ToString("");
             DataTable data = new DataTable();
-
+            MessageBox.Show(today);
             
             MailMessage mm = new MailMessage();
             SmtpClient sc = new SmtpClient("smtp.gmail.com");
             mm.From = new MailAddress("22520487@gm.uit.edu.vn");
             mm.To.Add(new MailAddress(emaillb.Text));
-            DAL.LichSuGiaoDich.insertHD(DateTime.Today.ToString("dd/MM/yyyy"), IDKH, this.IDNV);
+            
+            DAL.LichSuGiaoDich.insertHD(DateTime.Today.ToString("MM/dd/yyyy"), IDKH, this.IDNV);
+            
             if(Tab == "DATVE")
             {
-                string query = $"SELECT P.TENPHIM, SC.IDPHONG, SC.NGAYCHIEU, SOLUONGVE, TONGTIEN, NV.HOTEN, G.MAGHE   FROM HOADON HD JOIN CTHDVE CT on HD.IDHD = CT.IDHD join VE V \r\non CT.IDVE = V.IDVE join SUATCHIEU SC on V.IDSUATCHIEU = SC.IDSUATCHIEU join PHIM P \r\non SC.IDPHIM = P.IDPHIM join GHE G on V.IDGHE = G.IDGHE join NHANVIEN NV on HD.IDNV = NV.IDNV WHERE IDKH = {IDKH} and NGAYCHIEU = '{today}'";
+                string query = $"SELECT P.TENPHIM, SC.IDPHONG, SC.NGAYCHIEU, SOLUONGVE, TONGTIEN, NV.HOTEN, G.MAGHE, THOIGIANCHIEU   FROM HOADON HD JOIN CTHDVE CT on HD.IDHD = CT.IDHD join VE V \r\non CT.IDVE = V.IDVE join SUATCHIEU SC on V.IDSUATCHIEU = SC.IDSUATCHIEU join PHIM P \r\non SC.IDPHIM = P.IDPHIM join GHE G on V.IDGHE = G.IDGHE join NHANVIEN NV on HD.IDNV = NV.IDNV WHERE IDKH = {IDKH} and NGAYCHIEU = '{today}'";
                 data = DAL.DataProvider.ExecuteQuery(query);
                 string name = String.Empty;
                 string phong = String.Empty;

@@ -74,6 +74,10 @@ namespace QuanLyRapChieuPhim.UserControls
         {
             InitializeComponent();
         }
+        public DataTable list
+        {
+            get; set;
+        }
 
         private void FilmItem_Click(object sender, EventArgs e)
         {
@@ -86,7 +90,7 @@ namespace QuanLyRapChieuPhim.UserControls
         {
             
             //NV_DatVe newForm = new NV_DatVe(Name, Phong, NgayChieu, GioChieu, Image, SuatChieuID);
-            ChiTietPhim newForm = new ChiTietPhim(Name,Phong,NgayChieu,GioChieu,Image,SuatChieuID,IDPHIM, IDNV);
+            ChiTietPhim newForm = new ChiTietPhim(Name,Phong,NgayChieu,GioChieu,Image,SuatChieuID,IDPHIM, IDNV, list);
             newForm.ShowDialog();
         }
     }

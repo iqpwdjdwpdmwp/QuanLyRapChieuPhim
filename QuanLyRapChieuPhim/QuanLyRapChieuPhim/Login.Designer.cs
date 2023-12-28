@@ -42,8 +42,9 @@
             // 
             // tbTaiKhoan
             // 
+            this.tbTaiKhoan.AutoRoundedCorners = true;
             this.tbTaiKhoan.BorderColor = System.Drawing.Color.Black;
-            this.tbTaiKhoan.BorderRadius = 20;
+            this.tbTaiKhoan.BorderRadius = 23;
             this.tbTaiKhoan.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.tbTaiKhoan.DefaultText = "";
             this.tbTaiKhoan.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -58,6 +59,7 @@
             this.tbTaiKhoan.Location = new System.Drawing.Point(1109, 353);
             this.tbTaiKhoan.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tbTaiKhoan.Name = "tbTaiKhoan";
+            this.tbTaiKhoan.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.tbTaiKhoan.PasswordChar = '\0';
             this.tbTaiKhoan.PlaceholderText = "";
             this.tbTaiKhoan.SelectedText = "";
@@ -66,8 +68,9 @@
             // 
             // tbMatKhau
             // 
+            this.tbMatKhau.AutoRoundedCorners = true;
             this.tbMatKhau.BorderColor = System.Drawing.Color.Black;
-            this.tbMatKhau.BorderRadius = 20;
+            this.tbMatKhau.BorderRadius = 23;
             this.tbMatKhau.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.tbMatKhau.DefaultText = "";
             this.tbMatKhau.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -82,6 +85,7 @@
             this.tbMatKhau.Location = new System.Drawing.Point(1109, 456);
             this.tbMatKhau.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tbMatKhau.Name = "tbMatKhau";
+            this.tbMatKhau.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.tbMatKhau.PasswordChar = '●';
             this.tbMatKhau.PlaceholderText = "";
             this.tbMatKhau.SelectedText = "";
@@ -149,7 +153,8 @@
             // 
             // btDangNhap
             // 
-            this.btDangNhap.BorderRadius = 20;
+            this.btDangNhap.AutoRoundedCorners = true;
+            this.btDangNhap.BorderRadius = 23;
             this.btDangNhap.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btDangNhap.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btDangNhap.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));

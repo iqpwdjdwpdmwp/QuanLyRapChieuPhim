@@ -16,6 +16,9 @@ namespace QuanLyRapChieuPhim
         public Admin()
         {
             InitializeComponent();
+            ThongKe newForm = new ThongKe();
+            panel2.Controls.Clear();
+            panel2.Controls.Add(newForm);
         }
 
 
@@ -49,7 +52,9 @@ namespace QuanLyRapChieuPhim
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            ThongKe newForm = new ThongKe();
+            panel2.Controls.Clear();
+            panel2.Controls.Add(newForm);
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -68,6 +73,9 @@ namespace QuanLyRapChieuPhim
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
+            this.Hide();
+            Login newForm = new Login();
+            newForm.ShowDialog();
             this.Close();
         }
     }

@@ -51,11 +51,16 @@ namespace QuanLyRapChieuPhim.UserControls
                 list[i].NgayChieu = Convert.ToDateTime(data.Rows[i]["NGAYCHIEU"]).ToString("dd/MM/yyyy");
                 //list[i].GioChieu = data.Rows[i]["THOIGIANCHIEU"].ToString();
                 list[i].Phong = Convert.ToInt32(data.Rows[i]["IDPHONG"]);
-                list[i].SuatChieuID = Convert.ToInt32(data.Rows[i]["IDSUATCHIEU"]);
+                list[i].list = DAL.PhimDangChieu.getIDPhimDangChieu();
                 list[i].Description = data.Rows[i]["MOTA"].ToString();
                 list[i].IDNV = IDNV;
                 flowLayoutPanel1.Controls.Add(list[i]);
             }
+        }
+
+        private void datefinding_ValueChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -75,7 +75,7 @@
             // 
             this.guna2Separator1.Location = new System.Drawing.Point(0, 98);
             this.guna2Separator1.Name = "guna2Separator1";
-            this.guna2Separator1.Size = new System.Drawing.Size(960, 10);
+            this.guna2Separator1.Size = new System.Drawing.Size(1206, 10);
             this.guna2Separator1.TabIndex = 1;
             // 
             // guna2Button1
@@ -133,7 +133,7 @@
             dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
             this.danhsachphim.RowsDefaultCellStyle = dataGridViewCellStyle6;
             this.danhsachphim.RowTemplate.Height = 30;
-            this.danhsachphim.Size = new System.Drawing.Size(927, 541);
+            this.danhsachphim.Size = new System.Drawing.Size(1188, 614);
             this.danhsachphim.TabIndex = 3;
             this.danhsachphim.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.danhsachphim.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -212,7 +212,7 @@
             // editBtn
             // 
             this.editBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.editBtn.Location = new System.Drawing.Point(560, 672);
+            this.editBtn.Location = new System.Drawing.Point(802, 745);
             this.editBtn.Name = "editBtn";
             this.editBtn.Size = new System.Drawing.Size(109, 42);
             this.editBtn.TabIndex = 4;
@@ -223,7 +223,7 @@
             // deleteBtn
             // 
             this.deleteBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.deleteBtn.Location = new System.Drawing.Point(698, 672);
+            this.deleteBtn.Location = new System.Drawing.Point(940, 745);
             this.deleteBtn.Name = "deleteBtn";
             this.deleteBtn.Size = new System.Drawing.Size(109, 42);
             this.deleteBtn.TabIndex = 5;
@@ -234,7 +234,7 @@
             // button1
             // 
             this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.Location = new System.Drawing.Point(833, 672);
+            this.button1.Location = new System.Drawing.Point(1075, 745);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(109, 42);
             this.button1.TabIndex = 6;
@@ -244,9 +244,9 @@
             // 
             // guna2Separator2
             // 
-            this.guna2Separator2.Location = new System.Drawing.Point(0, 658);
+            this.guna2Separator2.Location = new System.Drawing.Point(0, 729);
             this.guna2Separator2.Name = "guna2Separator2";
-            this.guna2Separator2.Size = new System.Drawing.Size(960, 10);
+            this.guna2Separator2.Size = new System.Drawing.Size(1206, 10);
             this.guna2Separator2.TabIndex = 7;
             // 
             // QuanLiPhim
@@ -263,7 +263,7 @@
             this.Controls.Add(this.guna2Separator1);
             this.Controls.Add(this.guna2TextBox1);
             this.Name = "QuanLiPhim";
-            this.Size = new System.Drawing.Size(960, 726);
+            this.Size = new System.Drawing.Size(1206, 790);
             ((System.ComponentModel.ISupportInitialize)(this.danhsachphim)).EndInit();
             this.ResumeLayout(false);
 

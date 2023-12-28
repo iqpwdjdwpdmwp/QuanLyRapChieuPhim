@@ -259,30 +259,35 @@
             // staffbirth
             // 
             this.staffbirth.Checked = true;
+            this.staffbirth.CustomFormat = "dd/MM/yyyy";
             this.staffbirth.FillColor = System.Drawing.Color.White;
-            this.staffbirth.Font = new System.Drawing.Font("Segoe UI", 10.2F);
-            this.staffbirth.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.staffbirth.FocusedColor = System.Drawing.Color.White;
+            this.staffbirth.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.staffbirth.ForeColor = System.Drawing.Color.White;
+            this.staffbirth.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.staffbirth.Location = new System.Drawing.Point(703, 95);
             this.staffbirth.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.staffbirth.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.staffbirth.Name = "staffbirth";
             this.staffbirth.Size = new System.Drawing.Size(200, 48);
             this.staffbirth.TabIndex = 41;
-            this.staffbirth.Value = new System.DateTime(2023, 12, 11, 9, 9, 41, 515);
+            this.staffbirth.Value = new System.DateTime(2023, 12, 28, 0, 0, 0, 0);
             // 
             // daystart
             // 
             this.daystart.Checked = true;
+            this.daystart.CustomFormat = "dd/MM/yyyy";
             this.daystart.FillColor = System.Drawing.Color.White;
-            this.daystart.Font = new System.Drawing.Font("Segoe UI", 10.2F);
-            this.daystart.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.daystart.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.daystart.ForeColor = System.Drawing.Color.White;
+            this.daystart.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.daystart.Location = new System.Drawing.Point(703, 262);
             this.daystart.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.daystart.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.daystart.Name = "daystart";
             this.daystart.Size = new System.Drawing.Size(200, 48);
             this.daystart.TabIndex = 42;
-            this.daystart.Value = new System.DateTime(2023, 12, 11, 9, 9, 41, 515);
+            this.daystart.Value = new System.DateTime(2023, 12, 28, 0, 0, 0, 0);
             // 
             // checkAdmin
             // 
