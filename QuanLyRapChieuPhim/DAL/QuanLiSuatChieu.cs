@@ -17,7 +17,7 @@ namespace DAL
             string query = $"select * from suatchieu where IDPHONG = {idphong}";
             return DAL.DataProvider.ExecuteQuery(query);
         }
-        public static bool insertSuatChieu(int movieid, DateTime ngaychieu, int phongid, string giochieu)
+        public static bool insertSuatChieu(int movieid, string ngaychieu, int phongid, string giochieu)
         {
 
             string query = $"insert into suatchieu (IDPHIM,IDPHONG,NGAYCHIEU,THOIGIANCHIEU) values ({movieid},{phongid},'{ngaychieu}','{giochieu}')";

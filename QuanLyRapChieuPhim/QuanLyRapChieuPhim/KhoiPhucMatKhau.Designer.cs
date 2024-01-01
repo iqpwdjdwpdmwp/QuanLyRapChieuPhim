@@ -37,6 +37,7 @@
             this.tbOTP = new Guna.UI2.WinForms.Guna2TextBox();
             this.lbXacThucMK = new System.Windows.Forms.Label();
             this.tbXacThucMK = new Guna.UI2.WinForms.Guna2TextBox();
+            this.btThoat = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -188,12 +189,34 @@
             this.tbXacThucMK.Size = new System.Drawing.Size(341, 48);
             this.tbXacThucMK.TabIndex = 19;
             // 
+            // btThoat
+            // 
+            this.btThoat.CheckedState.FillColor = System.Drawing.Color.Red;
+            this.btThoat.CheckedState.Image = global::QuanLyRapChieuPhim.Properties.Resources.CancelNewIcon;
+            this.btThoat.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btThoat.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btThoat.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btThoat.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btThoat.FillColor = System.Drawing.Color.Empty;
+            this.btThoat.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.btThoat.ForeColor = System.Drawing.Color.White;
+            this.btThoat.HoverState.FillColor = System.Drawing.Color.Red;
+            this.btThoat.HoverState.Image = global::QuanLyRapChieuPhim.Properties.Resources.CancelNewIcon;
+            this.btThoat.Image = global::QuanLyRapChieuPhim.Properties.Resources.CancelIcon;
+            this.btThoat.ImageSize = new System.Drawing.Size(30, 30);
+            this.btThoat.Location = new System.Drawing.Point(1497, 0);
+            this.btThoat.Name = "btThoat";
+            this.btThoat.Size = new System.Drawing.Size(39, 33);
+            this.btThoat.TabIndex = 25;
+            this.btThoat.Click += new System.EventHandler(this.btThoat_Click);
+            // 
             // KhoiPhucMatKhau
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1535, 837);
+            this.Controls.Add(this.btThoat);
             this.Controls.Add(this.lbXacThucMK);
             this.Controls.Add(this.tbXacThucMK);
             this.Controls.Add(this.btHoanTat);
@@ -224,5 +247,6 @@
         private Guna.UI2.WinForms.Guna2TextBox tbOTP;
         private System.Windows.Forms.Label lbXacThucMK;
         private Guna.UI2.WinForms.Guna2TextBox tbXacThucMK;
+        private Guna.UI2.WinForms.Guna2Button btThoat;
     }
 }

@@ -34,9 +34,10 @@
             this.label2 = new System.Windows.Forms.Label();
             this.lbTaiKhoan = new System.Windows.Forms.Label();
             this.lbMatKhau = new System.Windows.Forms.Label();
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.btDangNhap = new Guna.UI2.WinForms.Guna2Button();
             this.lbQuenMatKhau = new System.Windows.Forms.Label();
+            this.btThoat = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -140,17 +141,6 @@
             this.lbMatKhau.TabIndex = 6;
             this.lbMatKhau.Text = "Mật khẩu";
             // 
-            // guna2PictureBox1
-            // 
-            this.guna2PictureBox1.Image = global::QuanLyRapChieuPhim.Properties.Resources.background;
-            this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(-2, -4);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(1026, 849);
-            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox1.TabIndex = 0;
-            this.guna2PictureBox1.TabStop = false;
-            // 
             // btDangNhap
             // 
             this.btDangNhap.AutoRoundedCorners = true;
@@ -181,12 +171,45 @@
             this.lbQuenMatKhau.Text = "Quên mật khẩu";
             this.lbQuenMatKhau.Click += new System.EventHandler(this.lbQuenMatKhau_Click);
             // 
+            // btThoat
+            // 
+            this.btThoat.CheckedState.FillColor = System.Drawing.Color.Red;
+            this.btThoat.CheckedState.Image = global::QuanLyRapChieuPhim.Properties.Resources.CancelNewIcon;
+            this.btThoat.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btThoat.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btThoat.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btThoat.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btThoat.FillColor = System.Drawing.Color.Empty;
+            this.btThoat.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.btThoat.ForeColor = System.Drawing.Color.White;
+            this.btThoat.HoverState.FillColor = System.Drawing.Color.Red;
+            this.btThoat.HoverState.Image = global::QuanLyRapChieuPhim.Properties.Resources.CancelNewIcon;
+            this.btThoat.Image = global::QuanLyRapChieuPhim.Properties.Resources.CancelIcon;
+            this.btThoat.ImageSize = new System.Drawing.Size(30, 30);
+            this.btThoat.Location = new System.Drawing.Point(1497, 0);
+            this.btThoat.Name = "btThoat";
+            this.btThoat.Size = new System.Drawing.Size(39, 33);
+            this.btThoat.TabIndex = 10;
+            this.btThoat.Click += new System.EventHandler(this.btThoat_Click);
+            // 
+            // guna2PictureBox1
+            // 
+            this.guna2PictureBox1.Image = global::QuanLyRapChieuPhim.Properties.Resources.background;
+            this.guna2PictureBox1.ImageRotate = 0F;
+            this.guna2PictureBox1.Location = new System.Drawing.Point(-2, -4);
+            this.guna2PictureBox1.Name = "guna2PictureBox1";
+            this.guna2PictureBox1.Size = new System.Drawing.Size(1026, 849);
+            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2PictureBox1.TabIndex = 0;
+            this.guna2PictureBox1.TabStop = false;
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1535, 837);
+            this.Controls.Add(this.btThoat);
             this.Controls.Add(this.lbQuenMatKhau);
             this.Controls.Add(this.btDangNhap);
             this.Controls.Add(this.lbMatKhau);
@@ -200,6 +223,7 @@
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Login_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -217,5 +241,6 @@
         private System.Windows.Forms.Label lbMatKhau;
         private Guna.UI2.WinForms.Guna2Button btDangNhap;
         private System.Windows.Forms.Label lbQuenMatKhau;
+        private Guna.UI2.WinForms.Guna2Button btThoat;
     }
 }

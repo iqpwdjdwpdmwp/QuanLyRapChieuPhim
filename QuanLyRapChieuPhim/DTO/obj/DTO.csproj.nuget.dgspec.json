@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\BEN\\source\\repos\\QuanLyRapChieuPhim\\QuanLyRapChieuPhim\\DTO\\DTO.csproj": {}
+    "D:\\c#\\DoAnLT\\QuanLyRapChieuPhim\\DTO\\DTO.csproj": {}
   },
   "projects": {
-    "C:\\Users\\BEN\\source\\repos\\QuanLyRapChieuPhim\\QuanLyRapChieuPhim\\DTO\\DTO.csproj": {
+    "D:\\c#\\DoAnLT\\QuanLyRapChieuPhim\\DTO\\DTO.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\BEN\\source\\repos\\QuanLyRapChieuPhim\\QuanLyRapChieuPhim\\DTO\\DTO.csproj",
+        "projectUniqueName": "D:\\c#\\DoAnLT\\QuanLyRapChieuPhim\\DTO\\DTO.csproj",
         "projectName": "DTO",
-        "projectPath": "C:\\Users\\BEN\\source\\repos\\QuanLyRapChieuPhim\\QuanLyRapChieuPhim\\DTO\\DTO.csproj",
-        "packagesPath": "C:\\Users\\BEN\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\BEN\\source\\repos\\QuanLyRapChieuPhim\\QuanLyRapChieuPhim\\DTO\\obj\\",
+        "projectPath": "D:\\c#\\DoAnLT\\QuanLyRapChieuPhim\\DTO\\DTO.csproj",
+        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
+        "outputPath": "D:\\c#\\DoAnLT\\QuanLyRapChieuPhim\\DTO\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\BEN\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -66,7 +66,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }
