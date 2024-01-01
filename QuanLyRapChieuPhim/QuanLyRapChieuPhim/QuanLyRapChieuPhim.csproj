@@ -123,6 +123,12 @@
     <Compile Include="SuaPhim.Designer.cs">
       <DependentUpon>SuaPhim.cs</DependentUpon>
     </Compile>
+    <Compile Include="SuaSP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SuaSP.Designer.cs">
+      <DependentUpon>SuaSP.cs</DependentUpon>
+    </Compile>
     <Compile Include="ThemNV.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -279,8 +285,14 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="SuaNV.resx">
+      <DependentUpon>SuaNV.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SuaPhim.resx">
       <DependentUpon>SuaPhim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SuaSP.resx">
+      <DependentUpon>SuaSP.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ThemNV.resx">
       <DependentUpon>ThemNV.cs</DependentUpon>
@@ -412,6 +424,23 @@
     <Content Include="obj\Debug\QuanLyRapChieuPhim.exe" />
     <Content Include="obj\Debug\QuanLyRapChieuPhim.pdb" />
     <Content Include="obj\Debug\TempPE\Properties.Resources.Designer.cs.dll" />
+    <None Include="Resources\InsertFileIcon.png" />
+    <None Include="Resources\SuatChieu.png" />
+    <None Include="Resources\SuatChieuNew.png" />
+    <None Include="Resources\Home.png" />
+    <None Include="Resources\HomeNew.png" />
+    <None Include="Resources\LogoutNew.png" />
+    <None Include="Resources\Logout.png" />
+    <None Include="Resources\HistoryNew.png" />
+    <None Include="Resources\History.png" />
+    <None Include="Resources\FoodNEw.png" />
+    <None Include="Resources\Food.png" />
+    <None Include="Resources\IconStaff.png" />
+    <None Include="Resources\StaffIcon.png" />
+    <None Include="Resources\movieNew.png" />
+    <None Include="Resources\movie.png" />
+    <None Include="Resources\CancelNewIcon.png" />
+    <None Include="Resources\CancelIcon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

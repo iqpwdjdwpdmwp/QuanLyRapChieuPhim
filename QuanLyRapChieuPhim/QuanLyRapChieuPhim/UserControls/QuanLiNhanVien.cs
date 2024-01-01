@@ -52,7 +52,7 @@ namespace QuanLyRapChieuPhim.UserControls
         private void btnAdd_Click(object sender, EventArgs e)
         {
             ThemNV newForm = new ThemNV();
-            newForm.Show();
+            newForm.ShowDialog();
         }
 
         private void danhsachnv_SelectionChanged(object sender, EventArgs e)
@@ -65,14 +65,21 @@ namespace QuanLyRapChieuPhim.UserControls
             }
         }
 
-        private void deleteBtn_Click(object sender, EventArgs e)
+
+        private void btEdit_Click(object sender, EventArgs e)
+        {
+            SuaNV newForm = new SuaNV(IDNV);
+            newForm.Show();
+        }
+
+        private void btXoa_Click(object sender, EventArgs e)
         {
             try
             {
                 bool data = DAL.QuanLiNhanVien.deleteNhanVien(IDNV);
                 //string img = phim.moviePic;
                 //File.Delete(img);
-                MessageBox.Show("Xóa nhân viên thành công");
+                MessageBox.Show("Xóa nhân viên thành công","Thông báo",MessageBoxButtons.OK,MessageBoxIcon.Information);
             }
             catch (Exception ex)
             {
@@ -80,15 +87,14 @@ namespace QuanLyRapChieuPhim.UserControls
             }
         }
 
-        private void editBtn_Click(object sender, EventArgs e)
-        {
-            SuaNV newForm = new SuaNV(IDNV);
-            newForm.Show();
-        }
-
-        private void refreshbtn_Click(object sender, EventArgs e)
+        private void btRefresh_Click(object sender, EventArgs e)
         {
             getAllStaff();
+        }
+
+        private void guna2TextBox2_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

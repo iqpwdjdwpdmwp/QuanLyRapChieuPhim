@@ -12,7 +12,7 @@ namespace DTO
         public string theloai { get; set; }
         public string quocgia { get; set; }
         public string moviePic { get; set; }
-        public int thoiluong { get; set; }
+        public string thoiluong { get; set; }
         
         public string namphathanh { get; set; }
         public string tacgia { get; set; }
@@ -26,7 +26,7 @@ namespace DTO
             theloai = string.Empty;
             quocgia = string.Empty;
             moviePic = string.Empty;
-            thoiluong = 0;
+            thoiluong = string.Empty;
         }
     }
 }

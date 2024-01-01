@@ -39,6 +39,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.totalquantity = new System.Windows.Forms.Label();
             this.totalprice = new System.Windows.Forms.Label();
+            this.btThoat = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -128,7 +129,7 @@
             // 
             this.flowLayoutPanel1.Location = new System.Drawing.Point(62, 131);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(711, 694);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(711, 726);
             this.flowLayoutPanel1.TabIndex = 2;
             // 
             // cart
@@ -199,11 +200,33 @@
             this.totalprice.TabIndex = 8;
             this.totalprice.Text = "0";
             // 
+            // btThoat
+            // 
+            this.btThoat.CheckedState.FillColor = System.Drawing.Color.Red;
+            this.btThoat.CheckedState.Image = global::QuanLyRapChieuPhim.Properties.Resources.CancelNewIcon;
+            this.btThoat.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btThoat.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btThoat.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btThoat.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btThoat.FillColor = System.Drawing.Color.Empty;
+            this.btThoat.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.btThoat.ForeColor = System.Drawing.Color.White;
+            this.btThoat.HoverState.FillColor = System.Drawing.Color.Red;
+            this.btThoat.HoverState.Image = global::QuanLyRapChieuPhim.Properties.Resources.CancelNewIcon;
+            this.btThoat.Image = global::QuanLyRapChieuPhim.Properties.Resources.CancelIcon;
+            this.btThoat.ImageSize = new System.Drawing.Size(30, 30);
+            this.btThoat.Location = new System.Drawing.Point(1245, 0);
+            this.btThoat.Name = "btThoat";
+            this.btThoat.Size = new System.Drawing.Size(42, 34);
+            this.btThoat.TabIndex = 12;
+            this.btThoat.Click += new System.EventHandler(this.btThoat_Click);
+            // 
             // DoAn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(232)))), ((int)(((byte)(237)))));
+            this.Controls.Add(this.btThoat);
             this.Controls.Add(this.totalprice);
             this.Controls.Add(this.totalquantity);
             this.Controls.Add(this.label2);
@@ -234,5 +257,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label totalquantity;
         private System.Windows.Forms.Label totalprice;
+        private Guna.UI2.WinForms.Guna2Button btThoat;
     }
 }

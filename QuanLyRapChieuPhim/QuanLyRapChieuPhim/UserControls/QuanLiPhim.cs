@@ -35,7 +35,7 @@ namespace QuanLyRapChieuPhim.UserControls
                 phim.theloai = row["THELOAI"].ToString();
                 phim.dangphim = row["DANGPHIM"].ToString();
                 phim.quocgia = row["QUOCGIA"].ToString();
-                phim.thoiluong = Convert.ToInt32(row["THOILUONG"]);
+                phim.thoiluong = row["THOILUONG"].ToString();
                 phim.tacgia = row["TACGIA"].ToString();
                 phim.mota = row["MOTA"].ToString();
                 phim.namphathanh = row["NAMPHATHANH"].ToString();
@@ -57,13 +57,7 @@ namespace QuanLyRapChieuPhim.UserControls
             newForm.Show();
         }
 
-        private void editBtn_Click(object sender, EventArgs e)
-        {
-            
-            
-            SuaPhim newForm = new SuaPhim(IDPHIM);
-            newForm.Show();
-        }
+       
 
         private void danhsachphim_SelectionChanged(object sender, EventArgs e)
         {
@@ -76,7 +70,15 @@ namespace QuanLyRapChieuPhim.UserControls
 
         }
 
-        private void deleteBtn_Click(object sender, EventArgs e)
+
+
+        private void btEdit_Click(object sender, EventArgs e)
+        {
+            SuaPhim newForm = new SuaPhim(IDPHIM);
+            newForm.Show();
+        }
+
+        private void btXoa_Click(object sender, EventArgs e)
         {
             try
             {
@@ -85,14 +87,14 @@ namespace QuanLyRapChieuPhim.UserControls
                 string img = imgPath;
                 File.Delete(img);
                 MessageBox.Show("Xóa phim thành công"); // Sai logic xóa phim cần tìm path theo ID
-            } catch (Exception ex)
+            }
+            catch (Exception ex)
             {
                 throw ex;
             }
-            
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btRefresh_Click(object sender, EventArgs e)
         {
             getAllMovie();
         }

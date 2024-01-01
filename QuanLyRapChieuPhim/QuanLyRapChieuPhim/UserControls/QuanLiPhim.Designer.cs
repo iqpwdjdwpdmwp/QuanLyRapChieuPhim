@@ -44,15 +44,17 @@
             this.quocgia = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.theloai = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.thoiluong = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.editBtn = new System.Windows.Forms.Button();
-            this.deleteBtn = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.guna2Separator2 = new Guna.UI2.WinForms.Guna2Separator();
+            this.btXoa = new Guna.UI2.WinForms.Guna2Button();
+            this.btEdit = new Guna.UI2.WinForms.Guna2Button();
+            this.btRefresh = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.danhsachphim)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2TextBox1
             // 
+            this.guna2TextBox1.AutoRoundedCorners = true;
+            this.guna2TextBox1.BorderColor = System.Drawing.Color.Black;
+            this.guna2TextBox1.BorderRadius = 23;
             this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.guna2TextBox1.DefaultText = "";
             this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -61,34 +63,38 @@
             this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2TextBox1.ForeColor = System.Drawing.Color.Black;
             this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Location = new System.Drawing.Point(15, 43);
+            this.guna2TextBox1.Location = new System.Drawing.Point(50, 20);
             this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.guna2TextBox1.Name = "guna2TextBox1";
             this.guna2TextBox1.PasswordChar = '\0';
-            this.guna2TextBox1.PlaceholderText = "";
+            this.guna2TextBox1.PlaceholderText = "Tìm kiếm ";
             this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.Size = new System.Drawing.Size(393, 48);
+            this.guna2TextBox1.Size = new System.Drawing.Size(347, 48);
             this.guna2TextBox1.TabIndex = 0;
             // 
             // guna2Separator1
             // 
-            this.guna2Separator1.Location = new System.Drawing.Point(0, 98);
+            this.guna2Separator1.FillColor = System.Drawing.Color.Black;
+            this.guna2Separator1.Location = new System.Drawing.Point(50, 92);
             this.guna2Separator1.Name = "guna2Separator1";
-            this.guna2Separator1.Size = new System.Drawing.Size(1206, 10);
+            this.guna2Separator1.Size = new System.Drawing.Size(1118, 10);
             this.guna2Separator1.TabIndex = 1;
             // 
             // guna2Button1
             // 
+            this.guna2Button1.BorderRadius = 10;
             this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(27)))), ((int)(((byte)(27)))));
+            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.Location = new System.Drawing.Point(460, 43);
+            this.guna2Button1.Location = new System.Drawing.Point(422, 20);
             this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(180, 49);
+            this.guna2Button1.Size = new System.Drawing.Size(163, 48);
             this.guna2Button1.TabIndex = 2;
             this.guna2Button1.Text = "Thêm";
             this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
@@ -97,6 +103,7 @@
             // 
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
             this.danhsachphim.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.danhsachphim.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -123,7 +130,7 @@
             dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.danhsachphim.DefaultCellStyle = dataGridViewCellStyle5;
             this.danhsachphim.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
-            this.danhsachphim.Location = new System.Drawing.Point(15, 125);
+            this.danhsachphim.Location = new System.Drawing.Point(50, 122);
             this.danhsachphim.Name = "danhsachphim";
             this.danhsachphim.RowHeadersVisible = false;
             this.danhsachphim.RowHeadersWidth = 51;
@@ -133,7 +140,7 @@
             dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
             this.danhsachphim.RowsDefaultCellStyle = dataGridViewCellStyle6;
             this.danhsachphim.RowTemplate.Height = 30;
-            this.danhsachphim.Size = new System.Drawing.Size(1188, 614);
+            this.danhsachphim.Size = new System.Drawing.Size(1118, 614);
             this.danhsachphim.TabIndex = 3;
             this.danhsachphim.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.danhsachphim.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -209,55 +216,65 @@
             this.thoiluong.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.thoiluong.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             // 
-            // editBtn
+            // btXoa
             // 
-            this.editBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.editBtn.Location = new System.Drawing.Point(802, 745);
-            this.editBtn.Name = "editBtn";
-            this.editBtn.Size = new System.Drawing.Size(109, 42);
-            this.editBtn.TabIndex = 4;
-            this.editBtn.Text = "Sửa";
-            this.editBtn.UseVisualStyleBackColor = true;
-            this.editBtn.Click += new System.EventHandler(this.editBtn_Click);
+            this.btXoa.BorderRadius = 10;
+            this.btXoa.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btXoa.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btXoa.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btXoa.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btXoa.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(27)))), ((int)(((byte)(27)))));
+            this.btXoa.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.btXoa.ForeColor = System.Drawing.Color.White;
+            this.btXoa.Location = new System.Drawing.Point(812, 20);
+            this.btXoa.Name = "btXoa";
+            this.btXoa.Size = new System.Drawing.Size(163, 48);
+            this.btXoa.TabIndex = 7;
+            this.btXoa.Text = "Xóa";
+            this.btXoa.Click += new System.EventHandler(this.btXoa_Click);
             // 
-            // deleteBtn
+            // btEdit
             // 
-            this.deleteBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.deleteBtn.Location = new System.Drawing.Point(940, 745);
-            this.deleteBtn.Name = "deleteBtn";
-            this.deleteBtn.Size = new System.Drawing.Size(109, 42);
-            this.deleteBtn.TabIndex = 5;
-            this.deleteBtn.Text = "Xóa";
-            this.deleteBtn.UseVisualStyleBackColor = true;
-            this.deleteBtn.Click += new System.EventHandler(this.deleteBtn_Click);
+            this.btEdit.BorderRadius = 10;
+            this.btEdit.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btEdit.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btEdit.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btEdit.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btEdit.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(27)))), ((int)(((byte)(27)))));
+            this.btEdit.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.btEdit.ForeColor = System.Drawing.Color.White;
+            this.btEdit.Location = new System.Drawing.Point(618, 20);
+            this.btEdit.Name = "btEdit";
+            this.btEdit.Size = new System.Drawing.Size(163, 48);
+            this.btEdit.TabIndex = 8;
+            this.btEdit.Text = "Sửa";
+            this.btEdit.Click += new System.EventHandler(this.btEdit_Click);
             // 
-            // button1
+            // btRefresh
             // 
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.Location = new System.Drawing.Point(1075, 745);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(109, 42);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Refresh";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // guna2Separator2
-            // 
-            this.guna2Separator2.Location = new System.Drawing.Point(0, 729);
-            this.guna2Separator2.Name = "guna2Separator2";
-            this.guna2Separator2.Size = new System.Drawing.Size(1206, 10);
-            this.guna2Separator2.TabIndex = 7;
+            this.btRefresh.BorderRadius = 10;
+            this.btRefresh.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btRefresh.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btRefresh.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btRefresh.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btRefresh.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(27)))), ((int)(((byte)(27)))));
+            this.btRefresh.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.btRefresh.ForeColor = System.Drawing.Color.White;
+            this.btRefresh.Location = new System.Drawing.Point(1005, 20);
+            this.btRefresh.Name = "btRefresh";
+            this.btRefresh.Size = new System.Drawing.Size(163, 48);
+            this.btRefresh.TabIndex = 9;
+            this.btRefresh.Text = "Refresh";
+            this.btRefresh.Click += new System.EventHandler(this.btRefresh_Click);
             // 
             // QuanLiPhim
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.guna2Separator2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.deleteBtn);
-            this.Controls.Add(this.editBtn);
+            this.Controls.Add(this.btRefresh);
+            this.Controls.Add(this.btEdit);
+            this.Controls.Add(this.btXoa);
             this.Controls.Add(this.danhsachphim);
             this.Controls.Add(this.guna2Button1);
             this.Controls.Add(this.guna2Separator1);
@@ -275,15 +292,14 @@
         private Guna.UI2.WinForms.Guna2Separator guna2Separator1;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private Guna.UI2.WinForms.Guna2DataGridView danhsachphim;
-        private System.Windows.Forms.Button editBtn;
-        private System.Windows.Forms.Button deleteBtn;
         private System.Windows.Forms.DataGridViewTextBoxColumn idphim;
         private System.Windows.Forms.DataGridViewTextBoxColumn tenphim;
         private System.Windows.Forms.DataGridViewTextBoxColumn loaiphim;
         private System.Windows.Forms.DataGridViewTextBoxColumn quocgia;
         private System.Windows.Forms.DataGridViewTextBoxColumn theloai;
         private System.Windows.Forms.DataGridViewTextBoxColumn thoiluong;
-        private System.Windows.Forms.Button button1;
-        private Guna.UI2.WinForms.Guna2Separator guna2Separator2;
+        private Guna.UI2.WinForms.Guna2Button btXoa;
+        private Guna.UI2.WinForms.Guna2Button btEdit;
+        private Guna.UI2.WinForms.Guna2Button btRefresh;
     }
 }

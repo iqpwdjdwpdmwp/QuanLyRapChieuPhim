@@ -146,8 +146,10 @@ namespace QuanLyRapChieuPhim
             {
                 smtp.Send(mail);
                 MessageBox.Show("Email sent successfully", "Email", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                this.Hide();
                 KhoiPhucMatKhau formKhoiPhucMatKhau = new KhoiPhucMatKhau(otp.ToString(), tbTaiKhoan.Text);
                 formKhoiPhucMatKhau.ShowDialog();
+                this.Close();
                 tbTaiKhoan.Text = tbEmail.Text = "";
 
             }
@@ -157,6 +159,11 @@ namespace QuanLyRapChieuPhim
 
             }
             Close();
+        }
+
+        private void btThoat_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
