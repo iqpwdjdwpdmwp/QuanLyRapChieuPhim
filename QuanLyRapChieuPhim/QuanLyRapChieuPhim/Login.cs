@@ -13,7 +13,7 @@ namespace QuanLyRapChieuPhim
 {
     public partial class Login : Form
     {
-        string SqlConnection = @"Data Source=MSI;Initial Catalog=test123;Integrated Security=True";
+        string SqlConnection = @"Data Source=LAPTOP-VHDOE6SK\SQLEXPRESS;Initial Catalog=test123;Integrated Security=True";
         SqlConnection sqlCon = null;
         public Login()
         {
@@ -67,14 +67,16 @@ namespace QuanLyRapChieuPhim
                         NhanVien nv = new NhanVien(IDNV);
                         this.Hide();
                         nv.ShowDialog();
-                        this.Close();
+                        tbMatKhau.Text = tbTaiKhoan.Text = "";
+                        this.Show();
                     }
                     if (reader.GetInt32(3) == 0)
                     {
                         Admin admin = new Admin();
                         this.Hide();
                         admin.ShowDialog();
-                        this.Close();
+                        tbMatKhau.Text = tbTaiKhoan.Text = "";
+                        this.Show();
                     }
                 }
                 if (!flag)
@@ -95,8 +97,24 @@ namespace QuanLyRapChieuPhim
 
         private void lbQuenMatKhau_Click(object sender, EventArgs e)
         {
+            this.Hide();
             XacThucTaiKhoan xacThucTaiKhoan = new XacThucTaiKhoan();
             xacThucTaiKhoan.ShowDialog();
+            this.Show();
+        }
+
+        private void btThoat_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void Login_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Do you want to exit the application?", "Notification", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.No)
+            {
+                e.Cancel = true;
+            }
         }
     }
 }

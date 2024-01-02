@@ -63,35 +63,5 @@ namespace QuanLyRapChieuPhim.UserControls
         {
 
         }
-
-        
-
-        private void find_Click(object sender, EventArgs e)
-        {
-            string theloai = danhsachtheloai.SelectedItem.ToString();
-            string quocgia = danhsachquocgia.SelectedItem.ToString();
-            string date = datefinding.Value.ToString();
-            int thoiluong = 0;
-            //int thoiluong = Convert.ToInt32(danhsachthoiluong.SelectedItem);
-            switch (danhsachthoiluong.SelectedItem.ToString())
-            {
-                case "Dưới 1 tiếng":
-                    thoiluong = 60;
-                    break;
-                case "Dưới 2 tiếng":
-                    thoiluong = 120;
-                    break;
-                case "Dưới 3 tiếng":
-                    thoiluong = 180;
-                    break;
-                case "Dưới 4 tiếng":
-                    thoiluong = 240;
-                    break;
-                default:
-                    break;
-            }
-            DataTable data = DAL.PhimDangChieu.getPhimTheoPhanLoai(theloai, quocgia, thoiluong, date);
-            LoadPhim(data);
-        }
     }
 }

@@ -43,7 +43,8 @@ namespace QuanLyRapChieuPhim
             int phongChieu = -1;
             foreach(DataRow row in data.Rows)
             {
-                ngayChieu = Convert.ToDateTime(row["NGAYCHIEU"]).ToString("dd/MM/yyyy");
+                // ngayChieu = Convert.ToDateTime(row["NGAYCHIEU"]).ToString("dd/MM/yyyy");
+                ngayChieu = row["NGAYCHIEU"].ToString();
                 phongChieu = Convert.ToInt32(row["IDPHONG"]);
             }
             tenphim.Text = name;
@@ -53,7 +54,7 @@ namespace QuanLyRapChieuPhim
         public void loadSeat()
         {
             flpSeats.Controls.Clear();
-            var ID = DAL.DataProvider.ExecuteScalar($"select IDSUATCHIEU from SUATCHIEU where THOIGIANCHIEU = '{gioChieu}' and NGAYCHIEU = '{(Convert.ToDateTime(ngayChieu)).ToString()}'");
+            var ID = DAL.DataProvider.ExecuteScalar($"select IDSUATCHIEU from SUATCHIEU where THOIGIANCHIEU = '{gioChieu}' and NGAYCHIEU = '{(Convert.ToDateTime(ngayChieu)).ToString("yyyy/dd/MM")}'");
             IDSuatChieu = Convert.ToInt32(ID);
             DataTable data = DAL.Seat.getAllSeats(Convert.ToInt32(ID));
             //if (data.Rows.Count == 0)

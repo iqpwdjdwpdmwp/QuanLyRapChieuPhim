@@ -34,7 +34,7 @@ namespace QuanLyRapChieuPhim
             }
         }
 
-        private void submit_Click(object sender, EventArgs e)
+        private void guna2Button1_Click(object sender, EventArgs e)
         {
             string path = Path.Combine(appPath, moviename.Text + ".jpg");
             Image img = moviepicture.Image;
@@ -45,6 +45,15 @@ namespace QuanLyRapChieuPhim
             QuanLiPhim quanLiPhim = new QuanLiPhim();
             quanLiPhim.insertMovie(moviename.Text, movietype.Text, moviegenre.Text, moviecountry.Text, path, movieduration.Text, mota.Text, tacgia.Text, namphathanh.Text);
             img.Save(path);
+        }
+
+        private void btThoat_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Do you want to cancel?", "Notification", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
+            {
+                this.Close();
+            }
         }
     }
 }

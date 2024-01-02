@@ -82,6 +82,13 @@ namespace QuanLyRapChieuPhim
             }
         }
 
-        
+        private void btThoat_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Do you want to cancel?", "Notification", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
+            {
+                this.Close();
+            }
+        }
     }
 }

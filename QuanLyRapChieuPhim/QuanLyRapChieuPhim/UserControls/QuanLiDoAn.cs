@@ -82,5 +82,16 @@ namespace QuanLyRapChieuPhim.UserControls
                 guna2PictureBox1.Image = Image.FromFile(open.FileName);
             }
         }
+
+        private void danhsachtheloai_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+            SuaSP sp = new SuaSP();
+            sp.ShowDialog();
+        }
     }
 }

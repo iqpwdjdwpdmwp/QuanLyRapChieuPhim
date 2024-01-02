@@ -37,6 +37,7 @@
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.btThoat = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.guna2Panel1.SuspendLayout();
             this.SuspendLayout();
@@ -117,11 +118,33 @@
             this.guna2Panel1.Size = new System.Drawing.Size(763, 616);
             this.guna2Panel1.TabIndex = 5;
             // 
+            // btThoat
+            // 
+            this.btThoat.CheckedState.FillColor = System.Drawing.Color.Red;
+            this.btThoat.CheckedState.Image = global::QuanLyRapChieuPhim.Properties.Resources.CancelNewIcon;
+            this.btThoat.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btThoat.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btThoat.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btThoat.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btThoat.FillColor = System.Drawing.Color.Empty;
+            this.btThoat.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.btThoat.ForeColor = System.Drawing.Color.White;
+            this.btThoat.HoverState.FillColor = System.Drawing.Color.Red;
+            this.btThoat.HoverState.Image = global::QuanLyRapChieuPhim.Properties.Resources.CancelNewIcon;
+            this.btThoat.Image = global::QuanLyRapChieuPhim.Properties.Resources.CancelNewIcon;
+            this.btThoat.ImageSize = new System.Drawing.Size(30, 30);
+            this.btThoat.Location = new System.Drawing.Point(1251, 0);
+            this.btThoat.Name = "btThoat";
+            this.btThoat.Size = new System.Drawing.Size(42, 34);
+            this.btThoat.TabIndex = 13;
+            this.btThoat.Click += new System.EventHandler(this.btThoat_Click);
+            // 
             // NV_Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(20)))), ((int)(((byte)(40)))));
+            this.Controls.Add(this.btThoat);
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -145,5 +168,6 @@
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
+        private Guna.UI2.WinForms.Guna2Button btThoat;
     }
 }

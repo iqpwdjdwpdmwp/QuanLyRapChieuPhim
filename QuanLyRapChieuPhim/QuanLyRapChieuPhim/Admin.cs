@@ -20,15 +20,6 @@ namespace QuanLyRapChieuPhim
             panel2.Controls.Clear();
             panel2.Controls.Add(newForm);
         }
-
-
-
-        
-
-        
-
-        
-
         private void button2_Click_1(object sender, EventArgs e)
         {
             QuanLiPhim newForm = new QuanLiPhim();
@@ -73,10 +64,16 @@ namespace QuanLyRapChieuPhim
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            Login newForm = new Login();
-            newForm.ShowDialog();
-            this.Close();
+            DialogResult result = MessageBox.Show("Do you want to log out?", "Notification", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
+            {
+                this.Close();
+            }
+        }
+
+        private void btThoat_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
 
         private void guna2Button2_Click(object sender, EventArgs e)

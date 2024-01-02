@@ -7,7 +7,7 @@ namespace DAL
 {
     public class DataProvider
     {
-        private static string conStr = "Data Source=MSI;Initial Catalog=test123;Integrated Security=True";
+        private static string conStr = "Data Source=LAPTOP-VHDOE6SK\\SQLEXPRESS;Initial Catalog=test123;Integrated Security=True";
         
         public static DataTable ExecuteQuery(string query)
         {

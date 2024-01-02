@@ -33,7 +33,8 @@ namespace QuanLyRapChieuPhim.UserControls
             foreach(DataRow row in data.Rows)
             {
                 newSuatChieu.MovieID = Convert.ToInt32(row["IDPHIM"]);
-                newSuatChieu.NgayChieu = Convert.ToDateTime(row["NGAYCHIEU"]);
+                //  newSuatChieu.NgayChieu = Convert.ToDateTime(row["NGAYCHIEU"]);
+                newSuatChieu.NgayChieu = row["NGAYCHIEU"].ToString();
                 newSuatChieu.PhongId = Convert.ToInt32(row["IDPHONG"]);
                 newSuatChieu.GioChieu = row["THOIGIANCHIEU"].ToString();
 
@@ -42,7 +43,8 @@ namespace QuanLyRapChieuPhim.UserControls
                 {
                     movieName.ToString(),
                     newSuatChieu.PhongId,
-                    newSuatChieu.NgayChieu.ToString("dd/MM/yyyy"),
+                   // newSuatChieu.NgayChieu.ToString("dd/MM/yyyy"),
+                   newSuatChieu.NgayChieu,
                     newSuatChieu.GioChieu,
                 });
             }
@@ -59,45 +61,55 @@ namespace QuanLyRapChieuPhim.UserControls
         }
 
 
-        private void phong1_Click(object sender, EventArgs e)
+       
+
+        
+
+        
+
+       
+
+       
+
+        private void refresh_Click(object sender, EventArgs e)
+        {
+            SuatChieu newSuatChieu = new SuatChieu();
+            data = DAL.QuanLiSuatChieu.getAllSuatChieu();
+            getSuatChieuTheoPhong(newSuatChieu, data);
+        }
+
+        private void btAll_Click(object sender, EventArgs e)
+        {
+            SuatChieu newSuatChieu = new SuatChieu();
+            data = DAL.QuanLiSuatChieu.getAllSuatChieu();
+            getSuatChieuTheoPhong(newSuatChieu, data);
+        }
+
+        private void btPhong1_Click(object sender, EventArgs e)
         {
             SuatChieu newSuatChieu = new SuatChieu();
             data = DAL.QuanLiSuatChieu.getSuatChieu(1);
             getSuatChieuTheoPhong(newSuatChieu, data);
         }
 
-        private void tatca_Click(object sender, EventArgs e)
-        {
-            SuatChieu newSuatChieu = new SuatChieu();
-            data = DAL.QuanLiSuatChieu.getAllSuatChieu();
-            getSuatChieuTheoPhong(newSuatChieu,data);
-        }
-
-        private void phong2_Click(object sender, EventArgs e)
+        private void btPhong2_Click(object sender, EventArgs e)
         {
             SuatChieu newSuatChieu = new SuatChieu();
             data = DAL.QuanLiSuatChieu.getSuatChieu(2);
             getSuatChieuTheoPhong(newSuatChieu, data);
         }
 
-        private void phong3_Click(object sender, EventArgs e)
+        private void btPhong3_Click(object sender, EventArgs e)
         {
             SuatChieu newSuatChieu = new SuatChieu();
             data = DAL.QuanLiSuatChieu.getSuatChieu(3);
             getSuatChieuTheoPhong(newSuatChieu, data);
         }
 
-        private void phong4_Click(object sender, EventArgs e)
+        private void btPhong4_Click(object sender, EventArgs e)
         {
             SuatChieu newSuatChieu = new SuatChieu();
             data = DAL.QuanLiSuatChieu.getSuatChieu(4);
-            getSuatChieuTheoPhong(newSuatChieu, data);
-        }
-
-        private void refresh_Click(object sender, EventArgs e)
-        {
-            SuatChieu newSuatChieu = new SuatChieu();
-            data = DAL.QuanLiSuatChieu.getAllSuatChieu();
             getSuatChieuTheoPhong(newSuatChieu, data);
         }
     }

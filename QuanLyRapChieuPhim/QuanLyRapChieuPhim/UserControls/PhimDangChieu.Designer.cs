@@ -39,7 +39,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.danhsachquocgia = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.find = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -65,13 +64,12 @@
             // 
             this.danhsachtheloai.AutoRoundedCorners = true;
             this.danhsachtheloai.BackColor = System.Drawing.Color.Transparent;
-            this.danhsachtheloai.BorderRadius = 17;
             this.danhsachtheloai.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.danhsachtheloai.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.danhsachtheloai.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.danhsachtheloai.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.danhsachtheloai.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.danhsachtheloai.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.danhsachtheloai.ForeColor = System.Drawing.Color.Black;
             this.danhsachtheloai.ItemHeight = 30;
             this.danhsachtheloai.Items.AddRange(new object[] {
             "Tất cả",
@@ -101,7 +99,6 @@
             // guna2Panel1
             // 
             this.guna2Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(20)))), ((int)(((byte)(40)))));
-            this.guna2Panel1.Controls.Add(this.find);
             this.guna2Panel1.Controls.Add(this.datefinding);
             this.guna2Panel1.Controls.Add(this.label4);
             this.guna2Panel1.Controls.Add(this.danhsachthoiluong);
@@ -123,11 +120,11 @@
             this.datefinding.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.datefinding.ForeColor = System.Drawing.Color.White;
             this.datefinding.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.datefinding.Location = new System.Drawing.Point(216, 43);
+            this.datefinding.Location = new System.Drawing.Point(302, 38);
             this.datefinding.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.datefinding.MinDate = new System.DateTime(2023, 12, 30, 0, 0, 0, 0);
             this.datefinding.Name = "datefinding";
-            this.datefinding.Size = new System.Drawing.Size(270, 36);
+            this.datefinding.Size = new System.Drawing.Size(229, 36);
             this.datefinding.TabIndex = 9;
             this.datefinding.Value = new System.DateTime(2023, 12, 30, 0, 0, 0, 0);
             this.datefinding.ValueChanged += new System.EventHandler(this.datefinding_ValueChanged);
@@ -145,17 +142,15 @@
             // 
             // danhsachthoiluong
             // 
-            this.danhsachthoiluong.AutoRoundedCorners = true;
-            this.danhsachthoiluong.BackColor = System.Drawing.Color.Transparent;
-            this.danhsachthoiluong.BorderRadius = 17;
-            this.danhsachthoiluong.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.danhsachthoiluong.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.danhsachthoiluong.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.danhsachthoiluong.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.danhsachthoiluong.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.danhsachthoiluong.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.danhsachthoiluong.ItemHeight = 30;
-            this.danhsachthoiluong.Items.AddRange(new object[] {
+            this.guna2ComboBox2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ComboBox2.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.guna2ComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.guna2ComboBox2.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2ComboBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2ComboBox2.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.guna2ComboBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.guna2ComboBox2.ItemHeight = 30;
+            this.guna2ComboBox2.Items.AddRange(new object[] {
             "Tất cả",
             "Dưới 1 tiếng",
             "Dưới 2 tiếng",
@@ -179,17 +174,15 @@
             // 
             // danhsachquocgia
             // 
-            this.danhsachquocgia.AutoRoundedCorners = true;
-            this.danhsachquocgia.BackColor = System.Drawing.Color.Transparent;
-            this.danhsachquocgia.BorderRadius = 17;
-            this.danhsachquocgia.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.danhsachquocgia.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.danhsachquocgia.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.danhsachquocgia.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.danhsachquocgia.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.danhsachquocgia.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.danhsachquocgia.ItemHeight = 30;
-            this.danhsachquocgia.Items.AddRange(new object[] {
+            this.guna2ComboBox1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.guna2ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.guna2ComboBox1.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2ComboBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2ComboBox1.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.guna2ComboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.guna2ComboBox1.ItemHeight = 30;
+            this.guna2ComboBox1.Items.AddRange(new object[] {
             "Tất cả",
             "Mỹ",
             "Hàn Quốc",
@@ -210,25 +203,6 @@
             this.label2.Size = new System.Drawing.Size(60, 18);
             this.label2.TabIndex = 4;
             this.label2.Text = "Thể loại";
-            // 
-            // find
-            // 
-            this.find.AutoRoundedCorners = true;
-            this.find.BorderRadius = 23;
-            this.find.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.find.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.find.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.find.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.find.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.find.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(136)))), ((int)(((byte)(77)))));
-            this.find.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.find.ForeColor = System.Drawing.Color.White;
-            this.find.Location = new System.Drawing.Point(1140, 33);
-            this.find.Name = "find";
-            this.find.Size = new System.Drawing.Size(134, 48);
-            this.find.TabIndex = 10;
-            this.find.Text = "Tìm kiếm";
-            this.find.Click += new System.EventHandler(this.find_Click);
             // 
             // PhimDangChieu
             // 
@@ -260,6 +234,5 @@
         private Guna.UI2.WinForms.Guna2ComboBox danhsachquocgia;
         private System.Windows.Forms.Label label2;
         private Guna.UI2.WinForms.Guna2DateTimePicker datefinding;
-        private Guna.UI2.WinForms.Guna2Button find;
     }
 }

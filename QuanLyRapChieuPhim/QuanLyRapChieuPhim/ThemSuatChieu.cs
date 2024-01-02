@@ -40,20 +40,20 @@ namespace QuanLyRapChieuPhim
             comboBoxHour.Items.Add($"{lastHour}:00");
         }
 
-        private void guna2Button1_Click(object sender, EventArgs e)
+        private void btHoanTat_Click(object sender, EventArgs e)
         {
             List<string> list = new List<string>();
             SuatChieu newSuatChieu = new SuatChieu();
             string query = $"select * from PHIM where TENPHIM = N'{comboBoxFilm.GetItemText(comboBoxFilm.SelectedItem)}'";
             newSuatChieu.MovieID = Convert.ToInt32(DAL.DataProvider.ExecuteScalar(query));
 
-            newSuatChieu.NgayChieu = ngaychieupicker.Value.Date;
+            newSuatChieu.NgayChieu = ngaychieupicker.Value.Date.ToString();
             newSuatChieu.GioChieu = comboBoxHour.GetItemText(comboBoxHour.SelectedItem);
             newSuatChieu.PhongId = Convert.ToInt32(phongchieu.Text);
             query = $"select top 1 THOIGIANCHIEU from SUATCHIEU where NGAYCHIEU = '{newSuatChieu.NgayChieu}' and THOIGIANCHIEU <= '{newSuatChieu.GioChieu}' and IDPHONG = {newSuatChieu.PhongId} ORDER BY THOIGIANCHIEU DESC";
             DataTable temp = DAL.DataProvider.ExecuteQuery(query);
 
-            if(temp.Rows.Count > 0)
+            if (temp.Rows.Count > 0)
             {
                 
                 string suatChieuGanNhatVoiSuatChieuDuocChon = temp.Rows[0]["THOIGIANCHIEU"].ToString();
@@ -95,7 +95,7 @@ namespace QuanLyRapChieuPhim
             }
             else
             {
-            MessageBox.Show(newSuatChieu.NgayChieu.ToString());
+                MessageBox.Show(newSuatChieu.NgayChieu.ToString());
                 bool data = DAL.QuanLiSuatChieu.insertSuatChieu(newSuatChieu.MovieID, newSuatChieu.NgayChieu, newSuatChieu.PhongId, newSuatChieu.GioChieu);
                 if (data == true)
                 {
@@ -106,11 +106,15 @@ namespace QuanLyRapChieuPhim
                     throw new Exception("Đã có lỗi xảy ra");
                 }
             }
-            
+        }
 
-
-
-
+        private void btHuyBo_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Do you want to cancel?", "Notification", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
+            {
+                this.Close();
+            }
         }
     }
 }

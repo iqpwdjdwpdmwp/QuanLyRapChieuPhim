@@ -58,13 +58,17 @@
             // 
             // guna2Separator1
             // 
-            this.guna2Separator1.Location = new System.Drawing.Point(0, 121);
+            this.guna2Separator1.FillColor = System.Drawing.Color.Gray;
+            this.guna2Separator1.FillThickness = 2;
+            this.guna2Separator1.Location = new System.Drawing.Point(15, 90);
             this.guna2Separator1.Name = "guna2Separator1";
-            this.guna2Separator1.Size = new System.Drawing.Size(1206, 10);
+            this.guna2Separator1.Size = new System.Drawing.Size(1171, 10);
             this.guna2Separator1.TabIndex = 8;
             // 
             // productfinding
             // 
+            this.productfinding.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.productfinding.BorderRadius = 10;
             this.productfinding.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.productfinding.DefaultText = "";
             this.productfinding.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -73,28 +77,29 @@
             this.productfinding.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.productfinding.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.productfinding.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.productfinding.ForeColor = System.Drawing.Color.Black;
             this.productfinding.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.productfinding.Location = new System.Drawing.Point(15, 66);
+            this.productfinding.Location = new System.Drawing.Point(15, 28);
             this.productfinding.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.productfinding.Name = "productfinding";
             this.productfinding.PasswordChar = '\0';
-            this.productfinding.PlaceholderText = "Tìm tên sản phẩm...";
+            this.productfinding.PlaceholderText = "Tìm tên sản phẩm";
             this.productfinding.SelectedText = "";
-            this.productfinding.Size = new System.Drawing.Size(170, 48);
+            this.productfinding.Size = new System.Drawing.Size(187, 48);
             this.productfinding.TabIndex = 7;
             // 
             // logs
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.logs.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Gray;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.logs.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
+            this.logs.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.Gray;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.logs.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.logs.ColumnHeadersHeight = 40;
             this.logs.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.logs.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -115,7 +120,7 @@
             dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.logs.DefaultCellStyle = dataGridViewCellStyle5;
             this.logs.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
-            this.logs.Location = new System.Drawing.Point(15, 137);
+            this.logs.Location = new System.Drawing.Point(15, 129);
             this.logs.Name = "logs";
             this.logs.RowHeadersVisible = false;
             this.logs.RowHeadersWidth = 51;
@@ -125,7 +130,7 @@
             dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
             this.logs.RowsDefaultCellStyle = dataGridViewCellStyle6;
             this.logs.RowTemplate.Height = 30;
-            this.logs.Size = new System.Drawing.Size(1171, 626);
+            this.logs.Size = new System.Drawing.Size(1171, 605);
             this.logs.TabIndex = 10;
             this.logs.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.logs.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -217,6 +222,8 @@
             // 
             // empfinding
             // 
+            this.empfinding.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.empfinding.BorderRadius = 10;
             this.empfinding.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.empfinding.DefaultText = "";
             this.empfinding.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -225,18 +232,21 @@
             this.empfinding.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.empfinding.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.empfinding.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.empfinding.ForeColor = System.Drawing.Color.Black;
             this.empfinding.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.empfinding.Location = new System.Drawing.Point(207, 66);
+            this.empfinding.Location = new System.Drawing.Point(211, 66);
             this.empfinding.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.empfinding.Name = "empfinding";
             this.empfinding.PasswordChar = '\0';
-            this.empfinding.PlaceholderText = "IDNV";
+            this.empfinding.PlaceholderText = "Tìm theo mã nhân viên...";
             this.empfinding.SelectedText = "";
-            this.empfinding.Size = new System.Drawing.Size(68, 48);
+            this.empfinding.Size = new System.Drawing.Size(190, 48);
             this.empfinding.TabIndex = 11;
             // 
             // guestfinding
             // 
+            this.guestfinding.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.guestfinding.BorderRadius = 10;
             this.guestfinding.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.guestfinding.DefaultText = "";
             this.guestfinding.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -245,14 +255,15 @@
             this.guestfinding.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.guestfinding.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guestfinding.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guestfinding.ForeColor = System.Drawing.Color.Black;
             this.guestfinding.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guestfinding.Location = new System.Drawing.Point(302, 66);
+            this.guestfinding.Location = new System.Drawing.Point(428, 66);
             this.guestfinding.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.guestfinding.Name = "guestfinding";
             this.guestfinding.PasswordChar = '\0';
-            this.guestfinding.PlaceholderText = "IDKH";
+            this.guestfinding.PlaceholderText = "Tìm theo mã khách hàng...";
             this.guestfinding.SelectedText = "";
-            this.guestfinding.Size = new System.Drawing.Size(75, 48);
+            this.guestfinding.Size = new System.Drawing.Size(200, 48);
             this.guestfinding.TabIndex = 12;
             // 
             // from
@@ -262,11 +273,11 @@
             this.from.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.from.ForeColor = System.Drawing.Color.White;
             this.from.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.from.Location = new System.Drawing.Point(483, 66);
+            this.from.Location = new System.Drawing.Point(721, 66);
             this.from.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.from.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.from.Name = "from";
-            this.from.Size = new System.Drawing.Size(152, 48);
+            this.from.Size = new System.Drawing.Size(179, 48);
             this.from.TabIndex = 42;
             this.from.Value = new System.DateTime(2023, 12, 27, 0, 0, 0, 0);
             // 
@@ -277,29 +288,29 @@
             this.to.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.to.ForeColor = System.Drawing.Color.White;
             this.to.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.to.Location = new System.Drawing.Point(746, 66);
+            this.to.Location = new System.Drawing.Point(984, 66);
             this.to.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.to.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.to.Name = "to";
-            this.to.Size = new System.Drawing.Size(152, 48);
+            this.to.Size = new System.Drawing.Size(179, 48);
             this.to.TabIndex = 43;
             this.to.Value = new System.DateTime(2023, 12, 27, 0, 0, 0, 0);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(413, 82);
+            this.label1.Location = new System.Drawing.Point(651, 82);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(56, 16);
+            this.label1.Size = new System.Drawing.Size(62, 20);
             this.label1.TabIndex = 44;
             this.label1.Text = "Từ ngày";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(668, 82);
+            this.label2.Location = new System.Drawing.Point(906, 82);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(64, 16);
+            this.label2.Size = new System.Drawing.Size(72, 20);
             this.label2.TabIndex = 45;
             this.label2.Text = "Đến ngày";
             // 
