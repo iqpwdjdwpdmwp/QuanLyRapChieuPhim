@@ -142,15 +142,15 @@
             // 
             // danhsachthoiluong
             // 
-            this.guna2ComboBox2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ComboBox2.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.guna2ComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.guna2ComboBox2.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox2.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.guna2ComboBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.guna2ComboBox2.ItemHeight = 30;
-            this.guna2ComboBox2.Items.AddRange(new object[] {
+            this.danhsachthoiluong.BackColor = System.Drawing.Color.Transparent;
+            this.danhsachthoiluong.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.danhsachthoiluong.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.danhsachthoiluong.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.danhsachthoiluong.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.danhsachthoiluong.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.danhsachthoiluong.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.danhsachthoiluong.ItemHeight = 30;
+            this.danhsachthoiluong.Items.AddRange(new object[] {
             "Tất cả",
             "Dưới 1 tiếng",
             "Dưới 2 tiếng",
@@ -174,15 +174,15 @@
             // 
             // danhsachquocgia
             // 
-            this.guna2ComboBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.guna2ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.guna2ComboBox1.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox1.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.guna2ComboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.guna2ComboBox1.ItemHeight = 30;
-            this.guna2ComboBox1.Items.AddRange(new object[] {
+            this.danhsachquocgia.BackColor = System.Drawing.Color.Transparent;
+            this.danhsachquocgia.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.danhsachquocgia.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.danhsachquocgia.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.danhsachquocgia.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.danhsachquocgia.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.danhsachquocgia.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.danhsachquocgia.ItemHeight = 30;
+            this.danhsachquocgia.Items.AddRange(new object[] {
             "Tất cả",
             "Mỹ",
             "Hàn Quốc",

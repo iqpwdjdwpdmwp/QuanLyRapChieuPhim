@@ -102,20 +102,20 @@ namespace QuanLyRapChieuPhim.UserControls
 
             data = DAL.ThongKe.getChiTieuKhachHang();
             count = 1;
-            if (data.Rows.Count > 0)
-            {
-                foreach (DataRow row in data.Rows)
-                {
-                    chitieukhachhang.Rows.Add(new object[]
-                    {
-                        count.ToString(),
-                        "NV" + row["IDKH"].ToString(),
-                        row["HOTEN"].ToString(),
-                        row["TONG"].ToString()
-                    });
-                    ++count;
-                }
-            }
+            //if (data.Rows.Count > 0)
+            //{
+            //    foreach (DataRow row in data.Rows)
+            //    {
+            //        chitieukhachhang.Rows.Add(new object[]
+            //        {
+            //            count.ToString(),
+            //            "NV" + row["IDKH"].ToString(),
+            //            row["HOTEN"].ToString(),
+            //            row["TONG"].ToString()
+            //        });
+            //        ++count;
+            //    }
+            //}
         }
     }
 }
