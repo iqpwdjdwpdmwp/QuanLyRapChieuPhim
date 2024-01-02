@@ -50,22 +50,17 @@ namespace QuanLyRapChieuPhim
             newSuatChieu.NgayChieu = ngaychieupicker.Value.Date;
             newSuatChieu.GioChieu = comboBoxHour.GetItemText(comboBoxHour.SelectedItem);
             newSuatChieu.PhongId = Convert.ToInt32(phongchieu.Text);
-            query = $"select THOIGIANCHIEU from SUATCHIEU where NGAYCHIEU = '{newSuatChieu.NgayChieu}' and THOIGIANCHIEU < '{newSuatChieu.GioChieu}' and IDPHONG = {newSuatChieu.PhongId}";
+            query = $"select top 1 THOIGIANCHIEU from SUATCHIEU where NGAYCHIEU = '{newSuatChieu.NgayChieu}' and THOIGIANCHIEU <= '{newSuatChieu.GioChieu}' and IDPHONG = {newSuatChieu.PhongId} ORDER BY THOIGIANCHIEU DESC";
             DataTable temp = DAL.DataProvider.ExecuteQuery(query);
 
             if(temp.Rows.Count > 0)
             {
-                foreach (DataRow row in temp.Rows)
-                {
-                    list.Add(row["THOIGIANCHIEU"].ToString());
-
-                }
-                list.Sort();
-                string suatChieuGanNhatVoiSuatChieuDuocChon = list.Last();
-                query = $"select THOILUONG from PHIM P inner join SUATCHIEU SC on P.IDPHIM = SC.IDPHIM where SC.THOIGIANCHIEU = '{suatChieuGanNhatVoiSuatChieuDuocChon}' and SC.NGAYCHIEU = '{newSuatChieu.NgayChieu}' and IDPHONG = {newSuatChieu.PhongId}";
-                int duration = Convert.ToInt32(DAL.DataProvider.ExecuteScalar(query));
-                int hour = duration / 60;
-                int minute = duration % 60;
+                
+                string suatChieuGanNhatVoiSuatChieuDuocChon = temp.Rows[0]["THOIGIANCHIEU"].ToString();
+                query = $"select top 1 THOILUONG from PHIM P inner join SUATCHIEU SC on P.IDPHIM = SC.IDPHIM where SC.THOIGIANCHIEU = '{suatChieuGanNhatVoiSuatChieuDuocChon}' and SC.NGAYCHIEU = '{newSuatChieu.NgayChieu}' and IDPHONG = {newSuatChieu.PhongId}";
+                int duration = Convert.ToInt32(DAL.DataProvider.ExecuteScalar(query)); // 203
+                int hour = duration / 60; // 3
+                int minute = duration % 60; // 23
                 int suatChieuGanNhatHour = Convert.ToInt32(suatChieuGanNhatVoiSuatChieuDuocChon.Split(':')[0]);
                 int suatChieuGanNhatMinute = Convert.ToInt32(suatChieuGanNhatVoiSuatChieuDuocChon.Split(':')[1]);
                 suatChieuGanNhatHour += hour;
@@ -79,7 +74,9 @@ namespace QuanLyRapChieuPhim
 
                 int newSuatChieuHour = Convert.ToInt32(newSuatChieu.GioChieu.Split(':')[0]);
                 int newSuatChieuMinute = Convert.ToInt32(newSuatChieu.GioChieu.Split(':')[1]);
+                MessageBox.Show(newSuatChieuHour.ToString());
                 if (newSuatChieuHour > suatChieuGanNhatHour || newSuatChieuHour == suatChieuGanNhatHour && newSuatChieuMinute > suatChieuGanNhatMinute)
+                    
                 {
                     bool data = DAL.QuanLiSuatChieu.insertSuatChieu(newSuatChieu.MovieID, newSuatChieu.NgayChieu, newSuatChieu.PhongId, newSuatChieu.GioChieu);
                     if (data == true)

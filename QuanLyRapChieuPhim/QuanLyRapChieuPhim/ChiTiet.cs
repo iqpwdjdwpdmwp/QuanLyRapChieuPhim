@@ -53,7 +53,7 @@ namespace QuanLyRapChieuPhim
         public void loadSeat()
         {
             flpSeats.Controls.Clear();
-            var ID = DAL.DataProvider.ExecuteScalar($"select IDSUATCHIEU from SUATCHIEU where THOIGIANCHIEU = '{gioChieu}' and NGAYCHIEU = '{(Convert.ToDateTime(ngayChieu)).ToString("yyyy/dd/MM")}'");
+            var ID = DAL.DataProvider.ExecuteScalar($"select IDSUATCHIEU from SUATCHIEU where THOIGIANCHIEU = '{gioChieu}' and NGAYCHIEU = '{(Convert.ToDateTime(ngayChieu)).ToString()}'");
             IDSuatChieu = Convert.ToInt32(ID);
             DataTable data = DAL.Seat.getAllSeats(Convert.ToInt32(ID));
             //if (data.Rows.Count == 0)
@@ -143,6 +143,7 @@ namespace QuanLyRapChieuPhim
 
         private void delete_Click(object sender, EventArgs e)
         {
+            MessageBox.Show(IDSuatChieu.ToString());
             bool data = DAL.QuanLiSuatChieu.deleteSuatChieu(IDSuatChieu);
             if (data == true)
             {

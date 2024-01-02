@@ -17,23 +17,24 @@ namespace QuanLyRapChieuPhim.UserControls
         public PhimDangChieu(int IDNV)
         {
             InitializeComponent();
+            danhsachtheloai.SelectedIndex = 0;
+            danhsachquocgia.SelectedIndex = 0;
+            danhsachthoiluong.SelectedIndex = 0;
             this.IDNV = IDNV;
         }
 
         private void PhimDangChieu_Load(object sender, EventArgs e)
         {
-            danhsachtheloai.Text = "Tất cả";
-            DataTable data = DAL.PhimDangChieu.getPhimDangChieu();
+
+
+            datefinding.Value = DateTime.Today;
+            string date = datefinding.Value.ToString();
+            DataTable data = DAL.PhimDangChieu.getPhimDangChieu(date);
             LoadPhim(data);
 
         }
 
-        private void danhsachtheloai_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            string theloai = danhsachtheloai.SelectedItem.ToString();
-            DataTable data = DAL.PhimDangChieu.getPhimTheoTheLoai(theloai);
-            LoadPhim(data);
-        }
+        
         private void LoadPhim(DataTable data)
         {
             flowLayoutPanel1.Controls.Clear();
@@ -61,6 +62,36 @@ namespace QuanLyRapChieuPhim.UserControls
         private void datefinding_ValueChanged(object sender, EventArgs e)
         {
 
+        }
+
+        
+
+        private void find_Click(object sender, EventArgs e)
+        {
+            string theloai = danhsachtheloai.SelectedItem.ToString();
+            string quocgia = danhsachquocgia.SelectedItem.ToString();
+            string date = datefinding.Value.ToString();
+            int thoiluong = 0;
+            //int thoiluong = Convert.ToInt32(danhsachthoiluong.SelectedItem);
+            switch (danhsachthoiluong.SelectedItem.ToString())
+            {
+                case "Dưới 1 tiếng":
+                    thoiluong = 60;
+                    break;
+                case "Dưới 2 tiếng":
+                    thoiluong = 120;
+                    break;
+                case "Dưới 3 tiếng":
+                    thoiluong = 180;
+                    break;
+                case "Dưới 4 tiếng":
+                    thoiluong = 240;
+                    break;
+                default:
+                    break;
+            }
+            DataTable data = DAL.PhimDangChieu.getPhimTheoPhanLoai(theloai, quocgia, thoiluong, date);
+            LoadPhim(data);
         }
     }
 }

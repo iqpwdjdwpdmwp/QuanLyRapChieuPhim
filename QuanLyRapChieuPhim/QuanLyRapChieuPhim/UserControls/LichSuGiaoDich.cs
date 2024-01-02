@@ -47,34 +47,25 @@ namespace QuanLyRapChieuPhim.UserControls
                 }
             }
         }
-        private void from_ValueChanged(object sender, EventArgs e)
+        
+
+        
+
+        private void find_Click(object sender, EventArgs e)
         {
             string fromDate = from.Value.ToString("MM/dd/yyyy");
             string toDate = to.Value.ToString("MM/dd/yyyy");
             
             DataTable data = new DataTable();
+
             data = DAL.LichSuGiaoDich.getLogsTheoTimKiem(fromDate, toDate, productfinding.Text, empfinding.Text, guestfinding.Text);
 
             LoadData(data);
         }
 
-        private void to_ValueChanged(object sender, EventArgs e)
+        private void export_Click(object sender, EventArgs e)
         {
-            string fromDate = from.Value.ToString("MM/dd/yyyy");
-            string toDate = to.Value.ToString("MM/dd/yyyy");
-            
-            DataTable data = new DataTable();
-            data = DAL.LichSuGiaoDich.getLogsTheoTimKiem(fromDate, toDate, productfinding.Text, empfinding.Text, guestfinding.Text);
-            LoadData(data);
-        }
 
-        private void productfinding_TextChanged(object sender, EventArgs e)
-        {
-            string fromDate = from.Value.ToString("MM/dd/yyyy");
-            string toDate = to.Value.ToString("MM/dd/yyyy");
-            DataTable data = new DataTable();
-            data = DAL.LichSuGiaoDich.getLogsTheoTimKiem(fromDate, toDate, productfinding.Text, empfinding.Text, guestfinding.Text);
-            LoadData(data);
         }
     }
 }

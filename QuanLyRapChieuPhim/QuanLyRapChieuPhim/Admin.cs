@@ -78,5 +78,12 @@ namespace QuanLyRapChieuPhim
             newForm.ShowDialog();
             this.Close();
         }
+
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+            LichLamViec newForm = new LichLamViec();
+            panel2.Controls.Clear();
+            panel2.Controls.Add(newForm);
+        }
     }
 }

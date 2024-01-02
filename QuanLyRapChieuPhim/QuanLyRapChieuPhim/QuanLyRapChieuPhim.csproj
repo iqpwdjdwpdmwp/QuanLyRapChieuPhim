@@ -109,6 +109,12 @@
     </Compile>
     <Compile Include="obj\Debug\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
     <Compile Include="obj\Release\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
+    <Compile Include="PhanCong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PhanCong.Designer.cs">
+      <DependentUpon>PhanCong.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SuaNV.cs">
@@ -147,6 +153,18 @@
     <Compile Include="TimKhachHang.Designer.cs">
       <DependentUpon>TimKhachHang.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\Calendar_Blank.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Calendar_Blank.Designer.cs">
+      <DependentUpon>Calendar_Blank.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Calendar_Day.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Calendar_Day.Designer.cs">
+      <DependentUpon>Calendar_Day.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\CartItem.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -176,6 +194,12 @@
     </Compile>
     <Compile Include="UserControls\FoodItem.Designer.cs">
       <DependentUpon>FoodItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\LichLamViec.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\LichLamViec.Designer.cs">
+      <DependentUpon>LichLamViec.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControls\LichSuGiaoDich.cs">
       <SubType>UserControl</SubType>
@@ -274,6 +298,9 @@
     <EmbeddedResource Include="obj\Debug\QuanLyRapChieuPhim.UserControls.QuanLiPhim.resources" />
     <EmbeddedResource Include="obj\Debug\QuanLyRapChieuPhim.UserControls.QuanLiSuatChieu.resources" />
     <EmbeddedResource Include="obj\Debug\QuanLyRapChieuPhim.XacThucTaiKhoan.resources" />
+    <EmbeddedResource Include="PhanCong.resx">
+      <DependentUpon>PhanCong.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
@@ -294,6 +321,12 @@
     <EmbeddedResource Include="TimKhachHang.resx">
       <DependentUpon>TimKhachHang.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Calendar_Blank.resx">
+      <DependentUpon>Calendar_Blank.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Calendar_Day.resx">
+      <DependentUpon>Calendar_Day.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControls\CartItem.resx">
       <DependentUpon>CartItem.cs</DependentUpon>
     </EmbeddedResource>
@@ -308,6 +341,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\FoodItem.resx">
       <DependentUpon>FoodItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\LichLamViec.resx">
+      <DependentUpon>LichLamViec.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\LichSuGiaoDich.resx">
       <DependentUpon>LichSuGiaoDich.cs</DependentUpon>

@@ -77,6 +77,7 @@ namespace QuanLyRapChieuPhim
                 }
             }
         }
+        
         private void datvebtn_Click(object sender, EventArgs e)
         {
             if(isClick == false)
@@ -97,6 +98,7 @@ namespace QuanLyRapChieuPhim
             data = DAL.DataProvider.ExecuteQuery($"select * from SUATCHIEU where NGAYCHIEU = '{today}' and THOIGIANCHIEU = '{button.Text}'");
             this.Phong = Convert.ToInt32(data.Rows[0]["IDPHONG"]);
             this.GioChieu = data.Rows[0]["THOIGIANCHIEU"].ToString();
+            this.SuatChieuID = Convert.ToInt32(data.Rows[0]["IDSUATCHIEU"]);
             isClick = true;
         }
     }

@@ -125,7 +125,7 @@ namespace QuanLyRapChieuPhim
             
         
             string query = "SELECT MAX(IDHD) FROM HOADON";
-            
+            MessageBox.Show(suatChieuID.ToString());
             int IDHD = Convert.ToInt32(DAL.DataProvider.ExecuteScalar(query));
             foreach (var item in list)
             {
@@ -135,7 +135,7 @@ namespace QuanLyRapChieuPhim
                 DAL.Ve.insertVe(IDNV, IDPHIM, SuatChieuID, IDGHE, 45000);
                 query = "SELECT MAX(IDVE) FROM VE";
                 int IDVE = Convert.ToInt32(DAL.DataProvider.ExecuteScalar(query));
-                DAL.LichSuGiaoDich.insertCTHDVE(IDHD, IDVE, 1, 45000);
+                DAL.LichSuGiaoDich.insertCTHDVE(IDHD,"Vé xem phim" ,IDVE, 1, 45000);
             }
             TimKhachHang newForm = new TimKhachHang(IDNV, "DATVE");
             newForm.ShowDialog();

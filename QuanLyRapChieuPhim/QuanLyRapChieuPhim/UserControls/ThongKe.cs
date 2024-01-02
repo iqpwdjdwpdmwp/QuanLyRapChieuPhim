@@ -79,6 +79,42 @@ namespace QuanLyRapChieuPhim.UserControls
             for (int i = 1; i <= 12; i++)
             {
                 chart2.Series["Doanh thu"].Points.AddXY(i, rand.Next(20000, 100000));
+            
+            }
+
+            DataTable data = new DataTable();
+            data = DAL.ThongKe.getDoanhThuNhanVien();
+            int count = 1;
+            if(data.Rows.Count > 0)
+            {
+                foreach(DataRow row in data.Rows)
+                {
+                    doanhthunhanvien.Rows.Add(new object[]
+                    {
+                        count.ToString(),
+                        "NV" + row["IDNV"].ToString(),
+                        row["HOTEN"].ToString(),
+                        row["TONG"].ToString()
+                    });
+                    ++count;
+                }
+            }
+
+            data = DAL.ThongKe.getChiTieuKhachHang();
+            count = 1;
+            if (data.Rows.Count > 0)
+            {
+                foreach (DataRow row in data.Rows)
+                {
+                    chitieukhachhang.Rows.Add(new object[]
+                    {
+                        count.ToString(),
+                        "NV" + row["IDKH"].ToString(),
+                        row["HOTEN"].ToString(),
+                        row["TONG"].ToString()
+                    });
+                    ++count;
+                }
             }
         }
     }

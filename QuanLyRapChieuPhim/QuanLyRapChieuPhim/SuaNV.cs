@@ -70,7 +70,7 @@ namespace QuanLyRapChieuPhim
                 datetimevalue = String_DateTime(row["NGAYBD"].ToString());
                 daystart.Value = datetimevalue;
             }
-            string query = $"SELECT (IDACCOUNT) FROM NHANVIEN WHERE IDNV={IDNV}";
+            string query = $"SELECT (IDACCOUNT) FROM TAIKHOAN WHERE IDNV={IDNV}";
             idacc=Convert.ToInt32(DAL.DataProvider.ExecuteScalar(query));
             query = $"SELECT PHANQUYEN AS PQ FROM TAIKHOAN WHERE IDACCOUNT={idacc}";
             pq= Convert.ToInt32(DAL.DataProvider.ExecuteScalar(query));
@@ -89,6 +89,7 @@ namespace QuanLyRapChieuPhim
 
             try
             {
+                
                 if (checkAdmin.Checked)
                 {
                     pq = 0;

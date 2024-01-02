@@ -43,3 +43,7 @@ C:\Users\BEN\source\repos\QuanLyRapChieuPhim\QuanLyRapChieuPhim\QuanLyRapChieuPh
 C:\Users\BEN\source\repos\QuanLyRapChieuPhim\QuanLyRapChieuPhim\QuanLyRapChieuPhim\obj\Debug\QuanLyRapChieuPhim.UserControls.QuanLiNhanVien.resources
 C:\Users\BEN\source\repos\QuanLyRapChieuPhim\QuanLyRapChieuPhim\QuanLyRapChieuPhim\obj\Debug\QuanLyRapChieuPhim.UserControls.ThongKe.resources
 C:\Users\BEN\source\repos\QuanLyRapChieuPhim\QuanLyRapChieuPhim\QuanLyRapChieuPhim\obj\Debug\QuanLyRapChieuPhim.ThemNV.resources
+C:\Users\BEN\source\repos\QuanLyRapChieuPhim\QuanLyRapChieuPhim\QuanLyRapChieuPhim\obj\Debug\QuanLyRapChieuPhim.UserControls.Calendar_Day.resources
+C:\Users\BEN\source\repos\QuanLyRapChieuPhim\QuanLyRapChieuPhim\QuanLyRapChieuPhim\obj\Debug\QuanLyRapChieuPhim.UserControls.LichLamViec.resources
+C:\Users\BEN\source\repos\QuanLyRapChieuPhim\QuanLyRapChieuPhim\QuanLyRapChieuPhim\obj\Debug\QuanLyRapChieuPhim.UserControls.Calendar_Blank.resources
+C:\Users\BEN\source\repos\QuanLyRapChieuPhim\QuanLyRapChieuPhim\QuanLyRapChieuPhim\obj\Debug\QuanLyRapChieuPhim.PhanCong.resources
